@@ -3,6 +3,7 @@
 
 The content contained in this repository is the intellectual property of Wirepath Home Systems, LLC, dba Control4 (“Control4”), and use without a valid license from Control4 is strictly prohibited. The user of this repository shall keep all content contained herein confidential and shall protect this content in whole or in part from disclosure to any and all third parties except as specifically authorized in writing by Control4.
 
+
 **License and Intellectual Property Disclaimer**
 
 The content in this repository is provided in connection with Control4 products. No license, express or implied, by estoppal or otherwise, to any intellectual property rights is granted by this document or in this repository. Except as provided in Control4ʼs terms and conditions for the license of such products, Control4 and its affiliates assume no liability whatsoever and disclaim any express or implied warranty, relating to the sale and/or use of Control4 products including liability or warranties relating to fitness for a particular purpose, merchantability, or infringement of any patent, copyright or other intellectual property right. Control4 products are not intended for use in medical, lifesaving, or life sustaining applications.
