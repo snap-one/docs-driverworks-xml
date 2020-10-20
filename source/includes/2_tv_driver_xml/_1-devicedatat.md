@@ -1,11 +1,6 @@
 
-*\<devicedata\>
+*\<devicedata\> \</devicedata\>
 
-Description
-
-
-| Attributes | Description |
-| --- | --- |
+This is the root level XML element that contains all of the driver’s XML schema. 
 
 
-### Example

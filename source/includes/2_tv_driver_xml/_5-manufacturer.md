@@ -1,11 +1,12 @@
 
-*\<manufacturer\>
+*\<manufacturer\>\</manufacturer\>
 
-Description
-
-
-| Attributes | Description |
-| --- | --- |
+This element contains the manufacturer information for the device
 
 
 ### Example
+
+```xml
+<manufacturer>Control4</manufacturer>
+
+```
