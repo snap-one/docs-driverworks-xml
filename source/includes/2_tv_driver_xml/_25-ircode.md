@@ -1,5 +1,5 @@
 
-*\<serial_settings_\>
+\*\<ircodes\>
 
 Description
 
@@ -9,7 +9,6 @@ Description
 
 
 ### Example
-
 
 
 

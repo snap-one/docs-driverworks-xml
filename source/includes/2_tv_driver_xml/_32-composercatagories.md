@@ -1,5 +1,6 @@
 
-*\<power_command_needed\>
+\*\<composer\_categories\_\>
+
 
 Description
 
@@ -9,7 +10,3 @@ Description
 
 
 ### Example
-
-
-
-

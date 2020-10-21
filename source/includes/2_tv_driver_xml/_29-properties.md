@@ -1,6 +1,5 @@
 
-*\<composer_categories_\>
-
+\*\<properties\>
 
 Description
 
@@ -10,3 +9,4 @@ Description
 
 
 ### Example
+

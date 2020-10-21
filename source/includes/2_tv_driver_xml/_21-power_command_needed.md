@@ -1,5 +1,5 @@
 
-*\<properties\>
+\*\<power\_command\_needed\>
 
 Description
 
@@ -9,4 +9,7 @@ Description
 
 
 ### Example
+
+
+
 

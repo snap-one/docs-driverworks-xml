@@ -1,5 +1,5 @@
 
-*\<rfs\>
+\*\<power\_management\_method\>
 
 Description
 

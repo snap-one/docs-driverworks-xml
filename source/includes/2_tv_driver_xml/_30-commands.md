@@ -1,5 +1,5 @@
 
-*\<capabilities\>
+\*\<commands\>
 
 Description
 
@@ -9,7 +9,4 @@ Description
 
 
 ### Example
-
-
-
 

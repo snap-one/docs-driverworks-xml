@@ -1,5 +1,5 @@
 
-*\<power_delay_\>
+\*\<irsection\>
 
 Description
 

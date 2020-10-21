@@ -1,5 +1,5 @@
 
-*\<documentation\>
+\*\<power\_delay\_\>
 
 Description
 

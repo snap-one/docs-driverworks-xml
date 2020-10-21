@@ -1,5 +1,5 @@
 
-*\<config\>
+\*\<power\_command\_delay\>
 
 Description
 

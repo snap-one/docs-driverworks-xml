@@ -1,5 +1,5 @@
 
-*\<script\>
+\*\<serial\_settings\_\>
 
 Description
 
@@ -9,4 +9,7 @@ Description
 
 
 ### Example
+
+
+
 
