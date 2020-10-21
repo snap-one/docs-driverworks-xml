@@ -23,7 +23,7 @@ This element defines the driver [connections][1] which are utilized to create th
 ### Example
 
 ```xml
-  -- The example below includes part of the connections section for a TV driver. It includes the main connection for the TV, as well as a Network Connection with TCP adn UDP connection classes. 
+ 
 
   <connections>
    <connection>
