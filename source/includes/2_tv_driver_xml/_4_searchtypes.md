@@ -1,8 +1,8 @@
 
 ## searchtypes
 
-`<search\_types\> </search\_types\>
-`
+`<search_types></search_types>`
+
 
 This element contains the searchable text that can be used to locate the driver. This text is contained in the \<type\> attribute.
 

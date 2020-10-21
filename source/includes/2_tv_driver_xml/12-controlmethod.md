@@ -1,16 +1,17 @@
 
-## contolmethod
+## controlmethod
 
-`<controlmethod></controlmethod>
-`
-Description
+`<controlmethod></controlmethod>`
 
 
-| Attributes | Description |
-| --- | --- |
+This element is used to defined the manner in which the device is controlled. For example, IP, Serial.
 
 
 ### Example
+
+```xml
+ <controlmethod>ip</controlmethod>
+```
 
 
 

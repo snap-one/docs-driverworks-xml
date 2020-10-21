@@ -1,7 +1,7 @@
 
 ## created
 
-`<created\>\</created\>`
+`<created></created>`
 
 
 This element contains the date and time at which the driver was created.
