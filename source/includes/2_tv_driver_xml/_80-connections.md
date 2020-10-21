@@ -1,8 +1,9 @@
 
 ## connections
 
-`<connections></connections>
-`
+`<connections></connections>`
+
+
 This element defines the driver [connections][1] which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the `<connection>` element.
 
 
