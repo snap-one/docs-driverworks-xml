@@ -1,5 +1,7 @@
 
-\*\<copyright\>\</copyright\>
+## copyright
+
+*\<copyright\>\</copyright\>
 
 The copyright element contains the driver’s copyright information
 
