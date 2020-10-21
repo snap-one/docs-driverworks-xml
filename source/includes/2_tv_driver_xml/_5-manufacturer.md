@@ -1,5 +1,8 @@
 
-*\<manufacturer\>\</manufacturer\>
+## manufacturer
+
+`<manufacturer\>\</manufacturer\>
+`
 
 This element contains the manufacturer information for the device
 

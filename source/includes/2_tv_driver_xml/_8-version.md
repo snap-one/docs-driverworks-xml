@@ -1,6 +1,8 @@
 
-*\<version\>\</version\>
+## version
 
+`<version\>\</version\>
+`
 
 This element contains the version of the driver.
 

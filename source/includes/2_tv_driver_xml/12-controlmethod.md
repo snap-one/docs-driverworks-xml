@@ -1,6 +1,8 @@
 
-*\<controlmethod\>
+## contolmethod
 
+`<controlmethod></controlmethod>
+`
 Description
 
 

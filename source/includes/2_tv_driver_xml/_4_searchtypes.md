@@ -1,5 +1,8 @@
 
-*\<search\_types\> \</search\_types\>
+## searchtypes
+
+`<search\_types\> </search\_types\>
+`
 
 This element contains the searchable text that can be used to locate the driver. This text is contained in the \<type\> attribute.
 
@@ -7,6 +10,7 @@ This element contains the searchable text that can be used to locate the driver.
 | Attributes | Description |
 | --- | --- |
 | \<type\> | Searchable text used to locate the driver. |
+
 
 ### Example
 
