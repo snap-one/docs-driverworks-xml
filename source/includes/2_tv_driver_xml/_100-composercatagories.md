@@ -1,5 +1,5 @@
 
-## composer_categories_
+## composer_categories
 
 `<composer_categories></composer_categories>`
 
@@ -17,5 +17,5 @@ Description
 ```xml
 <composer_categories>
     <category>Audio/Video</category>
-  </composer_categories>
+</composer_categories>
 ```
