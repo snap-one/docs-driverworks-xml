@@ -4,10 +4,15 @@
 `<copyright></copyright>`
 
 
+### Parent
+
+`<devicedata>
+`
+
 The copyright element contains the driver’s copyright information
 
 
-###  Example
+### Example
 
 ```xml
 <copyright>Copyright 2020 Control4 Corporation. All rights reserved.</copyright>
