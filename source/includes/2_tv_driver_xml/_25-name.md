@@ -4,13 +4,13 @@
 `<name></name>`
 
 
-This element contains the name information for the device
+This element contains the name information for the device.
 
 
 ### Example
 
 ```xml
-<name>Control4 XBR-55nfe05</name>
+<name>Control4 TV</name>
 
 ```
 

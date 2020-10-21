@@ -4,7 +4,7 @@
 `<model></model>`
 
 
-This element contains the model information for the device
+This element contains the model information for the device.
 
 
 ### Example
