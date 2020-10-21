@@ -8,11 +8,11 @@ This element lists the number proxies used by the driver. One or more proxies ma
 
 | Attributes | Description |
 | --- | --- |
-| qty | Number of proxies used by the driver |
-| proxy | name of the primary proxy |
-| proxybindingid | binding id value |
-| name | model name |
-| primary | Indicates if the proxy is the primary proxy used by the driver “True” or “False” |
+| \<qty\> | Number of proxies used by the driver |
+| \<proxy\> | Name of the primary proxy |
+| \<proxybindingid\> | Binding id value |
+| \<name\> | Model name |
+| \<primary\> | Indicates if the proxy is the primary proxy used by the driver “True” or “False” |
 
 
 ### Example
