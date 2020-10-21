@@ -15,12 +15,12 @@ This element is the root of the driver’s config section. This section contains
 | \<power_command_needed\> | |
 | \<serialsettings\> | |
 | \<irsection\> | |
-| rfs | |
-| documentation | |
-| script | |
-| properties | |
-| commands |
-| actions | |
+| \<rfs\> | |
+| \<documentation\> | |
+| \<script\> | |
+| \<properties\> | |
+| \<commands\> |
+| \<actions\> | |
 
 ### Example
 
