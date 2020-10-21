@@ -9,12 +9,18 @@ This element is the root of the driver’s config section. This section contains
 
 | Attributes | Description |
 | --- | --- |
-| \<power\_management\_method | |
-| \<power\_command\_delay | |
-| \<power\_delay\> | |
-| \<power\_command\_needed\> |  |
+| \<power_management_method \> | |
+| \<power_command_delay | |
+| \<power_delay\> | |
+| \<power_command_needed\> | |
 | \<serialsettings\> | |
 | \<irsection\> | |
+| rfs | |
+| documentation | |
+| script | |
+| properties | |
+| commands |
+| actions | |
 
 ### Example
 

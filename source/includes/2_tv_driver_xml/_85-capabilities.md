@@ -1,8 +1,8 @@
 
 ## capabilities
 
-`<capabilities><\capabilities>
-`
+`<capabilities><\capabilities>`
+
 
 This element contains the driver’s device [capabilities][1]. Capabilities are device dependent.
 
