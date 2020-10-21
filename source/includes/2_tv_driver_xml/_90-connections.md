@@ -18,7 +18,7 @@ This element defines the driver [connections][1] which are utilized to create th
 | audiosource | This value “True” or “False” indicates if this device provides a source of audio. |
 | videosource | This value “True” or “False” indicates if this device provides a source of video. |
 | linelevel | This value “True” or “False” indicates if this connection provides a line level source. |
-| classes | Root attribute for one or more classes defined within the connection. If the class is TCP or UDP then there may be a |ports section as seen in the example to the right. This includes the IP Port number for the network connection. |
+| classes | Root attribute for one or more classes defined within the connection. If the class is TCP or UDP then there may be a ports section as seen in the example to the right. This includes the IP Port number for the network connection. |
 
 
 ### Example
