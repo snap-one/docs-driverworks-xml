@@ -1,5 +1,7 @@
 
-\*\<config\>
+## config
+
+`<config><config>`
 
 Description
 
