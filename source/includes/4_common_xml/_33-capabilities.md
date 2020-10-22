@@ -4,7 +4,12 @@
 `<capabilities><\capabilities>`
 
 
-This element contains the driver’s device [capabilities][1]. Capabilities are device dependent.
+### Parent
+
+`<devicedata>`
+
+
+This element contains the driver’s device [capabilities][1]. Capabilities are proxy dependent.
 
 
 ### Example

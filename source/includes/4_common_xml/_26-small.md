@@ -1,7 +1,12 @@
-
 ## small
 
 `<small></small>`
+
+
+### Parent
+
+`<devicedata>`
+
 
 This element contains the root location and name of the small icon used to represent the driver in Composer Pro.
 

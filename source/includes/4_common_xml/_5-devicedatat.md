@@ -1,7 +1,7 @@
-
 ## devicedata
 
 `<devicedata></devicedata>`
+
 
 ### Parent
 

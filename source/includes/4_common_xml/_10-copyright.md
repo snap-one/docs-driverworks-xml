@@ -1,4 +1,3 @@
-
 ## copyright
 
 `<copyright></copyright>`
@@ -6,8 +5,8 @@
 
 ### Parent
 
-`<devicedata>
-`
+`<devicedata>`
+
 
 The copyright element contains the driver’s copyright information
 

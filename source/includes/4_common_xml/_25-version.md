@@ -1,7 +1,11 @@
-
 ## version
 
 `<version></version>`
+
+
+### Parent
+
+`<devicedata>`
 
 
 This element contains the version of the driver.

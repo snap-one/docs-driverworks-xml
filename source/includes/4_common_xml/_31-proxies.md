@@ -3,7 +3,13 @@
 
 `<proxies></proxies>`
 
-This element lists the number proxies used by the driver. One or more proxies may be listed.
+
+### Parent
+
+`<devicedata>`
+
+
+This element lists the number proxies used by the driver. One or more proxies may be defined. Proxies are defined within the \<proxies\> element in the \<proxy\> element.
 
 
 | Attributes | Description |
