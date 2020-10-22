@@ -1,22 +1,16 @@
-## serial settings
+## ir code
 
-`<serial_settings></serial_settings>`
+`<ircode></ircode>`
 
 
 ### Parent
 
-[`<config>`][1]
+`<ircodes>`
 
 
-This element defines a serial connection settings.  
+This element 
 
-| Attributes | Description |
-| --- | --- |
-| baud | Baud rate of the connection |
-| data bits | Number of data bits per character for the connection |
-| parity | The parity bit set for the connection: N, O, E, M and S. |
-| stop bit | Stop bit value sent after each character. |
-| flow control | Flow control used or not. |
+
 
 
 ### Example
@@ -52,5 +46,3 @@ The example to the right is a \<config\> XML section from a sample TV driver.  I
         </ircode>
 </config>
 ```
-
-[1]:	https://control4.github.io/docs-driverworks-xml/#config

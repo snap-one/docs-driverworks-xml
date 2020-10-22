@@ -10,16 +10,6 @@
 
 This element 
 
-| \<power\_command\_needed\> | |
-| \<serialsettings\> | |
-| \<irsection\> | |
-| \<rfs\> | |
-| \<documentation\> | |
-| \<script\> | |
-| \<properties\> | |
-| \<commands\> |
-| \<actions\> | |
-
 
 ### Example
 
@@ -31,7 +21,7 @@ The example to the right is a \<config\> XML section from a sample TV driver.  I
     <power_command_delay>0</power_command_delay>
     <power_delay>0</power_delay>
     <power_command_needed>False</power_command_needed>
-    <serialsettings>9600 8 none 1 none 232</serialsettings>
+    <serialsettings>9600 8 odd 1 none</serialsettings>
     <irsection>
       <ircodes>
         <ircode>
