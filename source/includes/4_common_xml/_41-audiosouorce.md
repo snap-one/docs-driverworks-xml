@@ -33,7 +33,7 @@ This element indicates if this device connection provides a source of audio. Val
       </classes>
     </connection>
     <connection>
-   </connections>
+  </connections>
 ```
 
 [1]:	https://control4.github.io/docs-driverworks-xml/#connection

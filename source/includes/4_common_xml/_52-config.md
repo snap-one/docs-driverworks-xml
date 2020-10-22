@@ -1,18 +1,22 @@
-
 ## config
 
 `<config><config>`
 
 
-This element is the root of the driver’s config section. This section contains numerous attributes as defined below.
+### Parent
+
+[`<devicedata>`][1]
+
+
+This element is the root of the driver’s config section. 
 
 
 | Attributes | Description |
 | --- | --- |
-| \<power_management_method \> | |
-| \<power_command_delay | |
-| \<power_delay\> | |
-| \<power_command_needed\> | |
+| \<power\_management\_method \> | |
+| \<power\_command\_delay | |
+| \<power\_delay\> | |
+| \<power\_command\_needed\> | |
 | \<serialsettings\> | |
 | \<irsection\> | |
 | \<rfs\> | |
@@ -22,7 +26,10 @@ This element is the root of the driver’s config section. This section contains
 | \<commands\> |
 | \<actions\> | |
 
+
 ### Example
+
+The example to the right is a \<config\> XML section from a sample TV driver.  If provides numerous example of  XML structure that may be found in a driver written using the TV Proxy.
 
 ```xml
 <config>
@@ -55,3 +62,5 @@ This element is the root of the driver’s config section. This section contains
 ```
 
 
+
+[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata

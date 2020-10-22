@@ -33,7 +33,7 @@ This element indicates if this connection provides a line level source. Values a
       </classes>
     </connection>
     <connection>
-   </connections>
+  </connections>
 ```
 
 [1]:	https://control4.github.io/docs-driverworks-xml/#connection

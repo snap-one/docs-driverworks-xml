@@ -13,7 +13,7 @@ This element defines the driver [connections][2] which are utilized to create th
 
 ### Example
 
-The example to the right is of an entire connections XML section from a sample TV driver. If provides numerous example of the various types of connections and their respective XML structure that may be found in a driver written using the TV Proxy.
+The example to the right is an entire connections XML section from a sample TV driver. If provides numerous example of the various types of connections and their respective XML structure that may be found in a driver written using the TV Proxy.
 
 ```xml
  

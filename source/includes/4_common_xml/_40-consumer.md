@@ -33,7 +33,7 @@ This element  indicates if this driver is a consumer or a provider of this conne
       </classes>
     </connection>
     <connection>
-   </connections>
+  </connections>
 ```
 
 [1]:	https://control4.github.io/docs-driverworks-xml/#connection
