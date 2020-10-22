@@ -1,4 +1,4 @@
-## type
+## consumer
 
 `<consumer></consumer>`
 
