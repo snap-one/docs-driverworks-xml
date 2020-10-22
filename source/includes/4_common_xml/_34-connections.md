@@ -3,8 +3,12 @@
 
 `<connections></connections>`
 
+### Parent
 
-This element defines the driver [connections][1] which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the `<connection>` element.
+`<devicedata>`
+
+
+This element defines the driver [connections][1] which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the `<connections>` element under the \<connection\> element.
 
 
 | Attributes | Description |
