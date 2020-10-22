@@ -1,4 +1,4 @@
-## class
+## classname
 
 `<classname></classname>`
 
