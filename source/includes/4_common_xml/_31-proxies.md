@@ -12,15 +12,6 @@
 This element lists the number proxies used by the driver. One or more proxies may be defined. Proxies are defined within the \<proxies\> element in the \<proxy\> element.
 
 
-| Attributes | Description |
-| --- | --- |
-| \<qty\> | Number of proxies used by the driver |
-| \<proxy\> | Name of the primary proxy |
-| \<proxybindingid\> | Binding id value |
-| \<name\> | Model name |
-| \<primary\> | Indicates if the proxy is the primary proxy used by the driver “True” or “False” |
-
-
 ### Example
 
 ```xml
