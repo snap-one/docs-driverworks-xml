@@ -1,20 +1,16 @@
-## config
+## power command delay
 
-`<config></config>`
+`<power_command_delay></power_command_delay>`
 
 
 ### Parent
 
-[`<devicedata>`][1]
+[`<config>`][1]
 
 
-This element is the root of the driver’s config section. 
+This element 
 
 
-| Attributes | Description |
-| --- | --- |
-| \<power\_management\_method \> | |
-| \<power\_command\_delay | |
 | \<power\_delay\> | |
 | \<power\_command\_needed\> | |
 | \<serialsettings\> | |
@@ -61,6 +57,4 @@ The example to the right is a \<config\> XML section from a sample TV driver.  I
 </config>
 ```
 
-
-
-[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata
+[1]:	https://control4.github.io/docs-driverworks-xml/#config

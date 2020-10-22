@@ -1,24 +1,15 @@
-## config
+## ir code
 
-`<config></config>`
+`<ircode></ircode>`
 
 
 ### Parent
 
-[`<devicedata>`][1]
+`<ircodes>`
 
 
-This element is the root of the driver’s config section. 
+This element 
 
-
-| Attributes | Description |
-| --- | --- |
-| \<power\_management\_method \> | |
-| \<power\_command\_delay | |
-| \<power\_delay\> | |
-| \<power\_command\_needed\> | |
-| \<serialsettings\> | |
-| \<irsection\> | |
 | \<rfs\> | |
 | \<documentation\> | |
 | \<script\> | |
@@ -60,7 +51,3 @@ The example to the right is a \<config\> XML section from a sample TV driver.  I
         </ircode>
 </config>
 ```
-
-
-
-[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata
