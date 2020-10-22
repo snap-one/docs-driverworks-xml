@@ -1,11 +1,11 @@
-## audiosource
+## class
 
-`<audiosource></audiosource>`
+`<class></class>`
 
 
 ### Parent
 
-[`<connection>`][1]
+[`<classes>`][1]
 
 
 This element is the
