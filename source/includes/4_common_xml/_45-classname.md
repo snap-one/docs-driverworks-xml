@@ -1,25 +1,23 @@
-## linelevel
+## class
 
-`<linelevel></linelevel>`
+`<classname></classname>`
 
 
 ### Parent
 
-[`<connection>`][1]
+`<class>`
 
 
-This element indicates if this connection provides a line level source. Values are: “True” or “False”.
+This element defines the name of a single class for a connection.
 
 
 ### Example
 
 ```xml
- 
-
-  <connections>
-   <connection>
+<connections>
+    <connection>
       <id>5001</id>
-      <facing>5</facing>
+      <facing>6</facing>
       <connectionname>TV</connectionname>
       <type>2</type>
       <consumer>False</consumer>
@@ -32,8 +30,5 @@ This element indicates if this connection provides a line level source. Values a
         </class>
       </classes>
     </connection>
-    <connection>
-   </connections>
+<connection>
 ```
-
-[1]:	https://control4.github.io/docs-driverworks-xml/#connection

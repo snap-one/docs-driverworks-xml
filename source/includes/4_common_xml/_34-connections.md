@@ -8,21 +8,7 @@
 [`<devicedata>`][1]
 
 
-This element defines the driver [connections][2] which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the `<connections>` element under the \<connection\> element.
-
-
-| Attributes | Description |
-| --- | --- |
-| connection | Root attribute for a connection |
-| id | Connection id value. |
-| facing | Numerical value indicating the location of the physical connection location |
-| connectionname | This connection’s name. This value will be displayed in Composer pro’s Connection area. |
-| type | The value indicates the type of this connection. |
-| consumer | This value “True” or “False” indicates if this driver is a consumer or a provider of this connection. |
-| audiosource | This value “True” or “False” indicates if this device provides a source of audio. |
-| videosource | This value “True” or “False” indicates if this device provides a source of video. |
-| linelevel | This value “True” or “False” indicates if this connection provides a line level source. |
-| classes | Root attribute for one or more classes defined within the connection. If the class is TCP or UDP then there may be a ports section as seen in the example to the right. This includes the IP Port number for the network connection. |
+This element defines the driver [connections][2] which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the `<connections>` element under the `<connection>` element.
 
 
 ### Example
