@@ -6,7 +6,7 @@
 
 ### Parent
 
-`<devicedata>`
+[`<devicedata>`][1]
 
 
 This element is used to designate DriverWorks drivers. It contains the value of DriverWorks.
@@ -21,3 +21,5 @@ This element is used to designate DriverWorks drivers. It contains the value of 
 
 
 
+
+[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata

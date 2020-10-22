@@ -5,10 +5,10 @@
 
 ### Parent
 
-`<devicedata>`
+[`<devicedata>`][1]
 
 
-This element defines the driver [connections][1] which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the `<connections>` element under the \<connection\> element.
+This element defines the driver [connections][2] which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the `<connections>` element under the \<connection\> element.
 
 
 | Attributes | Description |
@@ -265,4 +265,5 @@ This element defines the driver [connections][1] which are utilized to create th
 
 
 
-[1]:	https://control4.github.io/docs-driverworks-fundamentals/#connections
+[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata
+[2]:	https://control4.github.io/docs-driverworks-fundamentals/#connections

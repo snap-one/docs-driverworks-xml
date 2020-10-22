@@ -5,7 +5,7 @@
 
 ### Parent
 
-`<devicedata>`
+[`<devicedata>`][1]
 
 
 This element is used to define the underlying framework used by the device. Current options include av\_gen or lua\_gen. Typically, AV devices use av_gen while non-AV devices use lua\_gen.
@@ -20,3 +20,5 @@ This element is used to define the underlying framework used by the device. Curr
 ```xml
 <control>av_gen</control>
 ```
+
+[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata

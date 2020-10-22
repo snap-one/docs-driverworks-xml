@@ -5,7 +5,7 @@
 
 ### Parent
 
-`<devicedata>`
+[`<devicedata>`][1]
 
 
 This element contains the searchable text that can be used to locate the driver contained within the type XML element. 
@@ -18,3 +18,5 @@ This element contains the searchable text that can be used to locate the driver 
  <type>control4:tv:XBR-55nfe05G</type>
 </search_types>
 ```
+
+[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata

@@ -5,7 +5,7 @@
 
 ### Parent
 
-`<devicedata>`
+[`<devicedata>`][1]
 
 
 This element contains the root location and name of the small icon used to represent the driver in Composer Pro.
@@ -18,3 +18,5 @@ This element contains the root location and name of the small icon used to repre
 ```
 
 
+
+[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata

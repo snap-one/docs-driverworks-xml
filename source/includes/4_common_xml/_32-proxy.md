@@ -6,7 +6,7 @@
 
 ### Parent
 
-`<proxies>`
+[`<proxies>`][1]
 
 
 This element is used to define a proxy used by the driver. 
@@ -25,3 +25,5 @@ This element is used to define a proxy used by the driver.
     <proxy proxybindingid="5001" name="Control4 TV" primary="True">tv</proxy>
 </proxies>
 ```
+
+[1]:	https://control4.github.io/docs-driverworks-xml/#proxies

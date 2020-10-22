@@ -6,7 +6,7 @@
 
 ### Parent
 
-`<devicedata>`
+[`<devicedata>`][1]
 
 
 The creator element contains the name of the entity which created the driver.
@@ -17,3 +17,5 @@ The creator element contains the name of the entity which created the driver.
 ```xml
 <creator>Control4</creator>
 ```
+
+[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata

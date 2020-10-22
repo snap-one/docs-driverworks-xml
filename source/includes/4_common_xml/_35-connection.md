@@ -5,10 +5,10 @@
 
 ### Parent
 
-`<connections>`
+[`<connections>`][1]
 
 
-This element defines a single driver [connection][1] which are utilized to create the bindings within the Control4 system. 
+This element defines a single driver [connection][2] which are utilized to create the bindings within the Control4 system. 
 
 
 ### Example
@@ -36,4 +36,5 @@ This element defines a single driver [connection][1] which are utilized to creat
    </connections>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-fundamentals/#connections
+[1]:	https://control4.github.io/docs-driverworks-xml/#connections
+[2]:	https://control4.github.io/docs-driverworks-fundamentals/#connections

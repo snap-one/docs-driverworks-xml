@@ -6,10 +6,10 @@
 
 ### Parent
 
-`<devicedata>`
+[`<devicedata>`][1]
 
 
-This element contains the driver’s device [capabilities][1]. Capabilities are proxy dependent.
+This element contains the driver’s device [capabilities][2]. Capabilities are proxy dependent.
 
 
 ### Example
@@ -44,4 +44,5 @@ Note that the example to the right has been taken from a TV driver.
 ```
 
 
-[1]:	https://control4.github.io/docs-driverworks-fundamentals/#capabilities
+[1]:	[%60%3Cdevicedata%3E%60]
+[2]:	https://control4.github.io/docs-driverworks-fundamentals/#capabilities

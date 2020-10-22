@@ -5,7 +5,7 @@
 
 ### Parent
 
-`<devicedata>`
+[`<devicedata>`][1]
 
 
 This element is used to defined the manner in which the device is controlled. For example, IP, Serial.
@@ -20,3 +20,5 @@ This element is used to defined the manner in which the device is controlled. Fo
 
 
 
+
+[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata

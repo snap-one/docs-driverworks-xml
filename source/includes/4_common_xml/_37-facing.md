@@ -5,10 +5,10 @@
 
 ### Parent
 
-`<connection>`
+[`<connection>`][1]
 
 
-This element is the numerical value indicating the location of the physical [connection][1] location. Values are:
+This element is the numerical value indicating the location of the physical [connection][2] location. Values are:
 
 - Front - 0
 - Back - 1
@@ -44,4 +44,5 @@ This element is the numerical value indicating the location of the physical [con
    </connections>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-fundamentals/#connections
+[1]:	https://control4.github.io/docs-driverworks-xml/#connection
+[2]:	https://control4.github.io/docs-driverworks-fundamentals/#connections

@@ -4,7 +4,7 @@
 
 ### Parent
 
-`<devicedata>`
+[`<devicedata>`][1]
 
 
 This element contains the date and time at which the driver was created.
@@ -17,3 +17,5 @@ This element contains the date and time at which the driver was created.
 ```
 
 
+
+[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata

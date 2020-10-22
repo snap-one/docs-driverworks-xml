@@ -5,7 +5,7 @@
 
 ### Parent
 
-`<devicedata>`
+[`<devicedata>`][1]
 
 
 This element contains the date and time at which the driver was last modified.
@@ -17,3 +17,5 @@ This element contains the date and time at which the driver was last modified.
 `<modified>3/22/2020 1:15 PM</modified>
 ```
 
+
+[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata

@@ -6,7 +6,7 @@
 
 ### Parent
 
-`<devicedata>`
+[`<devicedata>`][1]
 
 
 This element lists the number proxies used by the driver. One or more proxies may be defined. Proxies are defined within the \<proxies\> element in the \<proxy\> element.
@@ -21,3 +21,5 @@ This element lists the number proxies used by the driver. One or more proxies ma
 ```
 
 
+
+[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata
