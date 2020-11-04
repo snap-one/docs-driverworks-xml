@@ -8,7 +8,7 @@
 [`<config>`][1]
 
 
-This element 
+This element indicates location and name of the driver’s documentation file. 
 
 | Attributes | Description |
 | --- | --- |

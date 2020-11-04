@@ -8,7 +8,7 @@
 [`<config>`][1]
 
 
-This element defines t
+This element defines the device’s means of managing power.
 
 
 

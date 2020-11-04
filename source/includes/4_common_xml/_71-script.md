@@ -14,7 +14,7 @@ This element
 | Attributes | Description |
 | --- | --- |
 | file | Main scripting file used by the driver. Typically driver.lua |
-| encryption | e A value of 1 if the driver should be [encrypted][2]. A value of 0 if the driver should not be encrypted. | |
+| encryption | A value of 1 if the driver should be [encrypted][2]. A value of 0 if the driver should not be encrypted. | 
 | jit | A value of 1 if the driver should be loaded using [luajit][3].  A value of 0 if the driver should be loaded using PUC.|
 
 

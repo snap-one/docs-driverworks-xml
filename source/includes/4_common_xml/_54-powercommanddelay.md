@@ -8,7 +8,7 @@
 [`<config>`][1]
 
 
-This element 
+This element indicates the 
 
 
 
