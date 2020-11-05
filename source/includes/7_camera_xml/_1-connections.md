@@ -8,7 +8,7 @@
 [`<devicedata>`][1]
 
 
-This element defines the blind driver [connections][2] which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the `<connections>` element under the `<connection>` element.
+This element defines the camera driver [connections][2] which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the `<connections>` element under the `<connection>` element.
 
 
 ### Example
