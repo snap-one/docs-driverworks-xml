@@ -1,2 +1,2 @@
 
-# Blind Proxy XML
+# AV Switch Proxy XML
