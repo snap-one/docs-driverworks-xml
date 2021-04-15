@@ -8,7 +8,7 @@
 [`<devicedata>`][1]
 
 
-This element contains the searchable text that can be used to locate the driver contained within the type XML element. 
+This element contains the searchable text that is be used to locate the driver contained within the type XML element. 
 
 
 ### Example
