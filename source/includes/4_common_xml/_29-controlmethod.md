@@ -8,7 +8,7 @@
 [`<devicedata>`][1]
 
 
-This element is used to defined the manner in which the device is controlled. For example, IP, Serial.
+This element is used to defined the manner in which the device is controlled. For example: IP, Serial.
 
 
 ### Example

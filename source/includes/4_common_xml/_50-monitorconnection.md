@@ -8,7 +8,7 @@
 [`<port>`][1]
 
 
-This element indicates if the connection status on this port should be monitored.  Values are “True” or  “False”.
+This element indicates if the connection status on this port should be monitored.  Values are: “True” or  “False”.
 
 
 ### Example
