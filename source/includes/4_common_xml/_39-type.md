@@ -22,7 +22,7 @@ This element  contains the type of this connection. Values are:
 ### Example
 
 ```xml
- 
+
 
   <connections>
    <connection>
@@ -44,4 +44,4 @@ This element  contains the type of this connection. Values are:
    </connections>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#connection
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#connection

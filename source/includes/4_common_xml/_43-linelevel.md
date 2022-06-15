@@ -14,7 +14,7 @@ This element indicates if this connection provides a line level source. Values a
 ### Example
 
 ```xml
- 
+
 
   <connections>
    <connection>
@@ -36,4 +36,4 @@ This element indicates if this connection provides a line level source. Values a
   </connections>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#connection
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#connection

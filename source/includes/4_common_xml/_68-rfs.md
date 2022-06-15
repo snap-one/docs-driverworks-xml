@@ -8,7 +8,7 @@
 [`<config>`][1]
 
 
-This element 
+This element
 
 
 
@@ -21,4 +21,4 @@ This element
 </rfs>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#config
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#config

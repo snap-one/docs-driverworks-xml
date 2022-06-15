@@ -13,7 +13,7 @@ This element defines the doorstation driver [connections][2] which are utilized 
 
 ### Example
 
-The example to the right is an entire connections XML section from a sample Door Station driver. 
+The example to the right is an entire connections XML section from a sample Door Station driver.
 
 ```xml
 <connections>
@@ -73,5 +73,5 @@ The example to the right is an entire connections XML section from a sample Door
   </connections>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata
-[2]:	https://control4.github.io/docs-driverworks-fundamentals/#connections
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#devicedata
+[2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#connections

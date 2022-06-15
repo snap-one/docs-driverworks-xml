@@ -8,7 +8,7 @@
 [`<port>`][1]
 
 
-This element defines the number assigned to the port used for a single class within a connection. 
+This element defines the number assigned to the port used for a single class within a connection.
 
 
 ### Example
@@ -56,4 +56,4 @@ This element defines the number assigned to the port used for a single class wit
 </connection>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#class
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#class

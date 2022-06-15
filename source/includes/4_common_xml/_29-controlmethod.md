@@ -21,4 +21,4 @@ This element is used to defined the manner in which the device is controlled. Fo
 
 
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#devicedata

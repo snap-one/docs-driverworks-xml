@@ -13,7 +13,7 @@ This element defines the camera driver [connections][2] which are utilized to cr
 
 ### Example
 
-The example to the right is an entire connections XML section from a sample Camera driver. 
+The example to the right is an entire connections XML section from a sample Camera driver.
 
 ```xml
 <connections>
@@ -57,5 +57,5 @@ The example to the right is an entire connections XML section from a sample Came
 </connections>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata
-[2]:	https://control4.github.io/docs-driverworks-fundamentals/#connections
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#devicedata
+[2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#connections

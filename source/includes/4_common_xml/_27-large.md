@@ -21,4 +21,4 @@ This element contains the root location and name of the large icon used to repre
 
 
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#devicedata

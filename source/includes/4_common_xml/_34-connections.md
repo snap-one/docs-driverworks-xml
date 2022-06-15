@@ -16,7 +16,7 @@ This element defines the driver [connections][2] which are utilized to create th
 The example to the right is an entire connections XML section from a sample TV driver. If provides numerous example of the various types of connections and their respective XML structure that may be found in a driver written using the TV Proxy.
 
 ```xml
- 
+
 
   <connections>
    <connection>
@@ -253,5 +253,5 @@ The example to the right is an entire connections XML section from a sample TV d
 
 
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata
-[2]:	https://control4.github.io/docs-driverworks-fundamentals/#connections
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#devicedata
+[2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#connections

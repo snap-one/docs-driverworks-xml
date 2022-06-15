@@ -34,4 +34,4 @@ This element is the root for one or more classes defined within the connection. 
 <connection>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#connection
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#connection

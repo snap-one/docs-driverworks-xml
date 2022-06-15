@@ -8,7 +8,7 @@
 [`<config>`][1]
 
 
-This element indicates the 
+This element indicates the
 
 
 
@@ -46,4 +46,4 @@ The example to the right is a \<config\> XML section from a sample TV driver.  I
 </config>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#config
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#config

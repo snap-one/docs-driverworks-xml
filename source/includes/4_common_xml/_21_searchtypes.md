@@ -8,7 +8,7 @@
 [`<devicedata>`][1]
 
 
-This element contains the searchable text that is be used to locate the driver contained within the type XML element. 
+This element contains the searchable text that is be used to locate the driver contained within the type XML element.
 
 
 ### Example
@@ -19,4 +19,4 @@ This element contains the searchable text that is be used to locate the driver c
 </search_types>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#devicedata

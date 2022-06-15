@@ -8,7 +8,7 @@
 [`<config>`][1]
 
 
-This element indicates location and name of the driver’s documentation file. 
+This element indicates location and name of the driver’s documentation file.
 
 | Attributes | Description |
 | --- | --- |
@@ -20,4 +20,4 @@ This element indicates location and name of the driver’s documentation file.
  <documentation file="www/documentation.rtf"></documentation>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#config
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#config

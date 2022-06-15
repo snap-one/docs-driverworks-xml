@@ -21,4 +21,4 @@ This element is used to define the underlying framework used by the device. Curr
 <control>av_gen</control>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#devicedata

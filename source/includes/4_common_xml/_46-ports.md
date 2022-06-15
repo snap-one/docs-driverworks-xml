@@ -56,4 +56,4 @@ This element defines the ports used for a class within a connection. Numerous po
 </connection>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#class
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#class

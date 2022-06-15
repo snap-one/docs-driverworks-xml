@@ -13,7 +13,7 @@ This element defines the blind driver [connections][2] which are utilized to cre
 
 ### Example
 
-The example to the right is an entire connections XML section from a sample Blind driver. 
+The example to the right is an entire connections XML section from a sample Blind driver.
 
 ```xml
 <connections>
@@ -66,5 +66,5 @@ The example to the right is an entire connections XML section from a sample Blin
 </devicedata>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata
-[2]:	https://control4.github.io/docs-driverworks-fundamentals/#connections
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#devicedata
+[2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#connections

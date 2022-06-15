@@ -56,4 +56,4 @@ This element indicates if the connection status on this port should be monitored
 </connection>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#class
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#class

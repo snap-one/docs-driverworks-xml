@@ -22,7 +22,7 @@ This element is the numerical value indicating the location of the physical [con
 ### Example
 
 ```xml
- 
+
 
   <connections>
    <connection>
@@ -44,5 +44,5 @@ This element is the numerical value indicating the location of the physical [con
    </connections>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#connection
-[2]:	https://control4.github.io/docs-driverworks-fundamentals/#connections
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#connection
+[2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#connections

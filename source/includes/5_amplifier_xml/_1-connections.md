@@ -13,7 +13,7 @@ This element defines the amplifier driver [connections][2] which are utilized to
 
 ### Example
 
-The example to the right is an entire connections XML section from a sample Amplifier driver. 
+The example to the right is an entire connections XML section from a sample Amplifier driver.
 
 ```xml
 <connections>
@@ -31,7 +31,7 @@ The example to the right is an entire connections XML section from a sample Ampl
           <classname>STEREO</classname>
         </class>
       </classes>
-    </connection> 
+    </connection>
     <connection>
       <id>3001</id>
       <facing>6</facing>
@@ -258,5 +258,5 @@ The example to the right is an entire connections XML section from a sample Ampl
 </connections>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata
-[2]:	https://control4.github.io/docs-driverworks-fundamentals/#connections
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#devicedata
+[2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#connections

@@ -9,7 +9,7 @@
 [`<proxies>`][1]
 
 
-This element is used to define a proxy used by the driver. 
+This element is used to define a proxy used by the driver.
 
 | Attributes | Description |
 | --- | --- |
@@ -26,4 +26,4 @@ This element is used to define a proxy used by the driver.
 </proxies>
 ```
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#proxies
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#proxies

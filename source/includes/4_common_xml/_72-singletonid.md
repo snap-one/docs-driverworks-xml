@@ -17,4 +17,4 @@ This element is used to ensures that the driver can only be loaded once within a
 ```
 
 
-[1]:	https://control4.github.io/docs-driverworks-xml/#devicedata
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#devicedata
