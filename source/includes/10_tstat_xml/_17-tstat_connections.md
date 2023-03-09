@@ -1,5 +1,5 @@
 
-## connections
+## tstat connections
 
 `<connections></connections>`
 
