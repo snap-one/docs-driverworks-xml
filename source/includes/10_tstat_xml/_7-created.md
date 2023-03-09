@@ -13,7 +13,7 @@ This element contains the date and time at which the driver was created.
 ### Example
 
 ```xml
-<created>09/18/2021 4:30 PM</created>
+<created>03/06/2023 1:00 PM</created>
 ```
 
 

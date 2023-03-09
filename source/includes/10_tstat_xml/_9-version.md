@@ -14,7 +14,7 @@ This element contains the version of the driver.
 ### Example
 
 ```xml
-<version>133</version>
+<version>3</version>
 ```
 
 

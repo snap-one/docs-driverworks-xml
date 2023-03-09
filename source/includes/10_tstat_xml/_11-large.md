@@ -14,7 +14,7 @@ This element contains the root location and name of the large icon used to repre
 ### Example
 
 ```xml
-<large>devices_sm\tv.gif</large>
+<large>devices_sm\HVAC_32.gif</large>
 ```
 
 

@@ -14,7 +14,7 @@ This element contains the model information for the device.
 ### Example
 
 ```xml
-<model>C4-55dfe05</model>
+<model>Thermostat Proxy Template Model</model>
 
 ```
 

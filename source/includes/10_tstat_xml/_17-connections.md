@@ -8,12 +8,12 @@
 [`<devicedata>`][1]
 
 
-This element defines the av switch driver [connections][2] which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the `<connections>` element under the `<connection>` element.
+This element defines the Thermostate driver [connections][2] which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the `<connections>` element under the `<connection>` element.
 
 
 ### Example
 
-The example to the right is an entire connections XML section from the Thermostat proxy driver development template.
+The example to the right is an entire connections XML section from the [Thermostat Proxy Driver Development Template][3].
 
 ```xml
 <connection>
@@ -57,3 +57,4 @@ The example to the right is an entire connections XML section from the Thermosta
 
 [1]:	https://snap-one.github.io/docs-driverworks-xml/#devicedata
 [2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#connections
+[3]:	https://github.com/snap-one/docs-driverworks/tree/master/driver_development_templates/thermostat

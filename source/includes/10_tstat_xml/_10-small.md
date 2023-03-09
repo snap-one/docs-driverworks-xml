@@ -14,7 +14,7 @@ This element contains the root location and name of the small icon used to repre
 ### Example
 
 ```xml
-<small>devices_sm\tv.gif</small>
+<small>devices_sm\HVAC_16.gif</small>
 ```
 
 

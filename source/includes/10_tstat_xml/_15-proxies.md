@@ -16,7 +16,7 @@ This element lists the number proxies used by the driver. One or more proxies ma
 
 ```xml
 <proxies qty="1">
-    <proxy proxybindingid="5001" name="Control4 TV" primary="True">tv</proxy>
+    <proxy proxybindingid="5001" primary="True">thermostatV2</proxy>
 </proxies>
 ```
 
