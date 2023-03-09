@@ -1,5 +1,5 @@
 
-## capabilities
+## tstat capabilities
 
 `<capabilities><\capabilities>`
 
