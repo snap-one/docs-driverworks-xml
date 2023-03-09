@@ -509,6 +509,59 @@
           </li>
           <li>
             <a href="#thermostat-v2-proxy-xml" class="toc-h1 toc-link" data-title="Thermostat V2 Proxy XML">Thermostat V2 Proxy XML</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#devicedata" class="toc-h2 toc-link" data-title="devicedata">devicedata</a>
+                  </li>
+                  <li>
+                    <a href="#copyright" class="toc-h2 toc-link" data-title="copyright">copyright</a>
+                  </li>
+                  <li>
+                    <a href="#creator" class="toc-h2 toc-link" data-title="creator">creator</a>
+                  </li>
+                  <li>
+                    <a href="#manufacturer" class="toc-h2 toc-link" data-title="manufacturer">manufacturer</a>
+                  </li>
+                  <li>
+                    <a href="#name" class="toc-h2 toc-link" data-title="name">name</a>
+                  </li>
+                  <li>
+                    <a href="#model" class="toc-h2 toc-link" data-title="model">model</a>
+                  </li>
+                  <li>
+                    <a href="#created" class="toc-h2 toc-link" data-title="created">created</a>
+                  </li>
+                  <li>
+                    <a href="#modified" class="toc-h2 toc-link" data-title="modified">modified</a>
+                  </li>
+                  <li>
+                    <a href="#version" class="toc-h2 toc-link" data-title="version">version</a>
+                  </li>
+                  <li>
+                    <a href="#small" class="toc-h2 toc-link" data-title="small">small</a>
+                  </li>
+                  <li>
+                    <a href="#large" class="toc-h2 toc-link" data-title="large">large</a>
+                  </li>
+                  <li>
+                    <a href="#control" class="toc-h2 toc-link" data-title="control">control</a>
+                  </li>
+                  <li>
+                    <a href="#controlmethod" class="toc-h2 toc-link" data-title="controlmethod">controlmethod</a>
+                  </li>
+                  <li>
+                    <a href="#driver" class="toc-h2 toc-link" data-title="driver">driver</a>
+                  </li>
+                  <li>
+                    <a href="#proxies" class="toc-h2 toc-link" data-title="proxies">proxies</a>
+                  </li>
+                  <li>
+                    <a href="#capabilities" class="toc-h2 toc-link" data-title="capabilities">capabilities</a>
+                  </li>
+                  <li>
+                    <a href="#connections" class="toc-h2 toc-link" data-title="connections">connections</a>
+                  </li>
+              </ul>
           </li>
       </ul>
         <ul class="toc-footer">
@@ -3199,6 +3252,256 @@ Salt Lake City, UT 84020 USA</p>
     <span class="nt">&lt;/connections&gt;</span>
 </code></pre></div>
 <h1 id='thermostat-v2-proxy-xml'>Thermostat V2 Proxy XML</h1>
+
+<h2 id='devicedata'>devicedata</h2>
+
+<p><code>&lt;devicedata&gt;&lt;/devicedata&gt;</code></p>
+
+<h3 id='parent'>Parent</h3>
+
+<p>None</p>
+
+<p>This is the root level XML element that contains all of the driver’s XML schema. </p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;devicedata&gt;</span>
+  driver XML code
+<span class="nt">&lt;/devicedata&gt;</span>  
+</code></pre></div>
+<h2 id='copyright'>copyright</h2>
+<p><code>&lt;copyright&gt;&lt;/copyright&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>The copyright element contains the driver’s copyright information</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;copyright&gt;</span>Copyright 2020 Control4 Corporation. All rights reserved.<span class="nt">&lt;/copyright&gt;</span>
+</code></pre></div>
+<h2 id='creator'>creator</h2>
+<p><code>&lt;creator&gt;&lt;/creator&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>The creator element contains the name of the entity which created the driver.</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;creator&gt;</span>Control4<span class="nt">&lt;/creator&gt;</span>
+</code></pre></div>
+<h2 id='manufacturer'>manufacturer</h2>
+<p><code>&lt;manufacturer&gt;&lt;/manufacturer&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element contains the manufacturer information for the device</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;manufacturer&gt;</span>Control4<span class="nt">&lt;/manufacturer&gt;</span>
+
+</code></pre></div>
+<h2 id='name'>name</h2>
+<p><code>&lt;name&gt;&lt;/name&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element contains the model name for the device.</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;name&gt;</span>Control4 C4-55X805G<span class="nt">&lt;/name&gt;</span>
+</code></pre></div>
+<h2 id='model'>model</h2>
+<p><code>&lt;model&gt;&lt;/model&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element contains the model information for the device.</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;model&gt;</span>C4-55dfe05<span class="nt">&lt;/model&gt;</span>
+
+</code></pre></div>
+<h2 id='created'>created</h2>
+<p><code>&lt;created&gt;&lt;/created&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element contains the date and time at which the driver was created.</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;created&gt;</span>09/18/2021 4:30 PM<span class="nt">&lt;/created&gt;</span>
+</code></pre></div>
+<h2 id='modified'>modified</h2>
+<p><code>&lt;modified&gt;&lt;/modified&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element contains the date and time at which the driver was last modified.</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>`<span class="nt">&lt;modified&gt;</span>3/22/2021 1:15 PM<span class="nt">&lt;/modified&gt;</span>
+</code></pre></div>
+<h2 id='version'>version</h2>
+<p><code>&lt;version&gt;&lt;/version&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element contains the version of the driver.</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;version&gt;</span>133<span class="nt">&lt;/version&gt;</span>
+</code></pre></div>
+<h2 id='small'>small</h2>
+<p><code>&lt;small&gt;&lt;/small&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element contains the root location and name of the small icon used to represent the driver in Composer Pro.</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;small&gt;</span>devices_sm\tv.gif<span class="nt">&lt;/small&gt;</span>
+</code></pre></div>
+<h2 id='large'>large</h2>
+<p><code>&lt;large&gt;&lt;/large&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element contains the root location and name of the large icon used to represent the driver in Composer Pro.</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;large&gt;</span>devices_sm\tv.gif<span class="nt">&lt;/large&gt;</span>
+</code></pre></div>
+<h2 id='control'>control</h2>
+<p><code>&lt;control&gt;&lt;/control&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element is used to define the underlying framework used by the device. Current options include av_gen or lua_gen. Typically, AV devices use av_gen while non-AV devices use lua_gen.</p>
+
+<h3 id='examples'>Examples</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;control&gt;</span>lua_gen<span class="nt">&lt;/control&gt;</span>
+</code></pre></div><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;control&gt;</span>av_gen<span class="nt">&lt;/control&gt;</span>
+</code></pre></div>
+<h2 id='controlmethod'>controlmethod</h2>
+<p><code>&lt;controlmethod&gt;&lt;/controlmethod&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element is used to defined the manner in which the device is controlled. For example: IP, Serial.</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code> <span class="nt">&lt;controlmethod&gt;</span>ip<span class="nt">&lt;/controlmethod&gt;</span>
+</code></pre></div>
+<h2 id='driver'>driver</h2>
+<p><code>&lt;driver&gt;&lt;/driver&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element is used to designate DriverWorks drivers. It contains the value of DriverWorks.</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;driver&gt;</span>DriverWorks<span class="nt">&lt;/driver&gt;</span>
+</code></pre></div>
+<h2 id='proxies'>proxies</h2>
+<p><code>&lt;proxies&gt;&lt;/proxies&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element lists the number proxies used by the driver. One or more proxies may be defined. Proxies are defined within the &lt;proxies&gt; element in the &lt;proxy&gt; element.</p>
+
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;proxies</span> <span class="na">qty=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;proxy</span> <span class="na">proxybindingid=</span><span class="s">"5001"</span> <span class="na">name=</span><span class="s">"Control4 TV"</span> <span class="na">primary=</span><span class="s">"True"</span><span class="nt">&gt;</span>tv<span class="nt">&lt;/proxy&gt;</span>
+<span class="nt">&lt;/proxies&gt;</span>
+</code></pre></div>
+<h2 id='capabilities'>capabilities</h2>
+<p><code>&lt;capabilities&gt;&lt;\capabilities&gt;</code></p>
+<h3 id='parent'>Parent</h3>
+
+<p><a href="[%60%3Cdevicedata%3E%60]"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element contains the driver’s device <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#capabilities">capabilities</a>. Capabilities are proxy dependent.</p>
+
+<h3 id='example'>Example</h3>
+
+<p>Note that the example to the right has been taken from a TV driver.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;audio_consumer_count&gt;</span>1<span class="nt">&lt;/audio_consumer_count&gt;</span>
+    <span class="nt">&lt;audio_provider_count&gt;</span>1<span class="nt">&lt;/audio_provider_count&gt;</span>
+    <span class="nt">&lt;has_audio&gt;</span>True<span class="nt">&lt;/has_audio&gt;</span>
+    <span class="nt">&lt;has_discrete_balance_control&gt;</span>False<span class="nt">&lt;/has_discrete_balance_control&gt;</span>
+    <span class="nt">&lt;has_discrete_bass_control&gt;</span>False<span class="nt">&lt;/has_discrete_bass_control&gt;</span>
+    <span class="nt">&lt;has_discrete_channel_select&gt;</span>True<span class="nt">&lt;/has_discrete_channel_select&gt;</span>
+    <span class="nt">&lt;has_discrete_input_select&gt;</span>True<span class="nt">&lt;/has_discrete_input_select&gt;</span>
+    <span class="nt">&lt;has_discrete_loudness_control&gt;</span>False<span class="nt">&lt;/has_discrete_loudness_control&gt;</span>
+    <span class="nt">&lt;has_discrete_mute_control&gt;</span>True<span class="nt">&lt;/has_discrete_mute_control&gt;</span>
+    <span class="nt">&lt;has_discrete_treble_control&gt;</span>False<span class="nt">&lt;/has_discrete_treble_control&gt;</span>
+    <span class="nt">&lt;has_discrete_volume_control&gt;</span>True<span class="nt">&lt;/has_discrete_volume_control&gt;</span>
+    <span class="nt">&lt;has_toad_input_select&gt;</span>False<span class="nt">&lt;/has_toad_input_select&gt;</span>
+    <span class="nt">&lt;video_consumer_count&gt;</span>5<span class="nt">&lt;/video_consumer_count&gt;</span>
+    <span class="nt">&lt;video_provider_count&gt;</span>0<span class="nt">&lt;/video_provider_count&gt;</span>
+    <span class="nt">&lt;has_channel_up_down&gt;</span>True<span class="nt">&lt;/has_channel_up_down&gt;</span>
+    <span class="nt">&lt;has_toggle_loudness_control&gt;</span>False<span class="nt">&lt;/has_toggle_loudness_control&gt;</span>
+    <span class="nt">&lt;has_toggle_mute_control&gt;</span>True<span class="nt">&lt;/has_toggle_mute_control&gt;</span>
+    <span class="nt">&lt;has_up_down_balance_control&gt;</span>False<span class="nt">&lt;/has_up_down_balance_control&gt;</span>
+    <span class="nt">&lt;has_up_down_bass_control&gt;</span>False<span class="nt">&lt;/has_up_down_bass_control&gt;</span>
+    <span class="nt">&lt;has_up_down_treble_control&gt;</span>False<span class="nt">&lt;/has_up_down_treble_control&gt;</span>
+    <span class="nt">&lt;has_up_down_volume_control&gt;</span>True<span class="nt">&lt;/has_up_down_volume_control&gt;</span>
+    <span class="nt">&lt;requires_channel_after_input&gt;</span>False<span class="nt">&lt;/requires_channel_after_input&gt;</span>
+  <span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+
+<h2 id='connections'>connections</h2>
+
+<p><code>&lt;connections&gt;&lt;/connections&gt;</code></p>
+
+<h3 id='parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element defines the av switch driver <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#connections">connections</a> which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the <code>&lt;connections&gt;</code> element under the <code>&lt;connection&gt;</code> element.</p>
+
+<h3 id='example'>Example</h3>
+
+<p>The example to the right is an entire connections XML section from the Thermostat proxy driver development template.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connection&gt;</span>
+      <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+    <span class="nt">&lt;/connection&gt;</span>
+    <span class="nt">&lt;connection&gt;</span>
+      <span class="nt">&lt;id&gt;</span>7000<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Room Selection<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>7<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;autobind&gt;</span>True<span class="nt">&lt;/autobind&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>TEMPERATURE<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;autobind&gt;</span>True<span class="nt">&lt;/autobind&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>TEMPERATURE_CONTROL<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+    <span class="nt">&lt;/connection&gt;</span>
+  <span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
 
       </div>
       <div class="dark-box">
