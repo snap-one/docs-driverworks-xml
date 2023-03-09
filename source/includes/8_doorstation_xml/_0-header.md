@@ -1,2 +1,0 @@
-
-# Doorstation Proxy XML
