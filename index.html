@@ -3275,7 +3275,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The copyright element contains the driver’s copyright information</p>
 
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;copyright&gt;</span>Copyright 2020 Control4 Corporation. All rights reserved.<span class="nt">&lt;/copyright&gt;</span>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;copyright&gt;</span>Copyright 2023 Control4 Corporation. All rights reserved.<span class="nt">&lt;/copyright&gt;</span>
 </code></pre></div>
 <h2 id='creator'>creator</h2>
 <p><code>&lt;creator&gt;&lt;/creator&gt;</code></p>
@@ -3306,7 +3306,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>This element contains the model name for the device.</p>
 
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;name&gt;</span>Control4 C4-55X805G<span class="nt">&lt;/name&gt;</span>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;name&gt;</span>Thermostat Proxy Template<span class="err">&lt;</span><span class="nt">&lt;/name&gt;</span>
 </code></pre></div>
 <h2 id='model'>model</h2>
 <p><code>&lt;model&gt;&lt;/model&gt;</code></p>
@@ -3316,7 +3316,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>This element contains the model information for the device.</p>
 
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;model&gt;</span>C4-55dfe05<span class="nt">&lt;/model&gt;</span>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;model&gt;</span>Thermostat Proxy Template Model<span class="nt">&lt;/model&gt;</span>
 
 </code></pre></div>
 <h2 id='created'>created</h2>
@@ -3327,7 +3327,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>This element contains the date and time at which the driver was created.</p>
 
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;created&gt;</span>09/18/2021 4:30 PM<span class="nt">&lt;/created&gt;</span>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;created&gt;</span>03/06/2023 1:00 PM<span class="nt">&lt;/created&gt;</span>
 </code></pre></div>
 <h2 id='modified'>modified</h2>
 <p><code>&lt;modified&gt;&lt;/modified&gt;</code></p>
@@ -3337,7 +3337,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>This element contains the date and time at which the driver was last modified.</p>
 
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>`<span class="nt">&lt;modified&gt;</span>3/22/2021 1:15 PM<span class="nt">&lt;/modified&gt;</span>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>`<span class="nt">&lt;modified&gt;</span>03/06/2023 1:00 PM<span class="nt">&lt;/modified&gt;</span>
 </code></pre></div>
 <h2 id='version'>version</h2>
 <p><code>&lt;version&gt;&lt;/version&gt;</code></p>
@@ -3347,7 +3347,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>This element contains the version of the driver.</p>
 
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;version&gt;</span>133<span class="nt">&lt;/version&gt;</span>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;version&gt;</span>3<span class="nt">&lt;/version&gt;</span>
 </code></pre></div>
 <h2 id='small'>small</h2>
 <p><code>&lt;small&gt;&lt;/small&gt;</code></p>
@@ -3357,7 +3357,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>This element contains the root location and name of the small icon used to represent the driver in Composer Pro.</p>
 
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;small&gt;</span>devices_sm\tv.gif<span class="nt">&lt;/small&gt;</span>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;small&gt;</span>devices_sm\HVAC_16.gif<span class="nt">&lt;/small&gt;</span>
 </code></pre></div>
 <h2 id='large'>large</h2>
 <p><code>&lt;large&gt;&lt;/large&gt;</code></p>
@@ -3367,7 +3367,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>This element contains the root location and name of the large icon used to represent the driver in Composer Pro.</p>
 
-<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;large&gt;</span>devices_sm\tv.gif<span class="nt">&lt;/large&gt;</span>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;large&gt;</span>devices_sm\HVAC_32.gif<span class="nt">&lt;/large&gt;</span>
 </code></pre></div>
 <h2 id='control'>control</h2>
 <p><code>&lt;control&gt;&lt;/control&gt;</code></p>
@@ -3378,7 +3378,6 @@ Salt Lake City, UT 84020 USA</p>
 <p>This element is used to define the underlying framework used by the device. Current options include av_gen or lua_gen. Typically, AV devices use av_gen while non-AV devices use lua_gen.</p>
 
 <h3 id='examples'>Examples</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;control&gt;</span>lua_gen<span class="nt">&lt;/control&gt;</span>
-</code></pre></div><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;control&gt;</span>av_gen<span class="nt">&lt;/control&gt;</span>
 </code></pre></div>
 <h2 id='controlmethod'>controlmethod</h2>
 <p><code>&lt;controlmethod&gt;&lt;/controlmethod&gt;</code></p>
@@ -3409,7 +3408,7 @@ Salt Lake City, UT 84020 USA</p>
 <p>This element lists the number proxies used by the driver. One or more proxies may be defined. Proxies are defined within the &lt;proxies&gt; element in the &lt;proxy&gt; element.</p>
 
 <h3 id='example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;proxies</span> <span class="na">qty=</span><span class="s">"1"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;proxy</span> <span class="na">proxybindingid=</span><span class="s">"5001"</span> <span class="na">name=</span><span class="s">"Control4 TV"</span> <span class="na">primary=</span><span class="s">"True"</span><span class="nt">&gt;</span>tv<span class="nt">&lt;/proxy&gt;</span>
+    <span class="nt">&lt;proxy</span> <span class="na">proxybindingid=</span><span class="s">"5001"</span> <span class="na">primary=</span><span class="s">"True"</span><span class="nt">&gt;</span>thermostatV2<span class="nt">&lt;/proxy&gt;</span>
 <span class="nt">&lt;/proxies&gt;</span>
 </code></pre></div>
 <h2 id='capabilities'>capabilities</h2>
@@ -3418,35 +3417,74 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="[%60%3Cdevicedata%3E%60]"><code>&lt;devicedata&gt;</code></a></p>
 
-<p>This element contains the driver’s device <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#capabilities">capabilities</a>. Capabilities are proxy dependent.</p>
+<p>This element contains the driver’s device <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#capabilities">capabilities</a>. Capabilities are proxy dependent. Individual capabilities are defined in the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#thermostat-capabilities">Thermostat section</a> of the DriverWorks Proxy and Protocol Guide.</p>
 
 <h3 id='example'>Example</h3>
 
-<p>Note that the example to the right has been taken from a TV driver.</p>
+<p>Note that the example to the right has been taken from the <a href="https://github.com/snap-one/docs-driverworks/tree/master/driver_development_templates/thermostat">Thermostat Proxy Driver Development Template</a>.</p>
 
-<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
-    <span class="nt">&lt;audio_consumer_count&gt;</span>1<span class="nt">&lt;/audio_consumer_count&gt;</span>
-    <span class="nt">&lt;audio_provider_count&gt;</span>1<span class="nt">&lt;/audio_provider_count&gt;</span>
-    <span class="nt">&lt;has_audio&gt;</span>True<span class="nt">&lt;/has_audio&gt;</span>
-    <span class="nt">&lt;has_discrete_balance_control&gt;</span>False<span class="nt">&lt;/has_discrete_balance_control&gt;</span>
-    <span class="nt">&lt;has_discrete_bass_control&gt;</span>False<span class="nt">&lt;/has_discrete_bass_control&gt;</span>
-    <span class="nt">&lt;has_discrete_channel_select&gt;</span>True<span class="nt">&lt;/has_discrete_channel_select&gt;</span>
-    <span class="nt">&lt;has_discrete_input_select&gt;</span>True<span class="nt">&lt;/has_discrete_input_select&gt;</span>
-    <span class="nt">&lt;has_discrete_loudness_control&gt;</span>False<span class="nt">&lt;/has_discrete_loudness_control&gt;</span>
-    <span class="nt">&lt;has_discrete_mute_control&gt;</span>True<span class="nt">&lt;/has_discrete_mute_control&gt;</span>
-    <span class="nt">&lt;has_discrete_treble_control&gt;</span>False<span class="nt">&lt;/has_discrete_treble_control&gt;</span>
-    <span class="nt">&lt;has_discrete_volume_control&gt;</span>True<span class="nt">&lt;/has_discrete_volume_control&gt;</span>
-    <span class="nt">&lt;has_toad_input_select&gt;</span>False<span class="nt">&lt;/has_toad_input_select&gt;</span>
-    <span class="nt">&lt;video_consumer_count&gt;</span>5<span class="nt">&lt;/video_consumer_count&gt;</span>
-    <span class="nt">&lt;video_provider_count&gt;</span>0<span class="nt">&lt;/video_provider_count&gt;</span>
-    <span class="nt">&lt;has_channel_up_down&gt;</span>True<span class="nt">&lt;/has_channel_up_down&gt;</span>
-    <span class="nt">&lt;has_toggle_loudness_control&gt;</span>False<span class="nt">&lt;/has_toggle_loudness_control&gt;</span>
-    <span class="nt">&lt;has_toggle_mute_control&gt;</span>True<span class="nt">&lt;/has_toggle_mute_control&gt;</span>
-    <span class="nt">&lt;has_up_down_balance_control&gt;</span>False<span class="nt">&lt;/has_up_down_balance_control&gt;</span>
-    <span class="nt">&lt;has_up_down_bass_control&gt;</span>False<span class="nt">&lt;/has_up_down_bass_control&gt;</span>
-    <span class="nt">&lt;has_up_down_treble_control&gt;</span>False<span class="nt">&lt;/has_up_down_treble_control&gt;</span>
-    <span class="nt">&lt;has_up_down_volume_control&gt;</span>True<span class="nt">&lt;/has_up_down_volume_control&gt;</span>
-    <span class="nt">&lt;requires_channel_after_input&gt;</span>False<span class="nt">&lt;/requires_channel_after_input&gt;</span>
+<div class="highlight"><pre class="highlight xml tab-xml"><code> <span class="nt">&lt;can_heat&gt;</span>true<span class="nt">&lt;/can_heat&gt;</span>
+    <span class="nt">&lt;can_cool&gt;</span>true<span class="nt">&lt;/can_cool&gt;</span>
+    <span class="nt">&lt;has_single_setpoint&gt;</span>false<span class="nt">&lt;/has_single_setpoint&gt;</span>
+    <span class="nt">&lt;can_do_auto&gt;</span>false<span class="nt">&lt;/can_do_auto&gt;</span>
+    <span class="nt">&lt;can_calibrate&gt;</span>true<span class="nt">&lt;/can_calibrate&gt;</span>
+    <span class="nt">&lt;can_lock_buttons&gt;</span>true<span class="nt">&lt;/can_lock_buttons&gt;</span>
+    <span class="nt">&lt;can_change_scale&gt;</span>true<span class="nt">&lt;/can_change_scale&gt;</span>
+    <span class="nt">&lt;setpoint_heat_min_f&gt;</span>38<span class="nt">&lt;/setpoint_heat_min_f&gt;</span>
+    <span class="nt">&lt;setpoint_heat_min_c&gt;</span>4<span class="nt">&lt;/setpoint_heat_min_c&gt;</span>
+    <span class="nt">&lt;setpoint_heat_max_f&gt;</span>89<span class="nt">&lt;/setpoint_heat_max_f&gt;</span>
+    <span class="nt">&lt;setpoint_heat_max_c&gt;</span>31<span class="nt">&lt;/setpoint_heat_max_c&gt;</span>
+    <span class="nt">&lt;setpoint_heat_resolution_f&gt;</span>1<span class="nt">&lt;/setpoint_heat_resolution_f&gt;</span>
+    <span class="nt">&lt;setpoint_heat_resolution_c&gt;</span>1<span class="nt">&lt;/setpoint_heat_resolution_c&gt;</span>
+    <span class="nt">&lt;setpoint_cool_min_f&gt;</span>42<span class="nt">&lt;/setpoint_cool_min_f&gt;</span>
+    <span class="nt">&lt;setpoint_cool_min_c&gt;</span>6<span class="nt">&lt;/setpoint_cool_min_c&gt;</span>
+    <span class="nt">&lt;setpoint_cool_max_f&gt;</span>90<span class="nt">&lt;/setpoint_cool_max_f&gt;</span>
+    <span class="nt">&lt;setpoint_cool_max_c&gt;</span>32<span class="nt">&lt;/setpoint_cool_max_c&gt;</span>
+    <span class="nt">&lt;setpoint_cool_resolution_f&gt;</span>1<span class="nt">&lt;/setpoint_cool_resolution_f&gt;</span>
+    <span class="nt">&lt;setpoint_cool_resolution_c&gt;</span>1<span class="nt">&lt;/setpoint_cool_resolution_c&gt;</span>
+    <span class="nt">&lt;setpoint_single_min_f&gt;</span>42<span class="nt">&lt;/setpoint_single_min_f&gt;</span>
+    <span class="nt">&lt;setpoint_single_min_c&gt;</span>6<span class="nt">&lt;/setpoint_single_min_c&gt;</span>
+    <span class="nt">&lt;setpoint_single_max_f&gt;</span>90<span class="nt">&lt;/setpoint_single_max_f&gt;</span>
+    <span class="nt">&lt;setpoint_single_max_c&gt;</span>32<span class="nt">&lt;/setpoint_single_max_c&gt;</span>
+    <span class="nt">&lt;hvac_modes&gt;</span>Off,Heat,Cool<span class="nt">&lt;/hvac_modes&gt;</span>
+    <span class="nt">&lt;fan_modes&gt;</span>Auto,Low,Medium,High<span class="nt">&lt;/fan_modes&gt;</span>
+    <span class="nt">&lt;hold_modes&gt;</span>Off,2 Hours,Until Next,Permanent<span class="nt">&lt;/hold_modes&gt;</span>
+    <span class="nt">&lt;hvac_states&gt;</span>Off,Heat,Cool,Heating,Stage 1 Cool<span class="nt">&lt;/hvac_states&gt;</span>
+    <span class="nt">&lt;fan_states&gt;</span>Off,On,Low,Med,Circulate<span class="nt">&lt;/fan_states&gt;</span>
+    <span class="nt">&lt;has_vacation_mode&gt;</span>false<span class="nt">&lt;/has_vacation_mode&gt;</span>
+    <span class="nt">&lt;has_remote_sensor&gt;</span>false<span class="nt">&lt;/has_remote_sensor&gt;</span>
+    <span class="nt">&lt;has_outdoor_temperature&gt;</span>true<span class="nt">&lt;/has_outdoor_temperature&gt;</span>
+    <span class="nt">&lt;has_connection_status&gt;</span>true<span class="nt">&lt;/has_connection_status&gt;</span>
+    <span class="nt">&lt;can_inc_dec_setpoints&gt;</span>false<span class="nt">&lt;/can_inc_dec_setpoints&gt;</span>
+    <span class="nt">&lt;current_temperature_resolution_f&gt;</span>1<span class="nt">&lt;/current_temperature_resolution_f&gt;</span>
+    <span class="nt">&lt;current_temperature_resolution_c&gt;</span>1<span class="nt">&lt;/current_temperature_resolution_c&gt;</span>
+    <span class="nt">&lt;outdoor_temperature_resolution_f&gt;</span>1<span class="nt">&lt;/outdoor_temperature_resolution_f&gt;</span>
+    <span class="nt">&lt;outdoor_temperature_resolution_c&gt;</span>1<span class="nt">&lt;/outdoor_temperature_resolution_c&gt;</span>
+    <span class="nt">&lt;can_humidify&gt;</span>true<span class="nt">&lt;/can_humidify&gt;</span>
+    <span class="nt">&lt;has_humidity&gt;</span>true<span class="nt">&lt;/has_humidity&gt;</span>
+    <span class="nt">&lt;humidity_modes&gt;</span>Off,Humidify,Dehumidify,Auto<span class="nt">&lt;/humidity_modes&gt;</span>
+    <span class="nt">&lt;humidity_states&gt;</span>Off,Humidifying,Dehumidifying<span class="nt">&lt;/humidity_states&gt;</span>
+    <span class="nt">&lt;setpoint_humidify_min&gt;</span>0<span class="nt">&lt;/setpoint_humidify_min&gt;</span>
+    <span class="nt">&lt;setpoint_humidify_max&gt;</span>100<span class="nt">&lt;/setpoint_humidify_max&gt;</span>
+    <span class="nt">&lt;setpoint_humidify_resolution&gt;</span>1<span class="nt">&lt;/setpoint_humidify_resolution&gt;</span>
+    <span class="nt">&lt;can_dehumidify&gt;</span>true<span class="nt">&lt;/can_dehumidify&gt;</span>
+    <span class="nt">&lt;setpoint_dehumidify_min&gt;</span>0<span class="nt">&lt;/setpoint_dehumidify_min&gt;</span>
+    <span class="nt">&lt;setpoint_dehumidify_max&gt;</span>100<span class="nt">&lt;/setpoint_dehumidify_max&gt;</span>
+    <span class="nt">&lt;setpoint_dehumidify_resolution&gt;</span>1<span class="nt">&lt;/setpoint_dehumidify_resolution&gt;</span>
+    <span class="nt">&lt;has_extras&gt;</span>false<span class="nt">&lt;/has_extras&gt;</span>
+    <span class="nt">&lt;scheduling&gt;</span>true<span class="nt">&lt;/scheduling&gt;</span>
+    <span class="nt">&lt;schedule_default&gt;</span>
+      <span class="nt">&lt;schedule_day_info</span> <span class="na">Entries=</span><span class="s">"6"</span> <span class="na">DefaultHeat=</span><span class="s">"200"</span> <span class="na">DefaultCool=</span><span class="s">"278"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;schedule_entry</span> <span class="na">Name=</span><span class="s">"Wake"</span> <span class="na">Time=</span><span class="s">"360"</span> <span class="na">Enabled=</span><span class="s">"True"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;schedule_entry</span> <span class="na">Name=</span><span class="s">"Leave"</span> <span class="na">Time=</span><span class="s">"480"</span> <span class="na">Enabled=</span><span class="s">"True"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;schedule_entry</span> <span class="na">Name=</span><span class="s">"Return"</span> <span class="na">Time=</span><span class="s">"1080"</span> <span class="na">Enabled=</span><span class="s">"True"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;schedule_entry</span> <span class="na">Name=</span><span class="s">"Sleep"</span> <span class="na">Time=</span><span class="s">"1320"</span> <span class="na">Enabled=</span><span class="s">"True"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;schedule_entry</span> <span class="na">Name=</span><span class="s">"Custom 1"</span> <span class="na">Time=</span><span class="s">"1380"</span> <span class="na">Enabled=</span><span class="s">"False"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;schedule_entry</span> <span class="na">Name=</span><span class="s">"Custom 2"</span> <span class="na">Time=</span><span class="s">"1380"</span> <span class="na">Enabled=</span><span class="s">"False"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/schedule_day_info&gt;</span>
+    <span class="nt">&lt;/schedule_default&gt;</span>
+    <span class="nt">&lt;can_preset&gt;</span>true<span class="nt">&lt;/can_preset&gt;</span>
+    <span class="nt">&lt;can_preset_schedule&gt;</span>true<span class="nt">&lt;/can_preset_schedule&gt;</span>
   <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 
@@ -3458,11 +3496,11 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
 
-<p>This element defines the av switch driver <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#connections">connections</a> which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the <code>&lt;connections&gt;</code> element under the <code>&lt;connection&gt;</code> element.</p>
+<p>This element defines the Thermostate driver <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#connections">connections</a> which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the <code>&lt;connections&gt;</code> element under the <code>&lt;connection&gt;</code> element.</p>
 
 <h3 id='example'>Example</h3>
 
-<p>The example to the right is an entire connections XML section from the Thermostat proxy driver development template.</p>
+<p>The example to the right is an entire connections XML section from the <a href="https://github.com/snap-one/docs-driverworks/tree/master/driver_development_templates/thermostat">Thermostat Proxy Driver Development Template</a>.</p>
 
 <div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connection&gt;</span>
       <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
