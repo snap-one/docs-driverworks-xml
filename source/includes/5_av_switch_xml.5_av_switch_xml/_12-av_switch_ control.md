@@ -1,4 +1,4 @@
-## control
+## av switch control
 
 `<control></control>`
 

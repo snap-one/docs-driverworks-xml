@@ -1,4 +1,4 @@
-## searchtypes
+## av switch searchtypes
 
 `<search_types></search_types>`
 
