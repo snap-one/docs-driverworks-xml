@@ -1,4 +1,4 @@
-## controlmethod
+## tstat controlmethod
 
 `<controlmethod></controlmethod>`
 

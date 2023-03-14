@@ -1,4 +1,4 @@
-## manufacturer
+## tstat manufacturer
 
 `<manufacturer></manufacturer>`
 

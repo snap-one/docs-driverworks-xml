@@ -1,4 +1,4 @@
-## model
+## tstat model
 
 `<model></model>`
 

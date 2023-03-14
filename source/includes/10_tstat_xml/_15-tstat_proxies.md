@@ -1,5 +1,5 @@
 
-## proxies
+## tstat proxies
 
 `<proxies></proxies>`
 

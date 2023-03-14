@@ -1,4 +1,4 @@
-## control
+## tstat control
 
 `<control></control>`
 
