@@ -24,7 +24,7 @@ Note that the example to the right has been taken from the [Thermostat Proxy Dri
     <can_switch>True</can_switch>
     <can_upclass>True</can_upclass>
     <has_audio_sense_control>False</has_audio_sense_control>
-<has_discrete_balance_control>False<has_discrete_balance_control>
+ <has_discrete_balance_control>False<has_discrete_balance_control>
     <has_discrete_bass_control>False<has_discrete_bass_control>
     <has_discrete_input_select>True</has_discrete_input_select>
     <has_discrete_loudness_control>False<has_discrete_loudness_control>
