@@ -315,6 +315,14 @@
             <a href="#what-s-new" class="toc-h1 toc-link" data-title="What’s New">What’s New</a>
           </li>
           <li>
+            <a href="#properties" class="toc-h1 toc-link" data-title="Properties">Properties</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#properties-properties" class="toc-h2 toc-link" data-title="properties">properties</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#common-xml" class="toc-h1 toc-link" data-title="Common XML">Common XML</a>
               <ul class="toc-list-h2">
                   <li>
@@ -610,6 +618,10 @@
           </li>
       </ul>
         <ul class="toc-footer">
+            <li><a href='https://snap-one.github.io/docs-driverworks-introduction/'>An Introduction to DriverWorks</a></li>
+            <li><a href='https://snap-one.github.io/docs-driverworks-fundamentals/'>DriverWorks Fundamentals Guide</a></li>
+            <li><a href='https://snap-one.github.io/docs-driverworks-api/'>DriverWorks API Reference Guide</a></li>
+            <li><a href='https://github.com/snap-one/docs-driverworks'>DriverWorks GitHub Home</a></li>
             <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
@@ -630,7 +642,7 @@
 
 <p><strong>Copyright</strong></p>
 
-<p>Copyright 2023 Snap One, LLC. All rights reserved.</p>
+<p>Copyright 2024 Snap One, LLC. All rights reserved.</p>
 
 <p>The above copyright notice applies to all content in this repository unless otherwise stated explicitly herein that a third-party’s copyright applies.</p>
 
@@ -653,7 +665,9 @@ Salt Lake City, UT 84020 USA</p>
 <p><a href="www.control4.com">http://www.control4.com</a></p>
 <h1 id='xml-and-device-drivers'>XML and Device Drivers</h1>
 
-<p>The purpose of this guide is to assist with define the XML portion of a device or protocol driver. When this driver is added to a Control4 Automation system, device control is dictated by the functions defined in the protocol by the device manufacturer. User Interaction with the device is accomplished through system programming such as button presses and events. The UI is provided by one or possibly several of the proxies. In most instances of driver development, the driver developer will be creating a protocol driver.</p>
+<p><em>needs re-write!</em></p>
+
+<p>The purpose of this guide is to assist with defining the XML portion of a device or protocol driver. When this driver is added to a Control4 Automation system, device control is dictated by the functions defined in the protocol by the device manufacturer. User Interaction with the device is accomplished through system programming such as button presses and events. The UI is provided by one or possibly several of the proxies. In most instances of driver development, the driver developer will be creating a protocol driver.</p>
 
 <p>Simply put, Protocols contain the definition for a specific device (the device you’re creating a driver for) and they are composed of functionality that is unique to that specific device.</p>
 
@@ -663,6 +677,25 @@ Salt Lake City, UT 84020 USA</p>
 <h1 id='what-s-new'>What’s New</h1>
 
 <p>What’s New Content Here</p>
+<h1 id='properties'>Properties</h1>
+
+<p><code>&lt;properties&gt;&lt;/properties&gt;</code></p>
+
+<p>This section contains definitions for the XML elements that are supported in the Properties section of a device driver’s driver.xml file. Properties are exposed in the Composer Pro System Design interface on the Properties tab. They provide an excellent way for an integrator to configure your driver.</p>
+
+<p>Additional information regarding the role Properties play in driver performance can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-properties">DriverWorks Fundamentals: Properties</a></p>
+
+<h2 id='properties-properties'>properties</h2>
+
+<p><code>&lt;properties&gt;&lt;/properties&gt;</code></p>
+
+<h3 id='properties-properties-parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>The properties element contains the driver’s XML that defines the Properties displayed in Composer Pro.</p>
+
+<h3 id='properties-properties-example'>Example</h3>
 <h1 id='common-xml'>Common XML</h1>
 
 <h2 id='common-xml-devicedata'>devicedata</h2>
