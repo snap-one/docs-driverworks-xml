@@ -1,11 +1,11 @@
 ## type
 
-`<property></property>`
+`<type></type>`
 
 
 ### Parent
 
-`<property>`
+[`<property>`][1]
 
 
 The type element identifies the type of data supported by the Property. contains the name of the Property. This name is used to identify the property and is displayed  in Composer Pro.
@@ -39,3 +39,5 @@ Below is table of currently supported properties.
 
 
 
+
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property

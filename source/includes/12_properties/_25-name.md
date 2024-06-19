@@ -1,6 +1,6 @@
-## name
+## readonly
 
-`<name></name>`
+`<readonly></readonly>`
 
 
 ### Parent
@@ -8,8 +8,7 @@
 [`<property>`][1]
 
 
-The name element contains the name of the Property. This name is used to identify the property and is displayed  in Composer Pro.
-
+When set to True, the readonly element designates a Property as one that only displays information regarding the driver. If the property needs to provide information that is selectable, this must be set to false. 
 
 ### Example
 
