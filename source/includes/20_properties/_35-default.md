@@ -12,8 +12,8 @@ The default element provides the ability to define a default value for the Prope
 
 ### Example
 
+```xml
 <property>
-```
 			<name>Ranged Integer</name>
 			<type>RANGED_INTEGER</type>
 			<minimum>0</minimum>
