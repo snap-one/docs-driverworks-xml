@@ -335,6 +335,9 @@
                   <li>
                     <a href="#properties-xml-tooltip" class="toc-h2 toc-link" data-title="tooltip">tooltip</a>
                   </li>
+                  <li>
+                    <a href="#properties-xml-default" class="toc-h2 toc-link" data-title="default">default</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -841,13 +844,32 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The tooltip element provides the ability to display information regarding the property when a Composer Pro user hovers over the Property. In the example below. The tool tip of “Select the file source.” will be displayed for the list type property named Image File Source.</p>
 
-<p><h3 id='properties-xml-tooltip-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>
+<h3 id='properties-xml-tooltip-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>
                 <span class="nt">&lt;name&gt;</span>Image File Source<span class="nt">&lt;/name&gt;</span>
                 <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
                 <span class="nt">&lt;readonly&gt;</span>false<span class="nt">&lt;/readonly&gt;</span>
                 <span class="nt">&lt;tooltip&gt;</span>Select the file source.<span class="nt">&lt;/tooltip&gt;</span>
 <span class="nt">&lt;/property&gt;</span>
-</code></pre></div></p>
+</code></pre></div>
+<h2 id='properties-xml-default'>default</h2>
+<p><code>&lt;default&gt;&lt;/default&gt;</code></p>
+<h3 id='properties-xml-default-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
+
+<p>The default element provides the ability to define a default value for the Property that will be shown when tit is viewed in Composer Pro.  In the example, the default value of 20 will be displayed for this ranged integer type property named Image Ranged Integer.</p>
+
+<h3 id='properties-xml-default-example'>Example</h3>
+
+<p><property>
+<code>
+            &lt;name&gt;Ranged Integer&lt;/name&gt;
+            &lt;type&gt;RANGED_INTEGER&lt;/type&gt;
+            &lt;minimum&gt;0&lt;/minimum&gt;
+            &lt;maximum&gt;100&lt;/maximum&gt;
+            &lt;default&gt;20&lt;/default&gt;
+&lt;/property&gt;
+</code></p>
 <h1 id='common-xml'>Common XML</h1>
 
 <h2 id='common-xml-devicedata'>devicedata</h2>
