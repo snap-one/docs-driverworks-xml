@@ -530,7 +530,10 @@
                     <a href="#properties-xml-maximum" class="toc-h2 toc-link" data-title="maximum">maximum</a>
                   </li>
                   <li>
-                    <a href="#properties-xml-items" class="toc-h2 toc-link" data-title="items">items</a>
+                    <a href="#properties-xml-item" class="toc-h2 toc-link" data-title="item">item</a>
+                  </li>
+                  <li>
+                    <a href="#properties-xml-multiselect" class="toc-h2 toc-link" data-title="multiselect">multiselect</a>
                   </li>
               </ul>
           </li>
@@ -2943,15 +2946,15 @@ Salt Lake City, UT 84020 USA</p>
             <span class="nt">&lt;default&gt;</span>20<span class="nt">&lt;/default&gt;</span>
 <span class="nt">&lt;/property&gt;</span>
 </code></pre></div>
-<h2 id='properties-xml-items'>items</h2>
-<p><code>&lt;items&gt;&lt;/items&gt;</code></p>
-<h3 id='properties-xml-items-parent'>Parent</h3>
+<h2 id='properties-xml-item'>item</h2>
+<p><code>&lt;item&gt;&lt;/item&gt;</code></p>
+<h3 id='properties-xml-item-parent'>Parent</h3>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
 
-<p>The items element provides the ability to display a list of items in support of the Property’s use. In the list property example, six items are displayed in list format when this Property is displayed in Composer Pro.</p>
+<p>The item element provides the ability to display a list of items in support of the Property’s use. In the list property example, six items are displayed in list format when this Property is displayed in Composer Pro. Note that each item is formed within its own <code>&lt;items&gt;&lt;\items&gt;</code> XML tag.</p>
 
-<p><h3 id='properties-xml-items-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>
+<h3 id='properties-xml-item-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>
             <span class="nt">&lt;name&gt;</span>Test List<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
             <span class="nt">&lt;readonly&gt;</span>false<span class="nt">&lt;/readonly&gt;</span>
@@ -2965,6 +2968,26 @@ Salt Lake City, UT 84020 USA</p>
                 <span class="nt">&lt;item&gt;</span>Item 5<span class="nt">&lt;/item&gt;</span>
                 <span class="nt">&lt;item&gt;</span>Item 6<span class="nt">&lt;/item&gt;</span>
             <span class="nt">&lt;/items&gt;</span>
+<span class="nt">&lt;/property&gt;</span>
+</code></pre></div>
+<h2 id='properties-xml-multiselect'>multiselect</h2>
+<p><code>&lt;multiselect&gt;&lt;/multiselect&gt;</code></p>
+<h3 id='properties-xml-multiselect-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
+
+<p>The multiselect element provides the ability for the user to make a selection from defined items when using the Property. In the device selector property example, two items are shown when this Property is displayed in Composer Pro. The user can select from two defined <code>&lt;items&gt;&lt;/items&gt;</code>: pool.c4z or thermostat.c4z.</p>
+
+<p><h3 id='properties-xml-multiselect-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>
+                <span class="nt">&lt;name&gt;</span>Device Multi Selector<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;type&gt;</span>DEVICE_SELECTOR<span class="nt">&lt;/type&gt;</span>
+                <span class="nt">&lt;items&gt;</span>
+                    <span class="nt">&lt;item&gt;</span>pool.c4z<span class="nt">&lt;/item&gt;</span>
+                    <span class="nt">&lt;item&gt;</span>thermostat.c4z<span class="nt">&lt;/item&gt;</span>
+                <span class="nt">&lt;/items&gt;</span>
+                <span class="nt">&lt;multiselect&gt;</span>true<span class="nt">&lt;/multiselect&gt;</span>
+                <span class="nt">&lt;default&gt;&lt;/default&gt;</span>
+                <span class="nt">&lt;tooltip&gt;</span>DEVICE_SELECTOR Property Tooltip<span class="nt">&lt;/tooltip&gt;</span>
 <span class="nt">&lt;/property&gt;</span>
 </code></pre></div></p>
 <h1 id='av-switch-proxy-xml'>AV Switch Proxy XML</h1>
