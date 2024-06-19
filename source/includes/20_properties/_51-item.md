@@ -5,10 +5,10 @@
 
 ### Parent
 
-[`<property>`][1]
+[`<items>`][1]
 
 
-The item element provides the ability to display a list of items in support of the Property’s use. In the list property example, six items are displayed in list format when this Property is displayed in Composer Pro. Note that each item is formed within its own `<items><\items>` XML tag.
+The item element provides the ability to display up to six  items in support of the Property’s use. In the list property example, six items are displayed in list format when this Property is displayed in Composer Pro. Note that each item is formed within its own `<item></item>` XML tag.
 
 
 ### Example
