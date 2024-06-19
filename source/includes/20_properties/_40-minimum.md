@@ -13,7 +13,7 @@ The minimum element provides the ability to define a value that represents the l
 ### Example
 
 ```xml
-<property>
+<property>~
 			<name>Ranged Integer</name>
 			<type>RANGED_INTEGER</type>
 			<minimum>0</minimum>
