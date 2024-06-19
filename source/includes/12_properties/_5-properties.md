@@ -14,7 +14,7 @@ The properties element contains the driver’s XML that defines the Properties d
 ### Example
 
 <properties>
-```xml
+```
 		<property>
 			<name>Driver Version</name>
 			<type>STRING</type>
@@ -23,6 +23,7 @@ The properties element contains the driver’s XML that defines the Properties d
 		</property>
 ```
 </properties>
+
 
 
 
