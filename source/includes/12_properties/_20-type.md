@@ -10,7 +10,7 @@
 
 The type element identifies the type of data supported by the Property. contains the name of the Property. This name is used to identify the property and is displayed  in Composer Pro.
 
-Below is table of currently supported properties. 
+Below is table of currently supported Property Types. For detailed information regarding each, please see: [Property Types][2].
 
 | Property            | Description                                                                                        |
 | ------------------- | -------------------------------------------------------------------------------------------------- |
@@ -41,3 +41,4 @@ Below is table of currently supported properties.
 
 
 [1]:	https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property
+[2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk
