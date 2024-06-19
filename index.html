@@ -323,6 +323,12 @@
                   <li>
                     <a href="#properties-xml-property" class="toc-h2 toc-link" data-title="property">property</a>
                   </li>
+                  <li>
+                    <a href="#properties-xml-name" class="toc-h2 toc-link" data-title="name">name</a>
+                  </li>
+                  <li>
+                    <a href="#properties-xml-type" class="toc-h2 toc-link" data-title="type">type</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -711,11 +717,99 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;property&gt;&lt;/property&gt;</code></p>
 <h3 id='properties-xml-property-parent'>Parent</h3>
 
+<p><code>&lt;properties&gt;</code></p>
+
+<p>The property element contains the driver’s XML that defines an individual Property displayed in Composer Pro.</p>
+
+<h3 id='properties-xml-property-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
+        <span class="nt">&lt;property&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
+            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div>
+<h2 id='properties-xml-name'>name</h2>
+<p><code>&lt;property&gt;&lt;/property&gt;</code></p>
+<h3 id='properties-xml-name-parent'>Parent</h3>
+
 <p><code>&lt;property&gt;</code></p>
 
-<p>The properties element contains the driver’s XML that defines the Properties displayed in Composer Pro. It is the root element for all Properties.</p>
+<p>The name element contains the name of the Property. This name is used to identify the property and is displayed  in Composer Pro.</p>
 
-<h3 id='properties-xml-property-example'>Example</h3>
+<h3 id='properties-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
+        <span class="nt">&lt;property&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
+            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div>
+<h2 id='properties-xml-type'>type</h2>
+<p><code>&lt;property&gt;&lt;/property&gt;</code></p>
+<h3 id='properties-xml-type-parent'>Parent</h3>
+
+<p><code>&lt;property&gt;</code></p>
+
+<p>The type element identifies the type of data supported by the Property. contains the name of the Property. This name is used to identify the property and is displayed  in Composer Pro.</p>
+
+<p>Below is table of currently supported properties. </p>
+
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>List</strong></td>
+<td>Provides a list of selectable objects.</td>
+</tr>
+<tr>
+<td><strong>Ranged Float</strong></td>
+<td>Provides a range of selectable floating-point or non-integer numbers.</td>
+</tr>
+<tr>
+<td><strong>Ranged Integer</strong></td>
+<td>Provides a range of selectable integers.</td>
+</tr>
+<tr>
+<td><strong>String</strong></td>
+<td>Provides a read only string.</td>
+</tr>
+<tr>
+<td><strong>String Password</strong></td>
+<td>Provides a string which can be used as a password.</td>
+</tr>
+<tr>
+<td><strong>Device Selector</strong></td>
+<td>Provides a list of selectable drivers. See the Device Selector topic for more information.</td>
+</tr>
+<tr>
+<td><strong>Color Selector</strong></td>
+<td>Provides the ability to select a color. See the Color Selector topic for more information.</td>
+</tr>
+<tr>
+<td><strong>Dynamic List</strong></td>
+<td>Provides driver-based, dynamically updated lists. See the Dynamic List topic for more information.</td>
+</tr>
+<tr>
+<td><strong>Link</strong></td>
+<td>Provides a link to a resource which can be used to support your driver.</td>
+</tr>
+</tbody></table>
+
+<p><h3 id='properties-xml-type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
+        <span class="nt">&lt;property&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
+            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div></p>
 <h1 id='common-xml'>Common XML</h1>
 
 <h2 id='common-xml-devicedata'>devicedata</h2>
