@@ -315,32 +315,6 @@
             <a href="#what-s-new" class="toc-h1 toc-link" data-title="What’s New">What’s New</a>
           </li>
           <li>
-            <a href="#properties-xml" class="toc-h1 toc-link" data-title="Properties XML">Properties XML</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#properties-xml-properties" class="toc-h2 toc-link" data-title="properties">properties</a>
-                  </li>
-                  <li>
-                    <a href="#properties-xml-property" class="toc-h2 toc-link" data-title="property">property</a>
-                  </li>
-                  <li>
-                    <a href="#properties-xml-name" class="toc-h2 toc-link" data-title="name">name</a>
-                  </li>
-                  <li>
-                    <a href="#properties-xml-type" class="toc-h2 toc-link" data-title="type">type</a>
-                  </li>
-                  <li>
-                    <a href="#properties-xml-readonly" class="toc-h2 toc-link" data-title="readonly">readonly</a>
-                  </li>
-                  <li>
-                    <a href="#properties-xml-tooltip" class="toc-h2 toc-link" data-title="tooltip">tooltip</a>
-                  </li>
-                  <li>
-                    <a href="#properties-xml-default" class="toc-h2 toc-link" data-title="default">default</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
             <a href="#common-xml" class="toc-h1 toc-link" data-title="Common XML">Common XML</a>
               <ul class="toc-list-h2">
                   <li>
@@ -526,6 +500,38 @@
               </ul>
           </li>
           <li>
+            <a href="#properties-xml" class="toc-h1 toc-link" data-title="Properties XML">Properties XML</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#properties-xml-properties" class="toc-h2 toc-link" data-title="properties">properties</a>
+                  </li>
+                  <li>
+                    <a href="#properties-xml-property" class="toc-h2 toc-link" data-title="property">property</a>
+                  </li>
+                  <li>
+                    <a href="#properties-xml-name" class="toc-h2 toc-link" data-title="name">name</a>
+                  </li>
+                  <li>
+                    <a href="#properties-xml-type" class="toc-h2 toc-link" data-title="type">type</a>
+                  </li>
+                  <li>
+                    <a href="#properties-xml-readonly" class="toc-h2 toc-link" data-title="readonly">readonly</a>
+                  </li>
+                  <li>
+                    <a href="#properties-xml-tooltip" class="toc-h2 toc-link" data-title="tooltip">tooltip</a>
+                  </li>
+                  <li>
+                    <a href="#properties-xml-default" class="toc-h2 toc-link" data-title="default">default</a>
+                  </li>
+                  <li>
+                    <a href="#properties-xml-minimum" class="toc-h2 toc-link" data-title="minimum">minimum</a>
+                  </li>
+                  <li>
+                    <a href="#properties-xml-maximum" class="toc-h2 toc-link" data-title="maximum">maximum</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#av-switch-proxy-xml" class="toc-h1 toc-link" data-title="AV Switch Proxy XML">AV Switch Proxy XML</a>
               <ul class="toc-list-h2">
                   <li>
@@ -695,181 +701,6 @@ Salt Lake City, UT 84020 USA</p>
 <h1 id='what-s-new'>What’s New</h1>
 
 <p>What’s New Content Here</p>
-<h1 id='properties-xml'>Properties XML</h1>
-
-<p><code>&lt;properties&gt;&lt;/properties&gt;</code></p>
-
-<p>This area contains definitions for the XML elements that are supported in the Properties section of a device driver’s driver.xml file. Properties are exposed in the Composer Pro System Design interface on the Properties tab. They provide an excellent way for an integrator to configure your driver.</p>
-
-<p>Additional information regarding the role Properties play in driver performance can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-properties">DriverWorks Fundamentals: Properties</a></p>
-
-<h2 id='properties-xml-properties'>properties</h2>
-
-<p><code>&lt;properties&gt;&lt;/properties&gt;</code></p>
-
-<h3 id='properties-xml-properties-parent'>Parent</h3>
-
-<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
-
-<p>The properties element contains the driver’s XML that defines the Properties displayed in Composer Pro. It is the root element for all Properties.</p>
-
-<h3 id='properties-xml-properties-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
-        <span class="nt">&lt;property&gt;</span>
-            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
-            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
-            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
-            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
-        <span class="nt">&lt;/property&gt;</span>
-<span class="nt">&lt;/properties&gt;</span>
-</code></pre></div>
-<h2 id='properties-xml-property'>property</h2>
-<p><code>&lt;property&gt;&lt;/property&gt;</code></p>
-<h3 id='properties-xml-property-parent'>Parent</h3>
-
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-properties"><code>&lt;properties&gt;</code></a></p>
-
-<p>The property element contains the driver’s XML that defines an individual Property displayed in Composer Pro.</p>
-
-<h3 id='properties-xml-property-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
-        <span class="nt">&lt;property&gt;</span>
-            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
-            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
-            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
-            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
-        <span class="nt">&lt;/property&gt;</span>
-<span class="nt">&lt;/properties&gt;</span>
-</code></pre></div>
-<h2 id='properties-xml-name'>name</h2>
-<p><code>&lt;name&gt;&lt;/name&gt;</code></p>
-<h3 id='properties-xml-name-parent'>Parent</h3>
-
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
-
-<p>The name element contains the name of the Property. This name is used to identify the property and is displayed  in Composer Pro.</p>
-
-<h3 id='properties-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
-        <span class="nt">&lt;property&gt;</span>
-            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
-            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
-            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
-            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
-        <span class="nt">&lt;/property&gt;</span>
-<span class="nt">&lt;/properties&gt;</span>
-</code></pre></div>
-<h2 id='properties-xml-type'>type</h2>
-<p><code>&lt;type&gt;&lt;/type&gt;</code></p>
-<h3 id='properties-xml-type-parent'>Parent</h3>
-
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
-
-<p>The type element identifies the type of data supported by the Property. contains the name of the Property. This name is used to identify the property and is displayed  in Composer Pro.</p>
-
-<p>Below is table of currently supported Property Types. For detailed information regarding each, please see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk">Property Types</a>.</p>
-
-<table><thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td><strong>List</strong></td>
-<td>Provides a list of selectable objects.</td>
-</tr>
-<tr>
-<td><strong>Ranged Float</strong></td>
-<td>Provides a range of selectable floating-point or non-integer numbers.</td>
-</tr>
-<tr>
-<td><strong>Ranged Integer</strong></td>
-<td>Provides a range of selectable integers.</td>
-</tr>
-<tr>
-<td><strong>String</strong></td>
-<td>Provides a read only string.</td>
-</tr>
-<tr>
-<td><strong>String Password</strong></td>
-<td>Provides a string which can be used as a password.</td>
-</tr>
-<tr>
-<td><strong>Device Selector</strong></td>
-<td>Provides a list of selectable drivers. See the Device Selector topic for more information.</td>
-</tr>
-<tr>
-<td><strong>Color Selector</strong></td>
-<td>Provides the ability to select a color. See the Color Selector topic for more information.</td>
-</tr>
-<tr>
-<td><strong>Dynamic List</strong></td>
-<td>Provides driver-based, dynamically updated lists. See the Dynamic List topic for more information.</td>
-</tr>
-<tr>
-<td><strong>Link</strong></td>
-<td>Provides a link to a resource which can be used to support your driver.</td>
-</tr>
-</tbody></table>
-
-<h3 id='properties-xml-type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
-        <span class="nt">&lt;property&gt;</span>
-            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
-            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
-            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
-            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
-        <span class="nt">&lt;/property&gt;</span>
-<span class="nt">&lt;/properties&gt;</span>
-</code></pre></div>
-<h2 id='properties-xml-readonly'>readonly</h2>
-<p><code>&lt;readonly&gt;&lt;/readonly&gt;</code></p>
-<h3 id='properties-xml-readonly-parent'>Parent</h3>
-
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
-
-<p>When set to True, the readonly element designates a Property as one that only displays information regarding the driver. If the property needs to provide information that is selectable, this must be set to false. </p>
-
-<h3 id='properties-xml-readonly-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
-        <span class="nt">&lt;property&gt;</span>
-            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
-            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
-            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
-            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
-        <span class="nt">&lt;/property&gt;</span>
-<span class="nt">&lt;/properties&gt;</span>
-</code></pre></div>
-<h2 id='properties-xml-tooltip'>tooltip</h2>
-<p><code>&lt;tooltip&gt;&lt;/tooltip&gt;</code></p>
-<h3 id='properties-xml-tooltip-parent'>Parent</h3>
-
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
-
-<p>The tooltip element provides the ability to display information regarding the property when a Composer Pro user hovers over the Property. In the example below. The tool tip of “Select the file source.” will be displayed for the list type property named Image File Source.</p>
-
-<h3 id='properties-xml-tooltip-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>
-                <span class="nt">&lt;name&gt;</span>Image File Source<span class="nt">&lt;/name&gt;</span>
-                <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
-                <span class="nt">&lt;readonly&gt;</span>false<span class="nt">&lt;/readonly&gt;</span>
-                <span class="nt">&lt;tooltip&gt;</span>Select the file source.<span class="nt">&lt;/tooltip&gt;</span>
-<span class="nt">&lt;/property&gt;</span>
-</code></pre></div>
-<h2 id='properties-xml-default'>default</h2>
-<p><code>&lt;default&gt;&lt;/default&gt;</code></p>
-<h3 id='properties-xml-default-parent'>Parent</h3>
-
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
-
-<p>The default element provides the ability to define a default value for the Property that will be shown when tit is viewed in Composer Pro.  In the example, the default value of 20 will be displayed for this ranged integer type property named Image Ranged Integer.</p>
-
-<h3 id='properties-xml-default-example'>Example</h3>
-
-<p><property>
-<code>
-            &lt;name&gt;Ranged Integer&lt;/name&gt;
-            &lt;type&gt;RANGED_INTEGER&lt;/type&gt;
-            &lt;minimum&gt;0&lt;/minimum&gt;
-            &lt;maximum&gt;100&lt;/maximum&gt;
-            &lt;default&gt;20&lt;/default&gt;
-&lt;/property&gt;
-</code></p>
 <h1 id='common-xml'>Common XML</h1>
 
 <h2 id='common-xml-devicedata'>devicedata</h2>
@@ -2899,6 +2730,225 @@ Salt Lake City, UT 84020 USA</p>
     <span class="nt">&lt;category&gt;</span>Audio/Video<span class="nt">&lt;/category&gt;</span>
 <span class="nt">&lt;/composer_categories&gt;</span>
 </code></pre></div></p>
+<h1 id='properties-xml'>Properties XML</h1>
+
+<p><code>&lt;properties&gt;&lt;/properties&gt;</code></p>
+
+<p>This area contains definitions for the XML elements that are supported in the Properties section of a device driver’s driver.xml file. Properties are exposed in the Composer Pro System Design interface on the Properties tab. They provide an excellent way for an integrator to configure your driver.</p>
+
+<p>Additional information regarding the role Properties play in driver performance can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-properties">DriverWorks Fundamentals: Properties</a></p>
+
+<h2 id='properties-xml-properties'>properties</h2>
+
+<p><code>&lt;properties&gt;&lt;/properties&gt;</code></p>
+
+<h3 id='properties-xml-properties-parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>The properties element contains the driver’s XML that defines the Properties displayed in Composer Pro. It is the root element for all Properties.</p>
+
+<h3 id='properties-xml-properties-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
+        <span class="nt">&lt;property&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
+            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div>
+<h2 id='properties-xml-property'>property</h2>
+<p><code>&lt;property&gt;&lt;/property&gt;</code></p>
+<h3 id='properties-xml-property-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-properties"><code>&lt;properties&gt;</code></a></p>
+
+<p>The property element contains the driver’s XML that defines an individual Property displayed in Composer Pro.</p>
+
+<h3 id='properties-xml-property-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
+        <span class="nt">&lt;property&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
+            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div>
+<h2 id='properties-xml-name'>name</h2>
+<p><code>&lt;name&gt;&lt;/name&gt;</code></p>
+<h3 id='properties-xml-name-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
+
+<p>The name element contains the name of the Property. This name is used to identify the property and is displayed  in Composer Pro.</p>
+
+<h3 id='properties-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
+        <span class="nt">&lt;property&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
+            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div>
+<h2 id='properties-xml-type'>type</h2>
+<p><code>&lt;type&gt;&lt;/type&gt;</code></p>
+<h3 id='properties-xml-type-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
+
+<p>The type element identifies the type of data supported by the Property. contains the name of the Property. This name is used to identify the property and is displayed  in Composer Pro.</p>
+
+<p>Below is table of currently supported Property Types. For detailed information regarding each, please see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk">Property Types</a>.</p>
+
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>List</strong></td>
+<td>Provides a list of selectable objects.</td>
+</tr>
+<tr>
+<td><strong>Ranged Float</strong></td>
+<td>Provides a range of selectable floating-point or non-integer numbers.</td>
+</tr>
+<tr>
+<td><strong>Ranged Integer</strong></td>
+<td>Provides a range of selectable integers.</td>
+</tr>
+<tr>
+<td><strong>String</strong></td>
+<td>Provides a read only string.</td>
+</tr>
+<tr>
+<td><strong>String Password</strong></td>
+<td>Provides a string which can be used as a password.</td>
+</tr>
+<tr>
+<td><strong>Device Selector</strong></td>
+<td>Provides a list of selectable drivers. See the Device Selector topic for more information.</td>
+</tr>
+<tr>
+<td><strong>Color Selector</strong></td>
+<td>Provides the ability to select a color. See the Color Selector topic for more information.</td>
+</tr>
+<tr>
+<td><strong>Dynamic List</strong></td>
+<td>Provides driver-based, dynamically updated lists. See the Dynamic List topic for more information.</td>
+</tr>
+<tr>
+<td><strong>Link</strong></td>
+<td>Provides a link to a resource which can be used to support your driver.</td>
+</tr>
+</tbody></table>
+
+<h3 id='properties-xml-type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
+        <span class="nt">&lt;property&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
+            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div>
+<h2 id='properties-xml-readonly'>readonly</h2>
+<p><code>&lt;readonly&gt;&lt;/readonly&gt;</code></p>
+<h3 id='properties-xml-readonly-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
+
+<p>When set to True, the readonly element designates a Property as one that only displays information regarding the driver. If the property needs to provide information that is selectable, this must be set to false. </p>
+
+<h3 id='properties-xml-readonly-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
+        <span class="nt">&lt;property&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
+            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div>
+<h2 id='properties-xml-tooltip'>tooltip</h2>
+<p><code>&lt;tooltip&gt;&lt;/tooltip&gt;</code></p>
+<h3 id='properties-xml-tooltip-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
+
+<p>The tooltip element provides the ability to display information regarding the property when a Composer Pro user hovers over the Property. In the example below. The tool tip of “Select the file source.” will be displayed for the list type property named Image File Source.</p>
+
+<h3 id='properties-xml-tooltip-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>
+                <span class="nt">&lt;name&gt;</span>Image File Source<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+                <span class="nt">&lt;readonly&gt;</span>false<span class="nt">&lt;/readonly&gt;</span>
+                <span class="nt">&lt;tooltip&gt;</span>Select the file source.<span class="nt">&lt;/tooltip&gt;</span>
+<span class="nt">&lt;/property&gt;</span>
+</code></pre></div>
+<h2 id='properties-xml-default'>default</h2>
+<p><code>&lt;default&gt;&lt;/default&gt;</code></p>
+<h3 id='properties-xml-default-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
+
+<p>The default element provides the ability to define a default value for the Property that will be shown when tit is viewed in Composer Pro.  In the example, the default value of 20 will be displayed for this ranged integer type property named  Ranged Integer.</p>
+
+<h3 id='properties-xml-default-example'>Example</h3>
+
+<p><property>
+<code>
+            &lt;name&gt;Ranged Integer&lt;/name&gt;
+            &lt;type&gt;RANGED_INTEGER&lt;/type&gt;
+            &lt;minimum&gt;0&lt;/minimum&gt;
+            &lt;maximum&gt;100&lt;/maximum&gt;
+            &lt;default&gt;20&lt;/default&gt;
+&lt;/property&gt;
+</code></p>
+
+<h2 id='properties-xml-minimum'>minimum</h2>
+
+<p><code>&lt;minimum&gt;&lt;/minimum&gt;</code></p>
+
+<h3 id='properties-xml-minimum-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
+
+<p>The minimum element provides the ability to define a value that represents the lowest number accepted by the Property. In the example, the minimum value of 0 will be accepted for this ranged integer type property named Ranged Integer.</p>
+
+<h3 id='properties-xml-minimum-example'>Example</h3>
+
+<p><property>
+<code>
+            &lt;name&gt;Ranged Integer&lt;/name&gt;
+            &lt;type&gt;RANGED_INTEGER&lt;/type&gt;
+            &lt;minimum&gt;0&lt;/minimum&gt;
+            &lt;maximum&gt;100&lt;/maximum&gt;
+            &lt;default&gt;20&lt;/default&gt;
+&lt;/property&gt;
+</code></p>
+
+<h2 id='properties-xml-maximum'>maximum</h2>
+
+<p><code>&lt;maximum&gt;&lt;/maximum&gt;</code></p>
+
+<h3 id='properties-xml-maximum-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
+
+<p>The maximum element provides the ability to define a value that represents the  highest number accepted by the Property. In the example, the maximum value of 1000 will be accepted for this ranged integer type property named Ranged Integer.</p>
+
+<h3 id='properties-xml-maximum-example'>Example</h3>
+
+<p><property>
+<code>
+            &lt;name&gt;Ranged Integer&lt;/name&gt;
+            &lt;type&gt;RANGED_INTEGER&lt;/type&gt;
+            &lt;minimum&gt;0&lt;/minimum&gt;
+            &lt;maximum&gt;100&lt;/maximum&gt;
+            &lt;default&gt;20&lt;/default&gt;
+&lt;/property&gt;
+</code></p>
 <h1 id='av-switch-proxy-xml'>AV Switch Proxy XML</h1>
 
 <h2 id='av-switch-proxy-xml-av-switch-devicedata'>av switch  devicedata</h2>
