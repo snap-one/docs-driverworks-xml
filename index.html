@@ -332,6 +332,9 @@
                   <li>
                     <a href="#properties-xml-readonly" class="toc-h2 toc-link" data-title="readonly">readonly</a>
                   </li>
+                  <li>
+                    <a href="#properties-xml-tooltip" class="toc-h2 toc-link" data-title="tooltip">tooltip</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -758,7 +761,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The type element identifies the type of data supported by the Property. contains the name of the Property. This name is used to identify the property and is displayed  in Composer Pro.</p>
 
-<p>Below is table of currently supported properties. </p>
+<p>Below is table of currently supported Property Types. For detailed information regarding each, please see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk">Property Types</a>.</p>
 
 <table><thead>
 <tr>
@@ -821,7 +824,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>When set to True, the readonly element designates a Property as one that only displays information regarding the driver. If the property needs to provide information that is selectable, this must be set to false. </p>
 
-<p><h3 id='properties-xml-readonly-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
+<h3 id='properties-xml-readonly-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
         <span class="nt">&lt;property&gt;</span>
             <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
@@ -829,6 +832,21 @@ Salt Lake City, UT 84020 USA</p>
             <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
         <span class="nt">&lt;/property&gt;</span>
 <span class="nt">&lt;/properties&gt;</span>
+</code></pre></div>
+<h2 id='properties-xml-tooltip'>tooltip</h2>
+<p><code>&lt;tooltip&gt;&lt;/tooltip&gt;</code></p>
+<h3 id='properties-xml-tooltip-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
+
+<p>The tooltip element provides the ability to display information regarding the property when a Composer Pro user hovers over the Property. In the example below. The tool tip of “Select the file source.” will be displayed for the list type property named Image File Source.</p>
+
+<p><h3 id='properties-xml-tooltip-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>
+                <span class="nt">&lt;name&gt;</span>Image File Source<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+                <span class="nt">&lt;readonly&gt;</span>false<span class="nt">&lt;/readonly&gt;</span>
+                <span class="nt">&lt;tooltip&gt;</span>Select the file source.<span class="nt">&lt;/tooltip&gt;</span>
+<span class="nt">&lt;/property&gt;</span>
 </code></pre></div></p>
 <h1 id='common-xml'>Common XML</h1>
 
