@@ -13,17 +13,14 @@ The properties element contains the driver’s XML that defines the Properties d
 
 ### Example
 
-```xml
-~<properties>~
+<properties>
 		<property>
 			<name>Driver Version</name>
 			<type>STRING</type>
 			<readonly>true</readonly>
 			<default>--</default>
 		</property>
-~</properties>~
-```
-
+</properties>
 
 
 
