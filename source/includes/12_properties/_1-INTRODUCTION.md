@@ -1,9 +1,9 @@
 
-# Properties
+# Properties XML
 
 `<properties></properties>`
 
-This section contains definitions for the XML elements that are supported in the Properties section of a device driver’s driver.xml file. Properties are exposed in the Composer Pro System Design interface on the Properties tab. They provide an excellent way for an integrator to configure your driver.
+This area contains definitions for the XML elements that are supported in the Properties section of a device driver’s driver.xml file. Properties are exposed in the Composer Pro System Design interface on the Properties tab. They provide an excellent way for an integrator to configure your driver.
 
 Additional information regarding the role Properties play in driver performance can be found here: [DriverWorks Fundamentals: Properties][1]
 
