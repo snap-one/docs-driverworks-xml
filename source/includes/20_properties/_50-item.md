@@ -1,6 +1,6 @@
-## items
+## item
 
-`<items></items>`
+`<item></item>`
 
 
 ### Parent
@@ -8,7 +8,7 @@
 [`<property>`][1]
 
 
-The items element provides the ability to display a list of items in support of the Property’s use. In the list property example, six items are displayed in list format when this Property is displayed in Composer Pro.
+The item element provides the ability to display a list of items in support of the Property’s use. In the list property example, six items are displayed in list format when this Property is displayed in Composer Pro. Note that each item is formed within its own `<items><\items>` XML tag.
 
 
 ### Example
