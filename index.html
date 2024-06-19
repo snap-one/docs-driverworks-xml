@@ -329,6 +329,9 @@
                   <li>
                     <a href="#properties-xml-type" class="toc-h2 toc-link" data-title="type">type</a>
                   </li>
+                  <li>
+                    <a href="#properties-xml-readonly" class="toc-h2 toc-link" data-title="readonly">readonly</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -717,7 +720,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;property&gt;&lt;/property&gt;</code></p>
 <h3 id='properties-xml-property-parent'>Parent</h3>
 
-<p><code>&lt;properties&gt;</code></p>
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-properties"><code>&lt;properties&gt;</code></a></p>
 
 <p>The property element contains the driver’s XML that defines an individual Property displayed in Composer Pro.</p>
 
@@ -731,10 +734,10 @@ Salt Lake City, UT 84020 USA</p>
 <span class="nt">&lt;/properties&gt;</span>
 </code></pre></div>
 <h2 id='properties-xml-name'>name</h2>
-<p><code>&lt;property&gt;&lt;/property&gt;</code></p>
+<p><code>&lt;name&gt;&lt;/name&gt;</code></p>
 <h3 id='properties-xml-name-parent'>Parent</h3>
 
-<p><code>&lt;property&gt;</code></p>
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
 
 <p>The name element contains the name of the Property. This name is used to identify the property and is displayed  in Composer Pro.</p>
 
@@ -748,10 +751,10 @@ Salt Lake City, UT 84020 USA</p>
 <span class="nt">&lt;/properties&gt;</span>
 </code></pre></div>
 <h2 id='properties-xml-type'>type</h2>
-<p><code>&lt;property&gt;&lt;/property&gt;</code></p>
+<p><code>&lt;type&gt;&lt;/type&gt;</code></p>
 <h3 id='properties-xml-type-parent'>Parent</h3>
 
-<p><code>&lt;property&gt;</code></p>
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
 
 <p>The type element identifies the type of data supported by the Property. contains the name of the Property. This name is used to identify the property and is displayed  in Composer Pro.</p>
 
@@ -801,7 +804,24 @@ Salt Lake City, UT 84020 USA</p>
 </tr>
 </tbody></table>
 
-<p><h3 id='properties-xml-type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
+<h3 id='properties-xml-type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
+        <span class="nt">&lt;property&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
+            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div>
+<h2 id='properties-xml-readonly'>readonly</h2>
+<p><code>&lt;readonly&gt;&lt;/readonly&gt;</code></p>
+<h3 id='properties-xml-readonly-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
+
+<p>When set to True, the readonly element designates a Property as one that only displays information regarding the driver. If the property needs to provide information that is selectable, this must be set to false. </p>
+
+<p><h3 id='properties-xml-readonly-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
         <span class="nt">&lt;property&gt;</span>
             <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
