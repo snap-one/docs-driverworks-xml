@@ -1,6 +1,6 @@
-## default
+## maximum
 
-`<default></default>`
+`<maximum></maximum>`
 
 
 ### Parent
@@ -8,7 +8,7 @@
 [`<property>`][1]
 
 
-The default element provides the ability to define a default value for the Property that will be shown when tit is viewed in Composer Pro.  In the example, the default value of 20 will be displayed for this ranged integer type property named Image Ranged Integer.
+The maximum element provides the ability to define a value that represents the  highest number accepted by the Property. In the example, the maximum value of 1000 will be accepted for this ranged integer type property named Ranged Integer.
 
 ### Example
 
