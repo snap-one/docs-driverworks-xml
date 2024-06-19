@@ -5,7 +5,7 @@
 
 ### Parent
 
-[`<item>`][1]
+[`<property>`][1]
 
 
 The items element provides the ability to define the content displayed through the \<item\>\</item\> XML. In the list property example, six items are displayed in list format when this Property is displayed in Composer Pro. Note that each item is formed within its own `<item></items>` XML tag.

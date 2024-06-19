@@ -34,4 +34,4 @@ The item element provides the ability to display up to six  items in support of 
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#properties-xml-items
