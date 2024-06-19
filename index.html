@@ -315,10 +315,13 @@
             <a href="#what-s-new" class="toc-h1 toc-link" data-title="What’s New">What’s New</a>
           </li>
           <li>
-            <a href="#properties" class="toc-h1 toc-link" data-title="Properties">Properties</a>
+            <a href="#properties-xml" class="toc-h1 toc-link" data-title="Properties XML">Properties XML</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#properties-properties" class="toc-h2 toc-link" data-title="properties">properties</a>
+                    <a href="#properties-xml-properties" class="toc-h2 toc-link" data-title="properties">properties</a>
+                  </li>
+                  <li>
+                    <a href="#properties-xml-property" class="toc-h2 toc-link" data-title="property">property</a>
                   </li>
               </ul>
           </li>
@@ -677,34 +680,42 @@ Salt Lake City, UT 84020 USA</p>
 <h1 id='what-s-new'>What’s New</h1>
 
 <p>What’s New Content Here</p>
-<h1 id='properties'>Properties</h1>
+<h1 id='properties-xml'>Properties XML</h1>
 
 <p><code>&lt;properties&gt;&lt;/properties&gt;</code></p>
 
-<p>This section contains definitions for the XML elements that are supported in the Properties section of a device driver’s driver.xml file. Properties are exposed in the Composer Pro System Design interface on the Properties tab. They provide an excellent way for an integrator to configure your driver.</p>
+<p>This area contains definitions for the XML elements that are supported in the Properties section of a device driver’s driver.xml file. Properties are exposed in the Composer Pro System Design interface on the Properties tab. They provide an excellent way for an integrator to configure your driver.</p>
 
 <p>Additional information regarding the role Properties play in driver performance can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-properties">DriverWorks Fundamentals: Properties</a></p>
 
-<h2 id='properties-properties'>properties</h2>
+<h2 id='properties-xml-properties'>properties</h2>
 
 <p><code>&lt;properties&gt;&lt;/properties&gt;</code></p>
 
-<h3 id='properties-properties-parent'>Parent</h3>
+<h3 id='properties-xml-properties-parent'>Parent</h3>
 
 <p><a href="https://snap-one.github.io/docs-driverworks-xml/#devicedata"><code>&lt;devicedata&gt;</code></a></p>
 
-<p>The properties element contains the driver’s XML that defines the Properties displayed in Composer Pro.</p>
+<p>The properties element contains the driver’s XML that defines the Properties displayed in Composer Pro. It is the root element for all Properties.</p>
 
-<h3 id='properties-properties-example'>Example</h3>
+<h3 id='properties-xml-properties-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
+        <span class="nt">&lt;property&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
+            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div>
+<h2 id='properties-xml-property'>property</h2>
+<p><code>&lt;property&gt;&lt;/property&gt;</code></p>
+<h3 id='properties-xml-property-parent'>Parent</h3>
 
-<p>&lt;properties&gt;
-&lt;property&gt;
-&lt;name&gt;Driver Version&lt;/name&gt;
-&lt;type&gt;STRING&lt;/type&gt;
-&lt;readonly&gt;true&lt;/readonly&gt;
-&lt;default&gt;--&lt;/default&gt;
-&lt;/property&gt;
-&lt;/properties&gt;</p>
+<p><code>&lt;property&gt;</code></p>
+
+<p>The properties element contains the driver’s XML that defines the Properties displayed in Composer Pro. It is the root element for all Properties.</p>
+
+<h3 id='properties-xml-property-example'>Example</h3>
 <h1 id='common-xml'>Common XML</h1>
 
 <h2 id='common-xml-devicedata'>devicedata</h2>
