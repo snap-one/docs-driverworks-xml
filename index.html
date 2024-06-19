@@ -529,6 +529,9 @@
                   <li>
                     <a href="#properties-xml-maximum" class="toc-h2 toc-link" data-title="maximum">maximum</a>
                   </li>
+                  <li>
+                    <a href="#properties-xml-items" class="toc-h2 toc-link" data-title="items">items</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -2916,7 +2919,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The minimum element provides the ability to define a value that represents the lowest number accepted by the Property. In the example, the minimum value of 0 will be accepted for this ranged integer type property named Ranged Integer.</p>
 
-<h3 id='properties-xml-minimum-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>
+<h3 id='properties-xml-minimum-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>~
             <span class="nt">&lt;name&gt;</span>Ranged Integer<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;type&gt;</span>RANGED_INTEGER<span class="nt">&lt;/type&gt;</span>
             <span class="nt">&lt;minimum&gt;</span>0<span class="nt">&lt;/minimum&gt;</span>
@@ -2932,12 +2935,36 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The maximum element provides the ability to define a value that represents the  highest number accepted by the Property. In the example, the maximum value of 1000 will be accepted for this ranged integer type property named Ranged Integer.</p>
 
-<p><h3 id='properties-xml-maximum-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>
+<h3 id='properties-xml-maximum-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>
             <span class="nt">&lt;name&gt;</span>Ranged Integer<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;type&gt;</span>RANGED_INTEGER<span class="nt">&lt;/type&gt;</span>
             <span class="nt">&lt;minimum&gt;</span>0<span class="nt">&lt;/minimum&gt;</span>
             <span class="nt">&lt;maximum&gt;</span>100<span class="nt">&lt;/maximum&gt;</span>
             <span class="nt">&lt;default&gt;</span>20<span class="nt">&lt;/default&gt;</span>
+<span class="nt">&lt;/property&gt;</span>
+</code></pre></div>
+<h2 id='properties-xml-items'>items</h2>
+<p><code>&lt;items&gt;&lt;/items&gt;</code></p>
+<h3 id='properties-xml-items-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
+
+<p>The items element provides the ability to display a list of items in support of the Property’s use. In the list property example, six items are displayed in list format when this Property is displayed in Composer Pro.</p>
+
+<p><h3 id='properties-xml-items-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Test List<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;readonly&gt;</span>false<span class="nt">&lt;/readonly&gt;</span>
+            <span class="nt">&lt;tooltip&gt;</span>Test List Property Tooltip<span class="nt">&lt;/tooltip&gt;</span>
+            <span class="nt">&lt;default&gt;</span>Item 3<span class="nt">&lt;/default&gt;</span>
+            <span class="nt">&lt;items&gt;</span>
+                <span class="nt">&lt;item&gt;</span>Item 1<span class="nt">&lt;/item&gt;</span>
+                <span class="nt">&lt;item&gt;</span>Item 2<span class="nt">&lt;/item&gt;</span>
+                <span class="nt">&lt;item&gt;</span>Item 3<span class="nt">&lt;/item&gt;</span>
+                <span class="nt">&lt;item&gt;</span>Item 4<span class="nt">&lt;/item&gt;</span>
+                <span class="nt">&lt;item&gt;</span>Item 5<span class="nt">&lt;/item&gt;</span>
+                <span class="nt">&lt;item&gt;</span>Item 6<span class="nt">&lt;/item&gt;</span>
+            <span class="nt">&lt;/items&gt;</span>
 <span class="nt">&lt;/property&gt;</span>
 </code></pre></div></p>
 <h1 id='av-switch-proxy-xml'>AV Switch Proxy XML</h1>
