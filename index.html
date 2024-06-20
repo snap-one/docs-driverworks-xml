@@ -542,6 +542,14 @@
           </li>
           <li>
             <a href="#conditionals-xml" class="toc-h1 toc-link" data-title="Conditionals XML">Conditionals XML</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#conditionals-xml-conditionals" class="toc-h2 toc-link" data-title="conditionals">conditionals</a>
+                  </li>
+                  <li>
+                    <a href="#conditionals-xml-conditional" class="toc-h2 toc-link" data-title="conditional">conditional</a>
+                  </li>
+              </ul>
           </li>
           <li>
             <a href="#av-switch-proxy-xml" class="toc-h1 toc-link" data-title="AV Switch Proxy XML">AV Switch Proxy XML</a>
@@ -3022,7 +3030,46 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>Driver conditionals are useful as they provide the opportunity for custom programming through the interface found in Composer Pro. When considering conditionals, it’s helpful to think of them as “If” programming statements. For example, a light driver may have a simple conditional defined for when the light is in the On state. Using this conditional can then support programming in the project that will be executed if the light is On.</p>
 
-<p>Additional information regarding the role Properties play in driver performance can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#conditionals">DriverWorks Fundamentals: Properties</a></p>
+<p>Additional information regarding the role Properties play in driver performance can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#conditionals">DriverWorks Fundamentals: Conditionals</a></p>
+
+<h2 id='conditionals-xml-conditionals'>conditionals</h2>
+
+<p><code>&lt;conditionals&gt;&lt;/conditionals&gt;</code></p>
+
+<h3 id='conditionals-xml-conditionals-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>The conditionals element contains the driver’s XML that defines the Conditionals displayed in Composer Pro. It is the root element for all Conditionals. in the example, the <code>&lt;conditionals&gt;&lt;/conditionals&gt;</code> XML contains one conditional named SIMPLE LIGHT ON.</p>
+
+<h3 id='conditionals-xml-conditionals-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditionals&gt;</span>
+            <span class="nt">&lt;conditional&gt;</span>
+                <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
+                <span class="nt">&lt;name&gt;</span>SIMPLE_LIGHT_ON<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;type&gt;</span>SIMPLE<span class="nt">&lt;/type&gt;</span>
+                <span class="nt">&lt;condition_statement&gt;</span>[0-SIMPLE] Light is on<span class="nt">&lt;/condition_statement&gt;</span>
+                <span class="nt">&lt;description&gt;</span>[0] NAME is On<span class="nt">&lt;/description&gt;</span>
+            <span class="nt">&lt;/conditional&gt;</span>
+<span class="nt">&lt;/conditionals&gt;</span>
+</code></pre></div>
+<h2 id='conditionals-xml-conditional'>conditional</h2>
+<p><code>&lt;conditional&gt;&lt;/conditional&gt;</code></p>
+<h3 id='conditionals-xml-conditional-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata"><code>&lt;conditionals&gt;</code></a></p>
+
+<p>The conditional element contains the driver’s XML that defines an individual conditionals displayed in Composer Pro. In the example, the <code>&lt;conditional&gt;&lt;/conditional&gt;</code> contains the XML elements that make up a conditional named SIMPLE LIGHT ON.</p>
+
+<p><h3 id='conditionals-xml-conditional-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditionals&gt;</span>
+            <span class="nt">&lt;conditional&gt;</span>
+                <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
+                <span class="nt">&lt;name&gt;</span>SIMPLE_LIGHT_ON<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;type&gt;</span>SIMPLE<span class="nt">&lt;/type&gt;</span>
+                <span class="nt">&lt;condition_statement&gt;</span>[0-SIMPLE] Light is on<span class="nt">&lt;/condition_statement&gt;</span>
+                <span class="nt">&lt;description&gt;</span>[0] NAME is On<span class="nt">&lt;/description&gt;</span>
+            <span class="nt">&lt;/conditional&gt;</span>
+<span class="nt">&lt;/conditionals&gt;</span>
+</code></pre></div></p>
 <h1 id='av-switch-proxy-xml'>AV Switch Proxy XML</h1>
 
 <h2 id='av-switch-proxy-xml-av-switch-devicedata'>av switch  devicedata</h2>
