@@ -27,4 +27,4 @@ The conditional element contains the driver’s XML that defines an individual c
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditionals
