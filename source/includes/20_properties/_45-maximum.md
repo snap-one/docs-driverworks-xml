@@ -8,7 +8,7 @@
 [`<property>`][1]
 
 
-The maximum element provides the ability to define a value that represents the  highest number accepted by the Property. In the example, the maximum value of 1000 will be accepted for this ranged integer type property named Ranged Integer.
+The maximum element provides the ability to define a value that represents the  highest number accepted by the Property. In the example, the maximum value of 100 will be accepted for this ranged integer type property named Ranged Integer.
 
 ### Example
 

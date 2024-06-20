@@ -8,7 +8,7 @@
 [`<property>`][1]
 
 
-The type element identifies the type of data supported by the Property. contains the name of the Property. This name is used to identify the property and is displayed  in Composer Pro.
+The type element identifies the type of data supported by the Property. It contains the name of the Property Type. 
 
 Below is table of currently supported Property Types. For detailed information regarding each, please see: [Property Types][2].
 

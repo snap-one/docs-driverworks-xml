@@ -1,2 +1,0 @@
-
-# AV Switch Proxy XML
