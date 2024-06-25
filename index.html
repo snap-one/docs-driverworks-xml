@@ -2652,7 +2652,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>This area contains definitions for the XML elements that are supported in the Properties section of a device driver’s driver.xml file. Properties are exposed in the Composer Pro System Design interface on the Properties tab. They provide an excellent way for an integrator to configure your driver.</p>
 
-<p>Additional information regarding the role Properties play in driver performance can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-properties">DriverWorks Fundamentals: Properties</a></p>
+<p>Additional information regarding the role Properties including the various types of properties supported and the role they play in driver performance can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-properties">DriverWorks Fundamentals: Properties</a></p>
 
 <h2 id='properties-xml-properties'>properties</h2>
 
@@ -2715,7 +2715,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The type element identifies the type of data supported by the Property. It contains the name of the Property Type. </p>
 
-<p>Below is table of currently supported Property Types. For detailed information regarding each, please see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk">Property Types</a>.</p>
+<p>Below is table of currently supported Property Types. For detailed information regarding each, please see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk">Property Types</a> and <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-advanced-properties">Advanced Property Types</a>.</p>
 
 <table><thead>
 <tr>
@@ -2758,6 +2758,18 @@ Salt Lake City, UT 84020 USA</p>
 <tr>
 <td><strong>Link</strong></td>
 <td>Provides a link to a resource which can be used to support your driver.</td>
+</tr>
+<tr>
+<td><strong>Label</strong></td>
+<td>Advanced Property that provides a Header Label on the Properties Screen in Composer Pro.</td>
+</tr>
+<tr>
+<td><strong>Scroll</strong></td>
+<td>Advanced Property that provides a graphical way to set an integer value on a scale on the Properties Screen in Composer Pro.</td>
+</tr>
+<tr>
+<td><strong>Track</strong></td>
+<td>Advanced Property that provides another option  for setting an integer value which is similar to Scroll. However, Track is more of a discrete slider control.</td>
 </tr>
 </tbody></table>
 
@@ -2858,6 +2870,12 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The items element provides the ability to define the content displayed through the <code>&lt;item&gt;&lt;/item&gt;</code> XML. In the list property example, six items are displayed in list format when this Property is displayed in Composer Pro. Note that each item is formed within its own <code>&lt;item&gt;&lt;/items&gt;</code> XML tag.</p>
 
+<p>Use of the Item element is supported in the following Property Types:</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk">List</a>
+<a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-dynamic-list-properties">Dynamic List </a>
+<a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-using-the-device-selector-property">Device Selector</a></p>
+
 <h3 id='properties-xml-items-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>
             <span class="nt">&lt;name&gt;</span>Test List<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
@@ -2904,14 +2922,14 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;property&gt;</code></a></p>
 
-<p>The multiselect element provides the ability for the user to make a selection from defined items when using the Property. In the device selector property example, two items are shown when this Property is displayed in Composer Pro. The user can select from two defined <code>&lt;items&gt;&lt;/items&gt;</code>: pool.c4z or thermostat.c4z.</p>
+<p>The multiselect element provides the ability for the user to make a selection from defined items when using the Property. In the device selector property example, two items are shown when this Property is displayed in Composer Pro. With the multiselect element set to True, the user can select one or both of the two defined <code>&lt;items&gt;&lt;/items&gt;</code>: pool.c4i or thermostat.c4i.</p>
 
 <p><h3 id='properties-xml-multiselect-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;property&gt;</span>
                 <span class="nt">&lt;name&gt;</span>Device Multi Selector<span class="nt">&lt;/name&gt;</span>
                 <span class="nt">&lt;type&gt;</span>DEVICE_SELECTOR<span class="nt">&lt;/type&gt;</span>
                 <span class="nt">&lt;items&gt;</span>
-                    <span class="nt">&lt;item&gt;</span>pool.c4z<span class="nt">&lt;/item&gt;</span>
-                    <span class="nt">&lt;item&gt;</span>thermostat.c4z<span class="nt">&lt;/item&gt;</span>
+                    <span class="nt">&lt;item&gt;</span>pool.c4i<span class="nt">&lt;/item&gt;</span>
+                    <span class="nt">&lt;item&gt;</span>thermostat.c4i<span class="nt">&lt;/item&gt;</span>
                 <span class="nt">&lt;/items&gt;</span>
                 <span class="nt">&lt;multiselect&gt;</span>true<span class="nt">&lt;/multiselect&gt;</span>
                 <span class="nt">&lt;default&gt;&lt;/default&gt;</span>
