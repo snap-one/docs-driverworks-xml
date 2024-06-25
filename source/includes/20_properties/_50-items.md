@@ -10,6 +10,11 @@
 
 The items element provides the ability to define the content displayed through the `<item></item>` XML. In the list property example, six items are displayed in list format when this Property is displayed in Composer Pro. Note that each item is formed within its own `<item></items>` XML tag.
 
+Use of the Item element is supported in the following Property Types:
+
+[List][2]
+[Dynamic List ][3]
+[Device Selector][4]
 
 ### Example
 
@@ -35,3 +40,6 @@ The items element provides the ability to define the content displayed through t
 
 
 [1]:	https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property
+[2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk
+[3]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-dynamic-list-properties
+[4]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-using-the-device-selector-property
