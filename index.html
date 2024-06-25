@@ -558,6 +558,27 @@
                   <li>
                     <a href="#conditionals-xml-type" class="toc-h2 toc-link" data-title="type">type</a>
                   </li>
+                  <li>
+                    <a href="#conditionals-xml-condition-statement" class="toc-h2 toc-link" data-title="condition statement">condition statement</a>
+                  </li>
+                  <li>
+                    <a href="#conditionals-xml-description" class="toc-h2 toc-link" data-title="description">description</a>
+                  </li>
+                  <li>
+                    <a href="#conditionals-xml-true-text" class="toc-h2 toc-link" data-title="true text">true text</a>
+                  </li>
+                  <li>
+                    <a href="#conditionals-xml-false-text" class="toc-h2 toc-link" data-title="false text">false text</a>
+                  </li>
+                  <li>
+                    <a href="#conditionals-xml-minimum" class="toc-h2 toc-link" data-title="minimum">minimum</a>
+                  </li>
+                  <li>
+                    <a href="#conditionals-xml-maximum" class="toc-h2 toc-link" data-title="maximum">maximum</a>
+                  </li>
+                  <li>
+                    <a href="#conditionals-xml-items" class="toc-h2 toc-link" data-title="items">items</a>
+                  </li>
               </ul>
           </li>
       </ul>
@@ -2944,7 +2965,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>Driver conditionals are useful as they provide the opportunity for custom programming through the interface found in Composer Pro. When considering conditionals, it’s helpful to think of them as “If” programming statements. For example, a light driver may have a simple conditional defined for when the light is in the On state. Using this conditional can then support programming in the project that will be executed if the light is On.</p>
 
-<p>Additional information regarding the role Properties play in driver performance can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#conditionals">DriverWorks Fundamentals: Conditionals</a></p>
+<p>Additional information regarding the types of Conditionals supported as well as how those Conditionals can be used in driver programming can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#conditionals">DriverWorks Fundamentals: Conditionals</a></p>
 
 <h2 id='conditionals-xml-conditionals'>conditionals</h2>
 
@@ -3078,6 +3099,151 @@ Salt Lake City, UT 84020 USA</p>
             <span class="nt">&lt;/conditional&gt;</span>
 <span class="nt">&lt;/conditionals&gt;</span>
 </code></pre></div>
+
+<h2 id='conditionals-xml-condition-statement'>condition statement</h2>
+
+<p><code>&lt;condition_statement&gt;&lt;/condition_statement&gt;</code></p>
+
+<h3 id='conditionals-xml-condition-statement-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+
+<p>The conditional statement states a question being asked regarding a state of the driver. This is the statement that is shown before the condition logic. For example, the Simple Light On conditional , asks the question ‘The Light is on’. It is basically a useful statement that supports the conditional. When an integrator is viewing this driver’s conditionals in ComposerPro, they can select “The Light is on” from the list of conditionals and can ultimately initiate programming when the light is in the On state.</p>
+
+<h3 id='conditionals-xml-condition-statement-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>\<span class="nt">&lt;conditionals</span><span class="err">\</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;conditional&gt;</span>
+                <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
+                <span class="nt">&lt;name&gt;</span>SIMPLE_LIGHT_ON<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;type&gt;</span>SIMPLE<span class="nt">&lt;/type&gt;</span>
+                <span class="nt">&lt;condition_statement&gt;</span> Light is on<span class="nt">&lt;/condition_statement&gt;</span>
+                <span class="nt">&lt;description&gt;</span>NAME is On<span class="nt">&lt;/description&gt;</span>
+            <span class="nt">&lt;/conditional&gt;</span>
+<span class="nt">&lt;/conditionals&gt;</span>
+</code></pre></div>
+<h2 id='conditionals-xml-description'>description</h2>
+<p><code>&lt;description&gt;&lt;/description&gt;</code></p>
+<h3 id='conditionals-xml-description-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+
+<p>The description element needs to contain the NAME macro. NAME is a key value that is equivalent to your driver’s unique name. Every conditional needs to include NAME. ComposerPro treats the NAME macro in your conditional XML in a way that replaces it with your driver’s unique name. The unique name is formatted by the name of the room where the driver resides followed by “-&gt;”, followed by the name of the driver as it is named in the project. </p>
+
+<p>For example, consider that the name of our example driver is “Living Room Lamp” and it is in the Living Room. Based on this, “Living Room-&gt;Living Room Lamp” will replace NAME when your conditional programming description is displayed in the conditionals window and the script actions area of ComposerPro. Using the example above, ComposerPro will display the description XML element as: “If Living Room-&gt;Living Room Lamp is on”.</p>
+
+<h3 id='conditionals-xml-description-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>\<span class="nt">&lt;conditionals</span><span class="err">\</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;conditional&gt;</span>
+                <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
+                <span class="nt">&lt;name&gt;</span>SIMPLE_LIGHT_ON<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;type&gt;</span>SIMPLE<span class="nt">&lt;/type&gt;</span>
+                <span class="nt">&lt;condition_statement&gt;</span> Light is on<span class="nt">&lt;/condition_statement&gt;</span>
+                <span class="nt">&lt;description&gt;</span>NAME is On<span class="nt">&lt;/description&gt;</span>
+            <span class="nt">&lt;/conditional&gt;</span>
+<span class="nt">&lt;/conditionals&gt;</span>
+</code></pre></div>
+<h2 id='conditionals-xml-true-text'>true text</h2>
+<p><code>&lt;true_text&gt;&lt;/true_text&gt;</code></p>
+<h3 id='conditionals-xml-true-text-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+
+<p>The true text element provides the ability to define text that will be displayed in Composer Pro programming if a Boolean Conditional is True.</p>
+
+<h3 id='conditionals-xml-true-text-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;conditional&gt;</span>~
+            <span class="nt">&lt;id&gt;</span>3<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;name&gt;</span>BOOL_LIGHT_ON<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type&gt;</span>BOOL<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;condition_statement&gt;</span>[3-BOOL] Light is On<span class="nt">&lt;/condition_statement&gt;</span>
+            <span class="nt">&lt;description&gt;</span>[3] NAME Light is On is STRING<span class="nt">&lt;/description&gt;</span>
+            <span class="nt">&lt;true_text&gt;</span>True<span class="nt">&lt;/true_text&gt;</span>
+            <span class="nt">&lt;false_text&gt;</span>False<span class="nt">&lt;/false_text&gt;</span>
+<span class="nt">&lt;/conditional&gt;</span>
+</code></pre></div>
+<h2 id='conditionals-xml-false-text'>false text</h2>
+<p><code>&lt;false_text&gt;&lt;/false_text&gt;</code></p>
+<h3 id='conditionals-xml-false-text-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+
+<p>The false text element provides the ability to define text that will be displayed in Composer Pro programming if a Boolean Conditional is false.</p>
+
+<h3 id='conditionals-xml-false-text-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;conditional&gt;</span>~
+            <span class="nt">&lt;id&gt;</span>3<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;name&gt;</span>BOOL_LIGHT_ON<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type&gt;</span>BOOL<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;condition_statement&gt;</span> Light is On<span class="nt">&lt;/condition_statement&gt;</span>
+            <span class="nt">&lt;description&gt;</span> NAME Light is On is STRING<span class="nt">&lt;/description&gt;</span>
+            <span class="nt">&lt;true_text&gt;</span>True<span class="nt">&lt;/true_text&gt;</span>
+            <span class="nt">&lt;false_text&gt;</span>False<span class="nt">&lt;/false_text&gt;</span>
+<span class="nt">&lt;/conditional&gt;</span>
+</code></pre></div>
+<h2 id='conditionals-xml-minimum'>minimum</h2>
+<p><code>&lt;minimum&gt;&lt;/minimum&gt;</code></p>
+<h3 id='conditionals-xml-minimum-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+
+<p>The minimum element provides the ability to define a value that represents the lowest value of a range of numbers used by a NUMBER type Conditional.  In the example, the minimum value of the range is 10.</p>
+
+<h3 id='conditionals-xml-minimum-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditional&gt;</span>
+                <span class="nt">&lt;id&gt;</span>4<span class="nt">&lt;/id&gt;</span>
+                <span class="nt">&lt;name&gt;</span>NUMBER_LIGHT_LEVEL<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;type&gt;</span>NUMBER<span class="nt">&lt;/type&gt;</span>
+                <span class="nt">&lt;condition_statement&gt;</span>[4-NUMBER] Light Level<span class="nt">&lt;/condition_statement&gt;</span>
+                <span class="nt">&lt;description&gt;</span>[4] NAME is LOGIC INTEGER<span class="nt">&lt;/description&gt;</span>
+                <span class="nt">&lt;minimum&gt;</span>10<span class="nt">&lt;/minimum&gt;</span>
+                <span class="nt">&lt;maximum&gt;</span>150<span class="nt">&lt;/maximum&gt;</span>
+<span class="nt">&lt;/conditional&gt;</span>
+</code></pre></div>
+<h2 id='conditionals-xml-maximum'>maximum</h2>
+<p><code>&lt;maximum&gt;&lt;/maximum&gt;</code></p>
+<h3 id='conditionals-xml-maximum-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+
+<p>The maximum element provides the ability to define a value that represents the highest value of a range of numbers used by a NUMBER type Conditional.  In the example, the maximum value of the range is 150.</p>
+
+<h3 id='conditionals-xml-maximum-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditional&gt;</span>
+                <span class="nt">&lt;id&gt;</span>4<span class="nt">&lt;/id&gt;</span>
+                <span class="nt">&lt;name&gt;</span>NUMBER_LIGHT_LEVEL<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;type&gt;</span>NUMBER<span class="nt">&lt;/type&gt;</span>
+                <span class="nt">&lt;condition_statement&gt;</span>[4-NUMBER] Light Level<span class="nt">&lt;/condition_statement&gt;</span>
+                <span class="nt">&lt;description&gt;</span>[4] NAME is LOGIC INTEGER<span class="nt">&lt;/description&gt;</span>
+                <span class="nt">&lt;minimum&gt;</span>10<span class="nt">&lt;/minimum&gt;</span>
+                <span class="nt">&lt;maximum&gt;</span>150<span class="nt">&lt;/maximum&gt;</span>
+<span class="nt">&lt;/conditional&gt;</span>
+</code></pre></div>
+<h2 id='conditionals-xml-items'>items</h2>
+<p><code>&lt;items&gt;&lt;/items&gt;</code></p>
+<h3 id='conditionals-xml-items-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+
+<p>The items element provides the ability to define a list of items used by the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#conditionals-understanding-xml-in-a-list-type-conditional">LIST</a> type Conditional. The content is defined within the <code>&lt;items&gt;&lt;/items&gt;</code> XML. </p>
+
+<p>In the list Conditional example, ten percentages are defined in list format when this Conditional is displayed in Composer Pro. Note that each item is formed within its own <code>&lt;item&gt;&lt;/items&gt;</code> XML tag.</p>
+
+<p>Use of the Item element is supported in the following Conditional Types:</p>
+
+<p><h3 id='conditionals-xml-items-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditional&gt;</span>
+                <span class="nt">&lt;id&gt;</span>6<span class="nt">&lt;/id&gt;</span>
+                <span class="nt">&lt;name&gt;</span>LIST_LIGHT_LEVEL<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+                <span class="nt">&lt;condition_statement&gt;</span>[6-LIST] Light Level<span class="nt">&lt;/condition_statement&gt;</span>
+                <span class="nt">&lt;description&gt;</span>[6] NAME is LOGIC STRING<span class="nt">&lt;/description&gt;</span>
+                <span class="nt">&lt;items&gt;</span>
+                    <span class="nt">&lt;item&gt;</span>10%<span class="nt">&lt;/item&gt;</span>
+                    <span class="nt">&lt;item&gt;</span>20%<span class="nt">&lt;/item&gt;</span>
+                    <span class="nt">&lt;item&gt;</span>30%<span class="nt">&lt;/item&gt;</span>
+                    <span class="nt">&lt;item&gt;</span>40%<span class="nt">&lt;/item&gt;</span>
+                    <span class="nt">&lt;item&gt;</span>50%<span class="nt">&lt;/item&gt;</span>
+                    <span class="nt">&lt;item&gt;</span>60%<span class="nt">&lt;/item&gt;</span>
+                    <span class="nt">&lt;item&gt;</span>70%<span class="nt">&lt;/item&gt;</span>
+                    <span class="nt">&lt;item&gt;</span>80%<span class="nt">&lt;/item&gt;</span>
+                    <span class="nt">&lt;item&gt;</span>90%<span class="nt">&lt;/item&gt;</span>
+                    <span class="nt">&lt;item&gt;</span>100%<span class="nt">&lt;/item&gt;</span>
+                <span class="nt">&lt;/items&gt;</span>
+            <span class="nt">&lt;/conditional&gt;</span>
+</code></pre></div></p>
 
       </div>
       <div class="dark-box">
