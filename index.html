@@ -581,6 +581,17 @@
                   </li>
               </ul>
           </li>
+          <li>
+            <a href="#actions-xml" class="toc-h1 toc-link" data-title="Actions XML">Actions XML</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#actions-xml-actions" class="toc-h2 toc-link" data-title="actions">actions</a>
+                  </li>
+                  <li>
+                    <a href="#actions-xml-action" class="toc-h2 toc-link" data-title="action">action</a>
+                  </li>
+              </ul>
+          </li>
       </ul>
         <ul class="toc-footer">
             <li><a href='https://snap-one.github.io/docs-driverworks-introduction/'>An Introduction to DriverWorks</a></li>
@@ -3243,6 +3254,55 @@ Salt Lake City, UT 84020 USA</p>
                     <span class="nt">&lt;item&gt;</span>100%<span class="nt">&lt;/item&gt;</span>
                 <span class="nt">&lt;/items&gt;</span>
             <span class="nt">&lt;/conditional&gt;</span>
+</code></pre></div></p>
+<h1 id='actions-xml'>Actions XML</h1>
+
+<p><code>&lt;actions&gt;&lt;/actions&gt;</code></p>
+
+<p>The Actions XML elements are used to define programming which is specific a driver’s initial installation and configuration. Typically, the functionality provided through Actions is one-time setup configuration and not required for ongoing driver use.</p>
+
+<p>For a list of supported Action types and how they can assist with driver configuration, please see the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-actions">Actions</a> section of the DriverWorks Fundamentals Guide.</p>
+
+<h2 id='actions-xml-actions'>actions</h2>
+
+<p><code>&lt;actions&gt;&lt;/actions&gt;</code></p>
+
+<h3 id='actions-xml-actions-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata"><code>&lt;config&gt;</code></a></p>
+
+<p>The actions element contains the driver’s XML that defines the Actions displayed under the Properties tab of Composer Pro. It is the root element for all Actions. In the example, and action named “Add and Connect Relays” is defined under the &lt;actions&gt;&lt;/actions&gt; XML.</p>
+
+<h3 id='actions-xml-actions-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
+            <span class="nt">&lt;action&gt;</span>
+                <span class="nt">&lt;name&gt;</span>Add and Connect Relays<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;command&gt;</span>AddRelays<span class="nt">&lt;/command&gt;</span>
+                <span class="nt">&lt;params&gt;</span>
+                    <span class="nt">&lt;param&gt;</span>
+                        <span class="nt">&lt;name&gt;</span>Outlet<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>CUSTOM_SELECT:GetPropertiesForAction<span class="nt">&lt;/type&gt;</span>
+                        <span class="nt">&lt;search/&gt;</span>
+                    <span class="nt">&lt;/param&gt;</span>
+                <span class="nt">&lt;/params&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+<span class="nt">&lt;/actions&gt;</span>
+</code></pre></div>
+<h2 id='actions-xml-action'>action</h2>
+<p><code>&lt;action&gt;&lt;/action&gt;</code></p>
+<h3 id='actions-xml-action-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-properties"><code>&lt;actions&gt;</code></a></p>
+
+<p>The property element contains the driver’s XML that defines an individual Property displayed in Composer Pro.</p>
+
+<p><h3 id='actions-xml-action-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
+        <span class="nt">&lt;property&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
+            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
+        <span class="nt">&lt;/property&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
 </code></pre></div></p>
 
       </div>
