@@ -5,7 +5,7 @@
 
 ### Parent
 
-[`<actions>`]()
+[`<actions>`][1]
 
 
 The property element contains the driver’s XML that defines an individual Property displayed in Composer Pro.
@@ -31,3 +31,5 @@ The property element contains the driver’s XML that defines an individual Prop
 
 
 
+
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-actions

@@ -1,4 +1,4 @@
-## name
+## type
 
 `<type></type>`
 

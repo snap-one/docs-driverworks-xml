@@ -5,7 +5,7 @@
 
 ### Parent
 
-[`<action>`]()
+[`<action>`][1]
 
 
 The name element contains the name of the Action. This name is used to identify the action and is displayed  in Composer Pro.
@@ -31,3 +31,5 @@ The name element contains the name of the Action. This name is used to identify 
 
 
 
+
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action
