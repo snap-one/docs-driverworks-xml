@@ -5,7 +5,7 @@
 
 ### Parent
 
-[`<param>`]()
+[`<param>`][1]
 
 
 The parameter default element contains the ……………………
@@ -33,3 +33,5 @@ The parameter default element contains the ……………………
 
 
 
+
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-param

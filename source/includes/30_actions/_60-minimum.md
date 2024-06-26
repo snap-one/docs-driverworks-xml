@@ -5,7 +5,7 @@
 
 ### Parent
 
-[`<param>`]()
+[`<param>`][1]
 
 
 The minimum element provides the ability to define a value that represents the lowest number accepted by the Action. In the example, the minimum value of 79 will be accepted for this ranged integer type action named Ranged Integer.
@@ -30,3 +30,5 @@ The minimum element provides the ability to define a value that represents the l
 
 
 
+
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-param

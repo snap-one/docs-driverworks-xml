@@ -5,7 +5,7 @@
 
 ### Parent
 
-[`<action>`]()
+[`<action>`][1]
 
 
 The sort order element contains the ……………………
@@ -34,3 +34,4 @@ The sort order element contains the ……………………
 </action>
 ```
 
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action
