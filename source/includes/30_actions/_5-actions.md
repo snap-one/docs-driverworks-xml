@@ -22,7 +22,6 @@ The actions element contains the driver’s XML that defines the Actions display
 					<param>
 						<name>Outlet</name>
 					<type>CUSTOM_SELECT:GetPropertiesForAction</type>
-						<search/>
 					</param>
 				</params>
 			</action>

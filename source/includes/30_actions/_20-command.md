@@ -1,15 +1,14 @@
-## action
+## command
 
-`<action></action>`
+`<command></command>`
 
 
 ### Parent
 
-[`<actions>`]()
+[`<action>`]()
 
 
-The property element contains the driver’s XML that defines an individual Property displayed in Composer Pro.
-
+The command element contains the ……………………
 
 ### Example
 
