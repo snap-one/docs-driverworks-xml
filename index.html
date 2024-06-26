@@ -590,6 +590,42 @@
                   <li>
                     <a href="#actions-xml-action" class="toc-h2 toc-link" data-title="action">action</a>
                   </li>
+                  <li>
+                    <a href="#actions-xml-name" class="toc-h2 toc-link" data-title="name">name</a>
+                  </li>
+                  <li>
+                    <a href="#actions-xml-command" class="toc-h2 toc-link" data-title="command">command</a>
+                  </li>
+                  <li>
+                    <a href="#actions-xml-params" class="toc-h2 toc-link" data-title="params">params</a>
+                  </li>
+                  <li>
+                    <a href="#actions-xml-param" class="toc-h2 toc-link" data-title="param">param</a>
+                  </li>
+                  <li>
+                    <a href="#actions-xml-name" class="toc-h2 toc-link" data-title="name">name</a>
+                  </li>
+                  <li>
+                    <a href="#actions-xml-name" class="toc-h2 toc-link" data-title="name">name</a>
+                  </li>
+                  <li>
+                    <a href="#actions-xml-sort_order_" class="toc-h2 toc-link" data-title="sort_order_ ">sort_order_ </a>
+                  </li>
+                  <li>
+                    <a href="#actions-xml-name" class="toc-h2 toc-link" data-title="name">name</a>
+                  </li>
+                  <li>
+                    <a href="#actions-xml-password" class="toc-h2 toc-link" data-title="password">password</a>
+                  </li>
+                  <li>
+                    <a href="#actions-xml-minimum" class="toc-h2 toc-link" data-title="minimum">minimum</a>
+                  </li>
+                  <li>
+                    <a href="#actions-xml-maximum" class="toc-h2 toc-link" data-title="maximum">maximum</a>
+                  </li>
+                  <li>
+                    <a href="#actions-xml-variable_type" class="toc-h2 toc-link" data-title="variable_type">variable_type</a>
+                  </li>
               </ul>
           </li>
       </ul>
@@ -3281,7 +3317,6 @@ Salt Lake City, UT 84020 USA</p>
                     <span class="nt">&lt;param&gt;</span>
                         <span class="nt">&lt;name&gt;</span>Outlet<span class="nt">&lt;/name&gt;</span>
                     <span class="nt">&lt;type&gt;</span>CUSTOM_SELECT:GetPropertiesForAction<span class="nt">&lt;/type&gt;</span>
-                        <span class="nt">&lt;search/&gt;</span>
                     <span class="nt">&lt;/param&gt;</span>
                 <span class="nt">&lt;/params&gt;</span>
             <span class="nt">&lt;/action&gt;</span>
@@ -3291,18 +3326,291 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;action&gt;&lt;/action&gt;</code></p>
 <h3 id='actions-xml-action-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-properties"><code>&lt;actions&gt;</code></a></p>
+<p><a href="#"><code>&lt;actions&gt;</code></a></p>
 
 <p>The property element contains the driver’s XML that defines an individual Property displayed in Composer Pro.</p>
 
-<p><h3 id='actions-xml-action-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;properties&gt;</span>
-        <span class="nt">&lt;property&gt;</span>
-            <span class="nt">&lt;name&gt;</span>Driver Version<span class="nt">&lt;/name&gt;</span>
-            <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
-            <span class="nt">&lt;readonly&gt;</span>true<span class="nt">&lt;/readonly&gt;</span>
-            <span class="nt">&lt;default&gt;</span>--<span class="nt">&lt;/default&gt;</span>
-        <span class="nt">&lt;/property&gt;</span>
-<span class="nt">&lt;/properties&gt;</span>
+<h3 id='actions-xml-action-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
+            <span class="nt">&lt;action&gt;</span>
+                <span class="nt">&lt;name&gt;</span>Add and Connect Relays<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;command&gt;</span>AddRelays<span class="nt">&lt;/command&gt;</span>
+                <span class="nt">&lt;params&gt;</span>
+                    <span class="nt">&lt;param&gt;</span>
+                        <span class="nt">&lt;name&gt;</span>Outlet<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>CUSTOM_SELECT:GetPropertiesForAction<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;/param&gt;</span>
+                <span class="nt">&lt;/params&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+<span class="nt">&lt;/actions&gt;</span>
+</code></pre></div>
+<h2 id='actions-xml-name'>name</h2>
+<p><code>&lt;name&gt;&lt;/name&gt;</code></p>
+<h3 id='actions-xml-name-parent'>Parent</h3>
+
+<p><a href="#"><code>&lt;action&gt;</code></a></p>
+
+<p>The name element contains the name of the Action. This name is used to identify the action and is displayed  in Composer Pro.</p>
+
+<h3 id='actions-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
+            <span class="nt">&lt;action&gt;</span>
+                <span class="nt">&lt;name&gt;</span>Add and Connect Relays<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;command&gt;</span>AddRelays<span class="nt">&lt;/command&gt;</span>
+                <span class="nt">&lt;params&gt;</span>
+                    <span class="nt">&lt;param&gt;</span>
+                        <span class="nt">&lt;name&gt;</span>Outlet<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>CUSTOM_SELECT:GetPropertiesForAction<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;/param&gt;</span>
+                <span class="nt">&lt;/params&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+<span class="nt">&lt;/actions&gt;</span>
+</code></pre></div>
+<h2 id='actions-xml-command'>command</h2>
+<p><code>&lt;command&gt;&lt;/command&gt;</code></p>
+<h3 id='actions-xml-command-parent'>Parent</h3>
+
+<p><a href="#"><code>&lt;action&gt;</code></a></p>
+
+<p>The command element contains the ……………………</p>
+
+<h3 id='actions-xml-command-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
+            <span class="nt">&lt;action&gt;</span>
+                <span class="nt">&lt;name&gt;</span>Add and Connect Relays<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;command&gt;</span>AddRelays<span class="nt">&lt;/command&gt;</span>
+                <span class="nt">&lt;params&gt;</span>
+                    <span class="nt">&lt;param&gt;</span>
+                        <span class="nt">&lt;name&gt;</span>Outlet<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>CUSTOM_SELECT:GetPropertiesForAction<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;/param&gt;</span>
+                <span class="nt">&lt;/params&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+<span class="nt">&lt;/actions&gt;</span>
+</code></pre></div>
+<h2 id='actions-xml-params'>params</h2>
+<p><code>&lt;params&gt;&lt;/params&gt;</code></p>
+<h3 id='actions-xml-params-parent'>Parent</h3>
+
+<p><a href="#"><code>&lt;action&gt;</code></a></p>
+
+<p>The params element contains the ……………………</p>
+
+<h3 id='actions-xml-params-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
+            <span class="nt">&lt;action&gt;</span>
+                <span class="nt">&lt;name&gt;</span>Add and Connect Relays<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;command&gt;</span>AddRelays<span class="nt">&lt;/command&gt;</span>
+                <span class="nt">&lt;params&gt;</span>
+                    <span class="nt">&lt;param&gt;</span>
+                        <span class="nt">&lt;name&gt;</span>Outlet<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>CUSTOM_SELECT:GetPropertiesForAction<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;/param&gt;</span>
+                <span class="nt">&lt;/params&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+<span class="nt">&lt;/actions&gt;</span>
+</code></pre></div>
+<h2 id='actions-xml-param'>param</h2>
+<p><code>&lt;param&gt;&lt;/param&gt;</code></p>
+<h3 id='actions-xml-param-parent'>Parent</h3>
+
+<p><a href="#"><code>&lt;params&gt;</code></a></p>
+
+<p>The param element contains the ……………………</p>
+
+<h3 id='actions-xml-param-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
+            <span class="nt">&lt;action&gt;</span>
+                <span class="nt">&lt;name&gt;</span>Add and Connect Relays<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;command&gt;</span>AddRelays<span class="nt">&lt;/command&gt;</span>
+                <span class="nt">&lt;params&gt;</span>
+                    <span class="nt">&lt;param&gt;</span>
+                        <span class="nt">&lt;name&gt;</span>Outlet<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>CUSTOM_SELECT:GetPropertiesForAction<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;/param&gt;</span>
+                <span class="nt">&lt;/params&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+<span class="nt">&lt;/actions&gt;</span>
+</code></pre></div>
+<h2 id='actions-xml-name'>name</h2>
+<p><code>&lt;name&gt;&lt;/name&gt;</code></p>
+<h3 id='actions-xml-name-parent'>Parent</h3>
+
+<p><a href="#"><code>&lt;param&gt;</code></a></p>
+
+<p>The parameter name element contains the ……………………</p>
+
+<h3 id='actions-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
+            <span class="nt">&lt;action&gt;</span>
+                <span class="nt">&lt;name&gt;</span>Add and Connect Relays<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;command&gt;</span>AddRelays<span class="nt">&lt;/command&gt;</span>
+                <span class="nt">&lt;params&gt;</span>
+                    <span class="nt">&lt;param&gt;</span>
+                        <span class="nt">&lt;name&gt;</span>Outlet<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>CUSTOM_SELECT:GetPropertiesForAction<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;/param&gt;</span>
+                <span class="nt">&lt;/params&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+<span class="nt">&lt;/actions&gt;</span>
+</code></pre></div>
+<h2 id='actions-xml-name'>name</h2>
+<p><code>&lt;type&gt;&lt;/type&gt;</code></p>
+<h3 id='actions-xml-name-parent'>Parent</h3>
+
+<p><a href="#"><code>&lt;param&gt;</code></a></p>
+
+<p>The parameter type element contains the ……………………</p>
+
+<h3 id='actions-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
+            <span class="nt">&lt;action&gt;</span>
+                <span class="nt">&lt;name&gt;</span>Add and Connect Relays<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;command&gt;</span>AddRelays<span class="nt">&lt;/command&gt;</span>
+                <span class="nt">&lt;params&gt;</span>
+                    <span class="nt">&lt;param&gt;</span>
+                        <span class="nt">&lt;name&gt;</span>Outlet<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>CUSTOM_SELECT:GetPropertiesForAction<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;/param&gt;</span>
+                <span class="nt">&lt;/params&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+<span class="nt">&lt;/actions&gt;</span>
+</code></pre></div>
+<h2 id='actions-xml-sort_order_'>sort_order_ </h2>
+<p><code>&lt;sort_order&gt;&lt;/sort_order&gt;</code></p>
+<h3 id='actions-xml-sort_order_-parent'>Parent</h3>
+
+<p><a href="#"><code>&lt;action&gt;</code></a></p>
+
+<p>The sort order element contains the ……………………</p>
+
+<h3 id='actions-xml-sort_order_-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;action&gt;</span>~
+        <span class="nt">&lt;action&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Display Globals<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;command&gt;</span>DisplayGlobals<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;sort_order&gt;</span>1<span class="nt">&lt;/sort_order&gt;</span>
+        <span class="nt">&lt;/action&gt;</span>
+        <span class="nt">&lt;action&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Create Programming Project<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;command&gt;</span>CreateProgrammingProject<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;sort_order&gt;</span>2<span class="nt">&lt;/sort_order&gt;</span>
+            <span class="nt">&lt;params&gt;</span>
+                <span class="nt">&lt;param&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>Main Flood ID<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>RANGED_INTEGER<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;default&gt;</span>4<span class="nt">&lt;/default&gt;</span>
+                <span class="nt">&lt;/param&gt;</span>
+            <span class="nt">&lt;/params&gt;</span>
+        <span class="nt">&lt;/action&gt;</span>
+<span class="nt">&lt;/action&gt;</span>
+</code></pre></div>
+<h2 id='actions-xml-name'>name</h2>
+<p><code>&lt;default&gt;&lt;/default&gt;</code></p>
+<h3 id='actions-xml-name-parent'>Parent</h3>
+
+<p><a href="#"><code>&lt;param&gt;</code></a></p>
+
+<p>The parameter default element contains the ……………………</p>
+
+<h3 id='actions-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;action&gt;</span>~
+        <span class="nt">&lt;action&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Display Globals<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;command&gt;</span>DisplayGlobals<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;sort_order&gt;</span>1<span class="nt">&lt;/sort_order&gt;</span>
+        <span class="nt">&lt;/action&gt;</span>
+        <span class="nt">&lt;action&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Create Programming Project<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;command&gt;</span>CreateProgrammingProject<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;sort_order&gt;</span>2<span class="nt">&lt;/sort_order&gt;</span>
+            <span class="nt">&lt;params&gt;</span>
+                <span class="nt">&lt;param&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>Main Flood ID<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>RANGED_INTEGER<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;default&gt;</span>4<span class="nt">&lt;/default&gt;</span>
+                <span class="nt">&lt;/param&gt;</span>
+            <span class="nt">&lt;/params&gt;</span>
+        <span class="nt">&lt;/action&gt;</span>
+<span class="nt">&lt;/action&gt;</span>
+</code></pre></div>
+<h2 id='actions-xml-password'>password</h2>
+<p><code>&lt;default&gt;&lt;/default&gt;</code></p>
+<h3 id='actions-xml-password-parent'>Parent</h3>
+
+<p><a href="#"><code>&lt;param&gt;</code></a></p>
+
+<p>The parameter default element contains the ……………………</p>
+
+<h3 id='actions-xml-password-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;action&gt;</span>~
+            <span class="nt">&lt;name&gt;</span>Allow Execute<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;command&gt;</span>AllowExecute<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;params&gt;</span>
+                <span class="nt">&lt;param&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>Password<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>STRING<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;password&gt;</span>true<span class="nt">&lt;/password&gt;</span>
+                <span class="nt">&lt;/param&gt;</span>
+            <span class="nt">&lt;/params&gt;</span>
+<span class="nt">&lt;/action&gt;</span>
+</code></pre></div>
+<h2 id='actions-xml-minimum'>minimum</h2>
+<p><code>&lt;minimum&gt;&lt;/minimum&gt;</code></p>
+<h3 id='actions-xml-minimum-parent'>Parent</h3>
+
+<p><a href="#"><code>&lt;param&gt;</code></a></p>
+
+<p>The minimum element provides the ability to define a value that represents the lowest number accepted by the Action. In the example, the minimum value of 79 will be accepted for this ranged integer type action named Ranged Integer.</p>
+
+<h3 id='actions-xml-minimum-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;action&gt;</span>~
+            <span class="nt">&lt;name&gt;</span>Test Action with Paramters<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;command&gt;</span>TestActionWithParamters<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;params&gt;</span>
+                <span class="nt">&lt;param&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>RANGED_INTEGER<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>RANGED_INTEGER<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;minimum&gt;</span>79<span class="nt">&lt;/minimum&gt;</span>
+                    <span class="nt">&lt;maximum&gt;</span>120<span class="nt">&lt;/maximum&gt;</span>
+                <span class="nt">&lt;/param&gt;</span>
+            <span class="nt">&lt;/params&gt;</span>
+        <span class="nt">&lt;/action&gt;</span>
+</code></pre></div>
+<h2 id='actions-xml-maximum'>maximum</h2>
+<p><code>&lt;maximum&gt;&lt;/maximum&gt;</code></p>
+<h3 id='actions-xml-maximum-parent'>Parent</h3>
+
+<p><a href="#"><code>&lt;param&gt;</code></a></p>
+
+<p>The maximum element provides the ability to define a value that represents the highest number accepted by the Action. In the example, the minimum value of 120 will be accepted for this ranged integer type action named Ranged Integer.</p>
+
+<h3 id='actions-xml-maximum-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;action&gt;</span>~
+            <span class="nt">&lt;name&gt;</span>Test Action with Paramters<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;command&gt;</span>TestActionWithParamters<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;params&gt;</span>
+                <span class="nt">&lt;param&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>RANGED_INTEGER<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>RANGED_INTEGER<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;minimum&gt;</span>79<span class="nt">&lt;/minimum&gt;</span>
+                    <span class="nt">&lt;maximum&gt;</span>120<span class="nt">&lt;/maximum&gt;</span>
+                <span class="nt">&lt;/param&gt;</span>
+            <span class="nt">&lt;/params&gt;</span>
+        <span class="nt">&lt;/action&gt;</span>
+</code></pre></div>
+<h2 id='actions-xml-variable_type'>variable_type</h2>
+<p><code>&lt;varaible_type&gt;&lt;/varaible_type&gt;</code></p>
+<h3 id='actions-xml-variable_type-parent'>Parent</h3>
+
+<p><a href="#"><code>&lt;param&gt;</code></a></p>
+
+<p>The variable type element provides the ability to define a value that represents the highest number accepted by the Action. In the example, the minimum value of 120 will be accepted for this ranged integer type action named Ranged Integer.</p>
+
+<p><h3 id='actions-xml-variable_type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;action&gt;</span>~
+            <span class="nt">&lt;name&gt;</span>Test Action with Variable Paramters That is really long<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;command&gt;</span>TestActionWithVarParamters<span class="nt">&lt;/command&gt;</span>
+            <span class="nt">&lt;params&gt;</span>
+                <span class="nt">&lt;param&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>Test boolean Variable Selector<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>VARIABLE_SELECTOR<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;variabletype&gt;</span>boolean<span class="nt">&lt;/variabletype&gt;</span>
+                <span class="nt">&lt;/param&gt;</span>
+                <span class="nt">&lt;param&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>Test string Variable Selector<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>VARIABLE_SELECTOR<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;variabletype&gt;</span>string<span class="nt">&lt;/variabletype&gt;</span>
+                <span class="nt">&lt;/param&gt;</span>
+             <span class="nt">&lt;/params&gt;</span>
+<span class="nt">&lt;/action&gt;</span>
 </code></pre></div></p>
 
       </div>
