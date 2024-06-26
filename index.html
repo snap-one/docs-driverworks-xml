@@ -606,10 +606,10 @@
                     <a href="#actions-xml-name" class="toc-h2 toc-link" data-title="name">name</a>
                   </li>
                   <li>
-                    <a href="#actions-xml-name" class="toc-h2 toc-link" data-title="name">name</a>
+                    <a href="#actions-xml-type" class="toc-h2 toc-link" data-title="type">type</a>
                   </li>
                   <li>
-                    <a href="#actions-xml-sort_order_" class="toc-h2 toc-link" data-title="sort_order_ ">sort_order_ </a>
+                    <a href="#actions-xml-sort_order" class="toc-h2 toc-link" data-title="sort_order">sort_order</a>
                   </li>
                   <li>
                     <a href="#actions-xml-name" class="toc-h2 toc-link" data-title="name">name</a>
@@ -3305,7 +3305,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='actions-xml-actions-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata"><code>&lt;config&gt;</code></a></p>
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#common-xml-config"><code>&lt;config&gt;</code></a></p>
 
 <p>The actions element contains the driver’s XML that defines the Actions displayed under the Properties tab of Composer Pro. It is the root element for all Actions. In the example, and action named “Add and Connect Relays” is defined under the &lt;actions&gt;&lt;/actions&gt; XML.</p>
 
@@ -3326,7 +3326,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;action&gt;&lt;/action&gt;</code></p>
 <h3 id='actions-xml-action-parent'>Parent</h3>
 
-<p><a href="#"><code>&lt;actions&gt;</code></a></p>
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-actions"><code>&lt;actions&gt;</code></a></p>
 
 <p>The property element contains the driver’s XML that defines an individual Property displayed in Composer Pro.</p>
 
@@ -3347,7 +3347,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;name&gt;&lt;/name&gt;</code></p>
 <h3 id='actions-xml-name-parent'>Parent</h3>
 
-<p><a href="#"><code>&lt;action&gt;</code></a></p>
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action"><code>&lt;action&gt;</code></a></p>
 
 <p>The name element contains the name of the Action. This name is used to identify the action and is displayed  in Composer Pro.</p>
 
@@ -3368,7 +3368,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;command&gt;&lt;/command&gt;</code></p>
 <h3 id='actions-xml-command-parent'>Parent</h3>
 
-<p><a href="#"><code>&lt;action&gt;</code></a></p>
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action"><code>&lt;action&gt;</code></a></p>
 
 <p>The command element contains the ……………………</p>
 
@@ -3389,7 +3389,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;params&gt;&lt;/params&gt;</code></p>
 <h3 id='actions-xml-params-parent'>Parent</h3>
 
-<p><a href="#"><code>&lt;action&gt;</code></a></p>
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action"><code>&lt;action&gt;</code></a></p>
 
 <p>The params element contains the ……………………</p>
 
@@ -3410,7 +3410,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;param&gt;&lt;/param&gt;</code></p>
 <h3 id='actions-xml-param-parent'>Parent</h3>
 
-<p><a href="#"><code>&lt;params&gt;</code></a></p>
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-params"><code>&lt;params&gt;</code></a></p>
 
 <p>The param element contains the ……………………</p>
 
@@ -3431,7 +3431,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;name&gt;&lt;/name&gt;</code></p>
 <h3 id='actions-xml-name-parent'>Parent</h3>
 
-<p><a href="#"><code>&lt;param&gt;</code></a></p>
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-param"><code>&lt;param&gt;</code></a></p>
 
 <p>The parameter name element contains the ……………………</p>
 
@@ -3448,15 +3448,15 @@ Salt Lake City, UT 84020 USA</p>
             <span class="nt">&lt;/action&gt;</span>
 <span class="nt">&lt;/actions&gt;</span>
 </code></pre></div>
-<h2 id='actions-xml-name'>name</h2>
+<h2 id='actions-xml-type'>type</h2>
 <p><code>&lt;type&gt;&lt;/type&gt;</code></p>
-<h3 id='actions-xml-name-parent'>Parent</h3>
+<h3 id='actions-xml-type-parent'>Parent</h3>
 
 <p><a href="#"><code>&lt;param&gt;</code></a></p>
 
 <p>The parameter type element contains the ……………………</p>
 
-<h3 id='actions-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
+<h3 id='actions-xml-type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
             <span class="nt">&lt;action&gt;</span>
                 <span class="nt">&lt;name&gt;</span>Add and Connect Relays<span class="nt">&lt;/name&gt;</span>
                 <span class="nt">&lt;command&gt;</span>AddRelays<span class="nt">&lt;/command&gt;</span>
@@ -3469,15 +3469,15 @@ Salt Lake City, UT 84020 USA</p>
             <span class="nt">&lt;/action&gt;</span>
 <span class="nt">&lt;/actions&gt;</span>
 </code></pre></div>
-<h2 id='actions-xml-sort_order_'>sort_order_ </h2>
+<h2 id='actions-xml-sort_order'>sort_order</h2>
 <p><code>&lt;sort_order&gt;&lt;/sort_order&gt;</code></p>
-<h3 id='actions-xml-sort_order_-parent'>Parent</h3>
+<h3 id='actions-xml-sort_order-parent'>Parent</h3>
 
 <p><a href="#"><code>&lt;action&gt;</code></a></p>
 
 <p>The sort order element contains the ……………………</p>
 
-<h3 id='actions-xml-sort_order_-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;action&gt;</span>~
+<h3 id='actions-xml-sort_order-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;action&gt;</span>~
         <span class="nt">&lt;action&gt;</span>
             <span class="nt">&lt;name&gt;</span>Display Globals<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;command&gt;</span>DisplayGlobals<span class="nt">&lt;/command&gt;</span>
