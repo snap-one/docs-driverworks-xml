@@ -625,6 +625,20 @@
                   </li>
               </ul>
           </li>
+          <li>
+            <a href="#commands-xml" class="toc-h1 toc-link" data-title="Commands XML">Commands XML</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#commands-xml-commands" class="toc-h2 toc-link" data-title="commands">commands</a>
+                  </li>
+                  <li>
+                    <a href="#commands-xml-command" class="toc-h2 toc-link" data-title="command">command</a>
+                  </li>
+                  <li>
+                    <a href="#commands-xml-name" class="toc-h2 toc-link" data-title="name">name</a>
+                  </li>
+              </ul>
+          </li>
       </ul>
         <ul class="toc-footer">
             <li><a href='https://snap-one.github.io/docs-driverworks-introduction/'>An Introduction to DriverWorks</a></li>
@@ -2714,7 +2728,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>This area contains definitions for the XML elements that are supported in the Properties section of a device driver’s driver.xml file. Properties are exposed in the Composer Pro System Design interface on the Properties tab. They provide an excellent way for an integrator to configure your driver.</p>
 
-<p>Additional information regarding the role Properties including the various types of properties supported and the role they play in driver performance can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-properties">DriverWorks Fundamentals: Properties</a></p>
+<p>Additional information regarding Properties, including the various types of properties supported, and the role they play in driver performance can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-properties">DriverWorks Fundamentals: Properties</a></p>
 
 <h2 id='properties-xml-properties'>properties</h2>
 
@@ -3606,6 +3620,147 @@ Salt Lake City, UT 84020 USA</p>
              <span class="nt">&lt;/params&gt;</span>
 <span class="nt">&lt;/action&gt;</span>
 </code></pre></div></p>
+<h1 id='commands-xml'>Commands XML</h1>
+
+<p><code>&lt;commands&gt;&lt;/commands&gt;</code></p>
+
+<p>This area contains definitions for the XML elements that are supported in the Commands section of a device driver’s driver.xml file. Commands  come from the Device Proxy. For example, a AV Switch might have the following section in the XML of the .c4z file:</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;commands&gt;</span>~
+ ~<span class="nt">&lt;command&gt;</span>~
+   ~<span class="nt">&lt;name&gt;</span>~MAIN_ZONE_ON~<span class="nt">&lt;/name&gt;</span>~
+   ~<span class="nt">&lt;description&gt;</span>~MAIN_ZONE\_ON~<span class="nt">&lt;/description&gt;</span>~
+ ~<span class="nt">&lt;/command&gt;</span>~
+ ~<span class="nt">&lt;command&gt;</span>~
+   ~<span class="nt">&lt;name&gt;</span>~MAIN_ZONE_OFF~<span class="nt">&lt;/name&gt;</span>~
+   ~<span class="nt">&lt;description&gt;</span>~MAIN\_ZONE\_OFF~<span class="nt">&lt;/description&gt;</span>~
+ ~<span class="nt">&lt;/command&gt;</span>~
+ ~<span class="nt">&lt;command&gt;</span>~
+   ~<span class="nt">&lt;name&gt;</span>~ZONE2_ON~<span class="nt">&lt;/name&gt;</span>~
+   ~<span class="nt">&lt;description&gt;</span>~ZONE2\_ON~<span class="nt">&lt;/description&gt;</span>~
+ ~<span class="nt">&lt;/command&gt;</span>~
+ ~<span class="nt">&lt;command&gt;</span>~
+   ~<span class="nt">&lt;name&gt;</span>~ZONE2_OFF~<span class="nt">&lt;/name&gt;</span>~
+   ~<span class="nt">&lt;description&gt;</span>~ZONE2\_OFF~<span class="nt">&lt;/description&gt;</span>~
+ ~<span class="nt">&lt;/command&gt;</span>~
+ ~<span class="nt">&lt;command&gt;</span>~
+   ~<span class="nt">&lt;name&gt;</span>~ZONE3_ON~<span class="nt">&lt;/name&gt;</span>~
+   ~<span class="nt">&lt;description&gt;</span>~ZONE3\_ON~<span class="nt">&lt;/description&gt;</span>~
+ ~<span class="nt">&lt;/command&gt;</span>~
+ ~<span class="nt">&lt;command&gt;</span>~
+   ~<span class="nt">&lt;name&gt;</span>~ZONE3_OFF~<span class="nt">&lt;/name&gt;</span>~
+   ~<span class="nt">&lt;description&gt;</span>~ZONE3\_OFF~<span class="nt">&lt;/description&gt;</span>~
+ ~<span class="nt">&lt;/command&gt;</span>~
+ ~<span class="nt">&lt;command&gt;</span>~
+   ~<span class="nt">&lt;name&gt;</span>~ZONE4_ON~<span class="nt">&lt;/name&gt;</span>~
+   ~<span class="nt">&lt;description&gt;</span>~ZONE4\_ON~<span class="nt">&lt;/description&gt;</span>~
+ ~<span class="nt">&lt;/command&gt;</span>~
+ ~<span class="nt">&lt;command&gt;</span>~
+   ~<span class="nt">&lt;name&gt;</span>~ZONE4_OFF~<span class="nt">&lt;/name&gt;</span>~
+   ~<span class="nt">&lt;description&gt;</span>~ZONE4\_OFF~<span class="nt">&lt;/description&gt;</span>~
+ ~<span class="nt">&lt;/command&gt;</span>~
+~<span class="nt">&lt;/command&gt;</span>~
+</code></pre></div>
+
+<p>Additional information regarding Commands and how they can be configured in a driver can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#commands">DriverWorks Fundamentals: Commands</a></p>
+
+<h2 id='commands-xml-commands'>commands</h2>
+
+<p><code>&lt;commands&gt;&lt;/commands&gt;</code></p>
+
+<h3 id='commands-xml-commands-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#common-xml-config"><code>&lt;config&gt;</code></a></p>
+
+<p>The commands element contains the driver’s XML that defines the Commands displayed in the programming area of Composer Pro. It is the root element for all Commands. In the example, two commands are defined within the <code>&lt;commands&gt;&lt;/commands&gt;</code> XML: a command named “MAIN ZONE ON” and a command named MAIN ZONE OFF. </p>
+
+<h3 id='commands-xml-commands-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;commands&gt;</span>
+    ~<span class="nt">&lt;command&gt;</span>~
+        ~<span class="nt">&lt;name&gt;</span>~MAIN_ZONE_ON~<span class="nt">&lt;/name&gt;</span>~
+        ~<span class="nt">&lt;description&gt;</span>~MAIN_ZONE\_ON~<span class="nt">&lt;/description&gt;</span>~
+    ~<span class="nt">&lt;/command&gt;</span>~
+    ~<span class="nt">&lt;command&gt;</span>~
+        ~<span class="nt">&lt;name&gt;</span>~MAIN_ZONE_OFF~<span class="nt">&lt;/name&gt;</span>~
+        ~<span class="nt">&lt;description&gt;</span>~MAIN_ZONE_OFF~<span class="nt">&lt;/description&gt;</span>~
+    ~<span class="nt">&lt;/command&gt;</span>~
+<span class="nt">&lt;/commands&gt;</span>
+</code></pre></div>
+<h2 id='commands-xml-command'>command</h2>
+<p><code>&lt;command&gt;&lt;/command&gt;</code></p>
+<h3 id='commands-xml-command-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-actions"><code>&lt;commands&gt;</code></a></p>
+
+<p>The command element contains the driver’s XML that defines an individual Command which is made available in Composer Pro for programming purposes. In the example, a commands is defined within the <code>&lt;command&gt;&lt;/command&gt;</code> XML named “MAIN ZONE ON”.</p>
+
+<h3 id='commands-xml-command-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;commands&gt;</span>
+    ~<span class="nt">&lt;command&gt;</span>~
+        ~<span class="nt">&lt;name&gt;</span>~MAIN_ZONE_ON~<span class="nt">&lt;/name&gt;</span>~
+        ~<span class="nt">&lt;description&gt;</span>~MAIN_ZONE_ON~<span class="nt">&lt;/description&gt;</span>~
+    ~<span class="nt">&lt;/command&gt;</span>~
+<span class="nt">&lt;/commands&gt;</span>
+</code></pre></div>
+<h2 id='commands-xml-name'>name</h2>
+<p><code>&lt;name&gt;&lt;/name&gt;</code></p>
+<h3 id='commands-xml-name-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action"><code>&lt;command&gt;</code></a></p>
+
+<p>The name element contains the name of the Parameter Type for the Command. The following Command Parameter Types are supported:</p>
+
+<table><thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>Device Selector</strong></td>
+<td>The Device Selector command parameter type supports the Device Selector property. Device Selector allows you (as the driver developer) to display a list of devices that may be associated with the driver.</td>
+</tr>
+<tr>
+<td><strong>Custom Select</strong></td>
+<td>The ability of a Proxy driver to deliver a browse-able list of related elements can be supported through the use of the CUSTOM/_SELECT property.</td>
+</tr>
+<tr>
+<td><strong>Dynamic List</strong></td>
+<td>The Dynamic List command parameter type supports the ability to use the Dynamic List Property. This property provides ability to include driver-based, dynamically updated lists in ComposerPro’s Advanced Properties screen.</td>
+</tr>
+<tr>
+<td><strong>LIST</strong></td>
+<td>The List command parameter type supports the ability to provide a non-dynamic list of selectable objects within the Properties tab in ComposerPro.</td>
+</tr>
+<tr>
+<td><strong>Ranged Float</strong></td>
+<td>The Ranged Float command parameter type supports the ability to provide a range of selectable floating-point or non-integer numbers within the Properties tab in ComposerPro.</td>
+</tr>
+<tr>
+<td><strong>Ranged Integer</strong></td>
+<td>The Ranged Integer command parameter type supports the ability to provide a range of selectable integers within the Properties tab in ComposerPro.</td>
+</tr>
+<tr>
+<td><strong>String</strong></td>
+<td>The STRING command parameter type supports the ability to provide a read only string within the Properties tab in ComposerPro.</td>
+</tr>
+</tbody></table>
+
+<h3 id='commands-xml-name-example'>Example</h3>
+
+<p>In the example, </p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
+            <span class="nt">&lt;action&gt;</span>
+                <span class="nt">&lt;name&gt;</span>Add and Connect Relays<span class="nt">&lt;/name&gt;</span>
+                <span class="nt">&lt;command&gt;</span>AddRelays<span class="nt">&lt;/command&gt;</span>
+                <span class="nt">&lt;params&gt;</span>
+                    <span class="nt">&lt;param&gt;</span>
+                        <span class="nt">&lt;name&gt;</span>Outlet<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>CUSTOM_SELECT:GetPropertiesForAction<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;/param&gt;</span>
+                <span class="nt">&lt;/params&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+<span class="nt">&lt;/actions&gt;</span>
+</code></pre></div>
 
       </div>
       <div class="dark-box">
