@@ -8,12 +8,14 @@
 [`<command>`][1]
 
 
-The name element contains the name of the Parameter Type for the Command. The following Command Parameter Types are supported:
+The name element serves two purposes with regard to Command XML. First, it is used to name a command defined within the XML. In the first example, a command has been defined called New Command.
+
+Secondly, when a command is defined in conjunction with using on of the defined Command Parameter Types, the name element contains the name of the Parameter Type for the Command. This can bee seen in the second example where The following Command Parameter Types are supported:
 
 |                     |                                                                                                                                                                                                                               |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Device Selector** | The Device Selector command parameter type supports the Device Selector property. Device Selector allows you (as the driver developer) to display a list of devices that may be associated with the driver.                   |
-| **Custom Select**   | The ability of a Proxy driver to deliver a browse-able list of related elements can be supported through the use of the CUSTOM/_SELECT property.                                                                              |
+| **Custom Select**   | The ability of a Proxy driver to deliver a browse-able list of related elements can be supported through the use of the CUSTOM/\_SELECT property.                                                                             |
 | **Dynamic List**    | The Dynamic List command parameter type supports the ability to use the Dynamic List Property. This property provides ability to include driver-based, dynamically updated lists in ComposerPro’s Advanced Properties screen. |
 | **LIST**            | The List command parameter type supports the ability to provide a non-dynamic list of selectable objects within the Properties tab in ComposerPro.                                                                            |
 | **Ranged Float**    | The Ranged Float command parameter type supports the ability to provide a range of selectable floating-point or non-integer numbers within the Properties tab in ComposerPro.                                                 |
@@ -24,7 +26,7 @@ The name element contains the name of the Parameter Type for the Command. The fo
 
 ### Example
 
-In the example, 
+
 
 ```xml
 <actions>
