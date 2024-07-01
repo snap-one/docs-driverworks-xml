@@ -13,7 +13,7 @@ The variable type element provides the ability to define a value that represents
 ### Example
 
 ```xml
-~<action>~
+<action>
 			<name>Test Action with Variable Paramters That is really long</name>
 			<command>TestActionWithVarParamters</command>
 			<params>

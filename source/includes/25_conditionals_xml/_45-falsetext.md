@@ -14,7 +14,7 @@ The false text element provides the ability to define text that will be displaye
 
 
 ```xml
-~<conditional>~
+<conditional>
 			<id>3</id>
 			<name>BOOL_LIGHT_ON</name>
 			<type>BOOL</type>

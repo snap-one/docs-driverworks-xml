@@ -15,7 +15,7 @@ The conditional statement states a question being asked regarding a state of the
 
 
 ```xml
-\<conditionals\>
+<conditionals\>
 			<conditional>
 				<id>0</id>
 				<name>SIMPLE_LIGHT_ON</name>

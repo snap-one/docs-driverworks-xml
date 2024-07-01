@@ -13,7 +13,7 @@ The sort order element contains the ……………………
 ### Example
 
 ```xml
-~<action>~
+<action>
         <action>
 			<name>Display Globals</name>
 			<command>DisplayGlobals</command>

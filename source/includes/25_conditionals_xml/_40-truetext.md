@@ -14,7 +14,7 @@ The true text element provides the ability to define text that will be displayed
 
 
 ```xml
-~<conditional>~
+<conditional>
 			<id>3</id>
 			<name>BOOL_LIGHT_ON</name>
 			<type>BOOL</type>

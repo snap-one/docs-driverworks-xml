@@ -16,7 +16,7 @@ The description element is used to provide text that helps describe the purpose 
 
 
 ```xml
-~<command>~
+<command>
 			<name>Turn On</name>
 			<description>Turn on PARAM1 to PARAM2</description>
 			<params>

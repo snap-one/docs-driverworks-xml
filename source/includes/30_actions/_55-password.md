@@ -14,7 +14,7 @@ The parameter default element contains the ……………………
 ### Example
 
 ```xml
-~<action>~
+<action>
 			<name>Allow Execute</name>
 			<command>AllowExecute</command>
 			<params>

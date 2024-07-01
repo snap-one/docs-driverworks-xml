@@ -13,7 +13,7 @@ The maximum element provides the ability to define a value that represents the h
 ### Example
 
 ```xml
-~<action>~
+<action>
 			<name>Test Action with Paramters</name>
 			<command>TestActionWithParamters</command>
 			<params>

@@ -15,7 +15,7 @@ In the example, the command Toggle has a params element containing the XML defin
 ### Example
 
 ```xml
-~<command>~
+<command>
 			<name>Toggle</name>
 			<description>Toggle PARAM1</description>
 			<params>

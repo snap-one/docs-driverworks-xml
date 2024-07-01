@@ -8,7 +8,7 @@
 [`<conditionals>`][1]
 
 
-The conditional element contains the driver’s XML that defines an individual conditionals displayed in Composer Pro. In the example, the `<conditional></conditional>` contains the XML elements that make up a conditional named SIMPLE LIGHT ON.
+The conditional element contains the driver’s XML that defines an individual conditional displayed in Composer Pro. In the example, the `<conditional></conditional>` contains the XML elements that make up a conditional named SIMPLE LIGHT ON.
 
 
 ### Example

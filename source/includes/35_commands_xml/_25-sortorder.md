@@ -17,7 +17,7 @@ In the example, the sort order element is used to display the command Select Cha
 
 
 ```xml
-~<command>~
+<command>
 			<name>Select Channel 3</name>
 			<description>Select Channel PARAM1</description>
 			<sort_order>3</sort_order>
