@@ -649,6 +649,9 @@
                   <li>
                     <a href="#commands-xml-param" class="toc-h2 toc-link" data-title="param">param</a>
                   </li>
+                  <li>
+                    <a href="#commands-xml-type" class="toc-h2 toc-link" data-title="type">type</a>
+                  </li>
               </ul>
           </li>
       </ul>
@@ -3060,7 +3063,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditionals"><code>&lt;conditionals&gt;</code></a></p>
 
-<p>The conditional element contains the driver’s XML that defines an individual conditionals displayed in Composer Pro. In the example, the <code>&lt;conditional&gt;&lt;/conditional&gt;</code> contains the XML elements that make up a conditional named SIMPLE LIGHT ON.</p>
+<p>The conditional element contains the driver’s XML that defines an individual conditional displayed in Composer Pro. In the example, the <code>&lt;conditional&gt;&lt;/conditional&gt;</code> contains the XML elements that make up a conditional named SIMPLE LIGHT ON.</p>
 
 <h3 id='conditionals-xml-conditional-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditionals&gt;</span>
             <span class="nt">&lt;conditional&gt;</span>
@@ -3177,7 +3180,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The conditional statement states a question being asked regarding a state of the driver. This is the statement that is shown before the condition logic. For example, the Simple Light On conditional , asks the question ‘The Light is on’. It is basically a useful statement that supports the conditional. When an integrator is viewing this driver’s conditionals in ComposerPro, they can select “The Light is on” from the list of conditionals and can ultimately initiate programming when the light is in the On state.</p>
 
-<h3 id='conditionals-xml-condition-statement-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>\<span class="nt">&lt;conditionals</span><span class="err">\</span><span class="nt">&gt;</span>
+<h3 id='conditionals-xml-condition-statement-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditionals</span><span class="err">\</span><span class="nt">&gt;</span>
             <span class="nt">&lt;conditional&gt;</span>
                 <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
                 <span class="nt">&lt;name&gt;</span>SIMPLE_LIGHT_ON<span class="nt">&lt;/name&gt;</span>
@@ -3197,7 +3200,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>For example, consider that the name of our example driver is “Living Room Lamp” and it is in the Living Room. Based on this, “Living Room-&gt;Living Room Lamp” will replace NAME when your conditional programming description is displayed in the conditionals window and the script actions area of ComposerPro. Using the example above, ComposerPro will display the description XML element as: “If Living Room-&gt;Living Room Lamp is on”.</p>
 
-<h3 id='conditionals-xml-description-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>\<span class="nt">&lt;conditionals</span><span class="err">\</span><span class="nt">&gt;</span>
+<h3 id='conditionals-xml-description-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditionals</span><span class="err">\</span><span class="nt">&gt;</span>
             <span class="nt">&lt;conditional&gt;</span>
                 <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
                 <span class="nt">&lt;name&gt;</span>SIMPLE_LIGHT_ON<span class="nt">&lt;/name&gt;</span>
@@ -3215,7 +3218,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The true text element provides the ability to define text that will be displayed in Composer Pro programming if a Boolean Conditional is True.</p>
 
-<h3 id='conditionals-xml-true-text-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;conditional&gt;</span>~
+<h3 id='conditionals-xml-true-text-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditional&gt;</span>
             <span class="nt">&lt;id&gt;</span>3<span class="nt">&lt;/id&gt;</span>
             <span class="nt">&lt;name&gt;</span>BOOL_LIGHT_ON<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;type&gt;</span>BOOL<span class="nt">&lt;/type&gt;</span>
@@ -3233,7 +3236,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The false text element provides the ability to define text that will be displayed in Composer Pro programming if a Boolean Conditional is false.</p>
 
-<h3 id='conditionals-xml-false-text-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;conditional&gt;</span>~
+<h3 id='conditionals-xml-false-text-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditional&gt;</span>
             <span class="nt">&lt;id&gt;</span>3<span class="nt">&lt;/id&gt;</span>
             <span class="nt">&lt;name&gt;</span>BOOL_LIGHT_ON<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;type&gt;</span>BOOL<span class="nt">&lt;/type&gt;</span>
@@ -3497,7 +3500,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The sort order element contains the ……………………</p>
 
-<h3 id='actions-xml-sort_order-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;action&gt;</span>~
+<h3 id='actions-xml-sort_order-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;action&gt;</span>
         <span class="nt">&lt;action&gt;</span>
             <span class="nt">&lt;name&gt;</span>Display Globals<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;command&gt;</span>DisplayGlobals<span class="nt">&lt;/command&gt;</span>
@@ -3525,7 +3528,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The parameter default element contains the ……………………</p>
 
-<h3 id='actions-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;action&gt;</span>~
+<h3 id='actions-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;action&gt;</span>
         <span class="nt">&lt;action&gt;</span>
             <span class="nt">&lt;name&gt;</span>Display Globals<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;command&gt;</span>DisplayGlobals<span class="nt">&lt;/command&gt;</span>
@@ -3553,7 +3556,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The parameter default element contains the ……………………</p>
 
-<h3 id='actions-xml-password-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;action&gt;</span>~
+<h3 id='actions-xml-password-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;action&gt;</span>
             <span class="nt">&lt;name&gt;</span>Allow Execute<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;command&gt;</span>AllowExecute<span class="nt">&lt;/command&gt;</span>
             <span class="nt">&lt;params&gt;</span>
@@ -3573,7 +3576,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The minimum element provides the ability to define a value that represents the lowest number accepted by the Action. In the example, the minimum value of 79 will be accepted for this ranged integer type action named Ranged Integer.</p>
 
-<h3 id='actions-xml-minimum-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;action&gt;</span>~
+<h3 id='actions-xml-minimum-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;action&gt;</span>
             <span class="nt">&lt;name&gt;</span>Test Action with Paramters<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;command&gt;</span>TestActionWithParamters<span class="nt">&lt;/command&gt;</span>
             <span class="nt">&lt;params&gt;</span>
@@ -3594,7 +3597,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The maximum element provides the ability to define a value that represents the highest number accepted by the Action. In the example, the minimum value of 120 will be accepted for this ranged integer type action named Ranged Integer.</p>
 
-<h3 id='actions-xml-maximum-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;action&gt;</span>~
+<h3 id='actions-xml-maximum-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;action&gt;</span>
             <span class="nt">&lt;name&gt;</span>Test Action with Paramters<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;command&gt;</span>TestActionWithParamters<span class="nt">&lt;/command&gt;</span>
             <span class="nt">&lt;params&gt;</span>
@@ -3615,7 +3618,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The variable type element provides the ability to define a value that represents the highest number accepted by the Action. In the example, the minimum value of 120 will be accepted for this ranged integer type action named Ranged Integer.</p>
 
-<p><h3 id='actions-xml-variable_type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;action&gt;</span>~
+<p><h3 id='actions-xml-variable_type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;action&gt;</span>
             <span class="nt">&lt;name&gt;</span>Test Action with Variable Paramters That is really long<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;command&gt;</span>TestActionWithVarParamters<span class="nt">&lt;/command&gt;</span>
             <span class="nt">&lt;params&gt;</span>
@@ -3638,7 +3641,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>This area contains definitions for the XML elements that are supported in the Commands section of a device driver’s driver.xml file. Commands  come from the Device Proxy. For example, a AV Switch might have the following section in the XML of the .c4z file:</p>
 
-<div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;commands&gt;</span>~
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;commands&gt;</span>
  ~<span class="nt">&lt;command&gt;</span>~
    ~<span class="nt">&lt;name&gt;</span>~MAIN_ZONE_ON~<span class="nt">&lt;/name&gt;</span>~
    ~<span class="nt">&lt;description&gt;</span>~MAIN_ZONE\_ON~<span class="nt">&lt;/description&gt;</span>~
@@ -3671,7 +3674,7 @@ Salt Lake City, UT 84020 USA</p>
    ~<span class="nt">&lt;name&gt;</span>~ZONE4_OFF~<span class="nt">&lt;/name&gt;</span>~
    ~<span class="nt">&lt;description&gt;</span>~ZONE4\_OFF~<span class="nt">&lt;/description&gt;</span>~
  ~<span class="nt">&lt;/command&gt;</span>~
-~<span class="nt">&lt;/command&gt;</span>~
+<span class="nt">&lt;/command&gt;</span>
 </code></pre></div>
 
 <p>Additional information regarding Commands and how they can be configured in a driver can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#commands">DriverWorks Fundamentals: Commands</a></p>
@@ -3779,7 +3782,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The description element is used to provide text that helps describe the purpose of the command that is defined in the XML. This text is displayed in Composer pro programming. In the example, the description element is used to inform the user that the Turn On command has the ability to turn on a zone which is chosen from a dynamic List to a certain level, which is also chosen from a dynamically created list.</p>
 
-<h3 id='commands-xml-description-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;command&gt;</span>~
+<h3 id='commands-xml-description-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;command&gt;</span>
             <span class="nt">&lt;name&gt;</span>Turn On<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;description&gt;</span>Turn on PARAM1 to PARAM2<span class="nt">&lt;/description&gt;</span>
             <span class="nt">&lt;params&gt;</span>
@@ -3804,7 +3807,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>In the example, the sort order element is used to display the command Select Channel 3 in the third spot in a list of channels. </p>
 
-<h3 id='commands-xml-sort_order-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;command&gt;</span>~
+<h3 id='commands-xml-sort_order-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;command&gt;</span>
             <span class="nt">&lt;name&gt;</span>Select Channel 3<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;description&gt;</span>Select Channel PARAM1<span class="nt">&lt;/description&gt;</span>
             <span class="nt">&lt;sort_order&gt;</span>3<span class="nt">&lt;/sort_order&gt;</span>
@@ -3826,7 +3829,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>In the example, the command Toggle has a params element containing the XML definition of one parameter. The parameter name is Zone and uses the Command Parameter Type of DYNAMIC LIST to dynamically create a list of Zones that the command can toggle through.</p>
 
-<h3 id='commands-xml-params-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;command&gt;</span>~
+<h3 id='commands-xml-params-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;command&gt;</span>
             <span class="nt">&lt;name&gt;</span>Toggle<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;description&gt;</span>Toggle PARAM1<span class="nt">&lt;/description&gt;</span>
             <span class="nt">&lt;params&gt;</span>
@@ -3847,7 +3850,66 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>In the example, the command Toggle has a params element containing the XML definition of one parameter defined within the &lt;param&gt;&lt;/param&gt; element. The parameter name is Zone and uses the Command Parameter Type of DYNAMIC LIST to dynamically create a list of Zones that the command can toggle through.</p>
 
-<p><h3 id='commands-xml-param-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;command&gt;</span>~
+<h3 id='commands-xml-param-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;command&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Toggle<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;description&gt;</span>Toggle PARAM1<span class="nt">&lt;/description&gt;</span>
+            <span class="nt">&lt;params&gt;</span>
+                <span class="nt">&lt;param&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>Zone<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>DYNAMIC_LIST<span class="nt">&lt;/type&gt;</span>
+                <span class="nt">&lt;/param&gt;</span>
+            <span class="nt">&lt;/params&gt;</span>
+<span class="nt">&lt;/command&gt;</span>
+</code></pre></div>
+<h2 id='commands-xml-type'>type</h2>
+<p><code>&lt;param&gt;&lt;/param&gt;</code></p>
+<h3 id='commands-xml-type-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-params"><code>&lt;params&gt;</code></a></p>
+
+<p>The type element is used to identify which of the support Command Parameter Type are being used by the parameter. </p>
+
+<p>The following Command Parameter Types are supported:</p>
+
+<table><thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>Device Selector</strong></td>
+<td>The Device Selector command parameter type supports the Device Selector property. Device Selector allows you (as the driver developer) to display a list of devices that may be associated with the driver.</td>
+</tr>
+<tr>
+<td><strong>Custom Select</strong></td>
+<td>The ability of a Proxy driver to deliver a browse-able list of related elements can be supported through the use of the CUSTOM/\_SELECT property.</td>
+</tr>
+<tr>
+<td><strong>Dynamic List</strong></td>
+<td>The Dynamic List command parameter type supports the ability to use the Dynamic List Property. This property provides ability to include driver-based, dynamically updated lists in ComposerPro’s Advanced Properties screen.</td>
+</tr>
+<tr>
+<td><strong>LIST</strong></td>
+<td>The List command parameter type supports the ability to provide a non-dynamic list of selectable objects within the Properties tab in ComposerPro.</td>
+</tr>
+<tr>
+<td><strong>Ranged Float</strong></td>
+<td>The Ranged Float command parameter type supports the ability to provide a range of selectable floating-point or non-integer numbers within the Properties tab in ComposerPro.</td>
+</tr>
+<tr>
+<td><strong>Ranged Integer</strong></td>
+<td>The Ranged Integer command parameter type supports the ability to provide a range of selectable integers within the Properties tab in ComposerPro.</td>
+</tr>
+<tr>
+<td><strong>String</strong></td>
+<td>The STRING command parameter type supports the ability to provide a read only string within the Properties tab in ComposerPro.</td>
+</tr>
+</tbody></table>
+
+<p>In the example, the command Toggle has a params element containing the XML definition of one parameter defined within the &lt;param&gt;&lt;/param&gt; element. The parameter name is Zone and uses the Command Parameter Type of DYNAMIC LIST to dynamically create a list of Zones that the command can toggle through.</p>
+
+<p><h3 id='commands-xml-type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;command&gt;</span>
             <span class="nt">&lt;name&gt;</span>Toggle<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;description&gt;</span>Toggle PARAM1<span class="nt">&lt;/description&gt;</span>
             <span class="nt">&lt;params&gt;</span>
