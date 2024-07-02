@@ -3135,7 +3135,7 @@ Salt Lake City, UT 84020 USA</p>
 </tr>
 <tr>
 <td><strong>Number</strong></td>
-<td>Uses the following operators: =, !=, &lt;, &lt;=, &gt;, &gt;= to compare the current device value with an integer entered in ComposerPro programming by the dealer.</td>
+<td>Uses the following operators: =, !=, \&lt;, \&lt;=, \&gt;, \&gt;= to compare the current device value with an integer entered in ComposerPro programming by the dealer.</td>
 </tr>
 <tr>
 <td><strong>Boolean</strong></td>
@@ -3159,7 +3159,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>In the example, the Conditional type is SIMPLE</p>
 
-<div class="highlight"><pre class="highlight xml tab-xml"><code>\<span class="nt">&lt;conditionals</span><span class="err">\</span><span class="nt">&gt;</span>
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditionals&gt;</span>
             <span class="nt">&lt;conditional&gt;</span>
                 <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
                 <span class="nt">&lt;name&gt;</span>SIMPLE_LIGHT_ON<span class="nt">&lt;/name&gt;</span>
@@ -3180,7 +3180,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The conditional statement states a question being asked regarding a state of the driver. This is the statement that is shown before the condition logic. For example, the Simple Light On conditional , asks the question ‘The Light is on’. It is basically a useful statement that supports the conditional. When an integrator is viewing this driver’s conditionals in ComposerPro, they can select “The Light is on” from the list of conditionals and can ultimately initiate programming when the light is in the On state.</p>
 
-<h3 id='conditionals-xml-condition-statement-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditionals</span><span class="err">\</span><span class="nt">&gt;</span>
+<h3 id='conditionals-xml-condition-statement-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditionals&gt;</span>
             <span class="nt">&lt;conditional&gt;</span>
                 <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
                 <span class="nt">&lt;name&gt;</span>SIMPLE_LIGHT_ON<span class="nt">&lt;/name&gt;</span>
@@ -3200,7 +3200,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>For example, consider that the name of our example driver is “Living Room Lamp” and it is in the Living Room. Based on this, “Living Room-&gt;Living Room Lamp” will replace NAME when your conditional programming description is displayed in the conditionals window and the script actions area of ComposerPro. Using the example above, ComposerPro will display the description XML element as: “If Living Room-&gt;Living Room Lamp is on”.</p>
 
-<h3 id='conditionals-xml-description-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditionals</span><span class="err">\</span><span class="nt">&gt;</span>
+<h3 id='conditionals-xml-description-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;conditionals&gt;</span>
             <span class="nt">&lt;conditional&gt;</span>
                 <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
                 <span class="nt">&lt;name&gt;</span>SIMPLE_LIGHT_ON<span class="nt">&lt;/name&gt;</span>
@@ -3414,7 +3414,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action"><code>&lt;action&gt;</code></a></p>
 
-<p>The params element contains the ……………………</p>
+<p>The params contains the definition for the parameter(s) used by the Action’s Command.</p>
 
 <h3 id='actions-xml-params-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
             <span class="nt">&lt;action&gt;</span>
@@ -3435,7 +3435,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-params"><code>&lt;params&gt;</code></a></p>
 
-<p>The param element contains the ……………………</p>
+<p>The param element contains the definition of a single parameter used by the Action’s Command.</p>
 
 <h3 id='actions-xml-param-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
             <span class="nt">&lt;action&gt;</span>
@@ -3456,7 +3456,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-param"><code>&lt;param&gt;</code></a></p>
 
-<p>The parameter name element contains the ……………………</p>
+<p>The parameter name element contains the name of the parameter used by the Action’s Command.</p>
 
 <h3 id='actions-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
             <span class="nt">&lt;action&gt;</span>
@@ -3477,7 +3477,15 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="#"><code>&lt;param&gt;</code></a></p>
 
-<p>The parameter type element contains the ……………………</p>
+<p>The parameter type element identifies the type of Action supported by the parameter. Action Types include: </p>
+
+<ul>
+<li>STRING</li>
+<li>LIST</li>
+<li>RANGED INTEGER</li>
+<li>RANGED FLOAT</li>
+<li>COLOR SELECTOR</li>
+</ul>
 
 <h3 id='actions-xml-type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
             <span class="nt">&lt;action&gt;</span>
@@ -3498,7 +3506,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action"><code>&lt;action&gt;</code></a></p>
 
-<p>The sort order element contains the ……………………</p>
+<p>The sort order element allows for an ordered display of Command parameters in Composer Pro. These parameters can be selected by integrators configuring the driver. </p>
 
 <h3 id='actions-xml-sort_order-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;action&gt;</span>
         <span class="nt">&lt;action&gt;</span>
@@ -3526,7 +3534,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-param"><code>&lt;param&gt;</code></a></p>
 
-<p>The parameter default element contains the ……………………</p>
+<p>The parameter default element provides the ability to define a default value for parameter. This value will be displayed by default to integrators configuring the driver. </p>
 
 <h3 id='actions-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;action&gt;</span>
         <span class="nt">&lt;action&gt;</span>
