@@ -8,7 +8,7 @@
 [`<param>`][1]
 
 
-The parameter default element contains the ……………………
+The parameter default element provides the ability to define a default value for parameter. This value will be displayed by default to integrators configuring the driver. 
 
 
 ### Example

@@ -8,7 +8,7 @@
 [`<param>`][1]
 
 
-The parameter name element contains the ……………………
+The parameter name element contains the name of the parameter used by the Action’s Command.
 
 ### Example
 

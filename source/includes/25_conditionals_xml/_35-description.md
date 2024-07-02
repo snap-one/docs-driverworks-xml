@@ -16,7 +16,7 @@ For example, consider that the name of our example driver is “Living Room Lamp
 ### Example
 
 ```xml
-<conditionals\>
+<conditionals>
 			<conditional>
 				<id>0</id>
 				<name>SIMPLE_LIGHT_ON</name>

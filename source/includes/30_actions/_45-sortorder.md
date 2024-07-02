@@ -8,7 +8,7 @@
 [`<action>`][1]
 
 
-The sort order element contains the ……………………
+The sort order element allows for an ordered display of Command parameters in Composer Pro. These parameters can be selected by integrators configuring the driver. 
 
 ### Example
 

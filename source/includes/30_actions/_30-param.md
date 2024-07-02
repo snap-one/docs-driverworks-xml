@@ -8,7 +8,7 @@
 [`<params>`][1]
 
 
-The param element contains the ……………………
+The param element contains the definition of a single parameter used by the Action’s Command.
 
 ### Example
 

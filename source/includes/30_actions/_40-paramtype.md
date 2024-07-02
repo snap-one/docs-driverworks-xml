@@ -8,7 +8,14 @@
 [`<param>`]()
 
 
-The parameter type element contains the ……………………
+The parameter type element identifies the type of Action supported by the parameter. Action Types include: 
+
+- STRING
+- LIST
+- RANGED INTEGER
+- RANGED FLOAT
+- COLOR SELECTOR
+
 
 ### Example
 
@@ -26,6 +33,7 @@ The parameter type element contains the ……………………
 			</action>
 </actions>
 ```
+
 
 
 
