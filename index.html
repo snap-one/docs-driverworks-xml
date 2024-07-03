@@ -656,6 +656,20 @@
           </li>
           <li>
             <a href="#events-xml" class="toc-h1 toc-link" data-title="Events XML">Events XML</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#events-xml-events" class="toc-h2 toc-link" data-title="events">events</a>
+                  </li>
+                  <li>
+                    <a href="#events-xml-event" class="toc-h2 toc-link" data-title="event">event</a>
+                  </li>
+                  <li>
+                    <a href="#events-xml-id" class="toc-h2 toc-link" data-title="id">id</a>
+                  </li>
+                  <li>
+                    <a href="#events-xml-name" class="toc-h2 toc-link" data-title="name">name</a>
+                  </li>
+              </ul>
           </li>
       </ul>
         <ul class="toc-footer">
@@ -4006,6 +4020,85 @@ Salt Lake City, UT 84020 USA</p>
 <p>Note that a limit of 1000 Events per driver exists within the Control4 Operating System. Exceeding this limit results in undesirable handling of Events.</p>
 
 <p>For more information regard Events and how they can be used in conjunction with your driver, please see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#events">Events</a></p>
+
+<h2 id='events-xml-events'>events</h2>
+
+<p><code>&lt;events&gt;&lt;/eventss&gt;</code></p>
+
+<h3 id='events-xml-events-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>The events element contains the driver’s XML that defines the Events displayed in Composer Pro programming. It is the root element for all Events. </p>
+
+<p>In the example, and Event named “Static Event” is defined under the <code>&lt;events&gt;&lt;/events&gt;</code> XML.</p>
+
+<h3 id='events-xml-events-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;events&gt;</span>
+   <span class="nt">&lt;event&gt;</span>
+        <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Static Event<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;description&gt;</span>When the NAME Static Event changes<span class="nt">&lt;/description&gt;</span>
+        <span class="nt">&lt;sort_order&gt;</span>1<span class="nt">&lt;/sort_order&gt;</span>
+    <span class="nt">&lt;/event&gt;</span>
+<span class="nt">&lt;/events&gt;</span>
+</code></pre></div>
+<h2 id='events-xml-event'>event</h2>
+<p><code>&lt;event&gt;&lt;/even t&gt;</code></p>
+<h3 id='events-xml-event-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-actions"><code>&lt;events&gt;</code></a></p>
+
+<p>The property element contains the driver’s XML that defines an individual Event displayed in Composer Pro programming</p>
+
+<p>In the example, and Event named “Static Event” is defined under the <code>&lt;events&gt;&lt;/events&gt;</code> XML.</p>
+
+<h3 id='events-xml-event-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;events&gt;</span>
+   <span class="nt">&lt;event&gt;</span>
+        <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Static Event<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;description&gt;</span>When the NAME Static Event changes<span class="nt">&lt;/description&gt;</span>
+        <span class="nt">&lt;sort_order&gt;</span>1<span class="nt">&lt;/sort_order&gt;</span>
+    <span class="nt">&lt;/event&gt;</span>
+<span class="nt">&lt;/events&gt;</span>
+</code></pre></div>
+<h2 id='events-xml-id'>id</h2>
+<p><code>&lt;id&gt;&lt;/id&gt;</code></p>
+<h3 id='events-xml-id-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;event&gt;</code></a></p>
+
+<p>The id element provides a way to assign a numerical identification value to an individual Event.  All Events require an <code>&lt;id&gt;&lt;/id&gt;</code> value. It is recommended that Events be numbered beginning with 0. </p>
+
+<p>In the example, and Event named “Static Event” is defined under the <code>&lt;events&gt;&lt;/events&gt;</code> XML and has been assigned an Id value of 0.</p>
+
+<h3 id='events-xml-id-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;events&gt;</span>
+   <span class="nt">&lt;event&gt;</span>
+        <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Static Event<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;description&gt;</span>When the NAME Static Event changes<span class="nt">&lt;/description&gt;</span>
+        <span class="nt">&lt;sort_order&gt;</span>1<span class="nt">&lt;/sort_order&gt;</span>
+    <span class="nt">&lt;/event&gt;</span>
+<span class="nt">&lt;/events&gt;</span>
+</code></pre></div>
+<h2 id='events-xml-name'>name</h2>
+<p><code>&lt;name&gt;&lt;/name&gt;</code></p>
+<h3 id='events-xml-name-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;event&gt;</code></a></p>
+
+<p>The name element contains the name of the Event. This name is used to identify the Event and is displayed  in Composer Pro programming.</p>
+
+<p>In the example, the Event name is “Static Event”.</p>
+
+<p><h3 id='events-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;events&gt;</span>
+   <span class="nt">&lt;event&gt;</span>
+        <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Static Event<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;description&gt;</span>When the NAME Static Event changes<span class="nt">&lt;/description&gt;</span>
+        <span class="nt">&lt;sort_order&gt;</span>1<span class="nt">&lt;/sort_order&gt;</span>
+    <span class="nt">&lt;/event&gt;</span>
+<span class="nt">&lt;/events&gt;</span>
+</code></pre></div></p>
 
       </div>
       <div class="dark-box">
