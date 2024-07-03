@@ -2832,7 +2832,7 @@ Salt Lake City, UT 84020 USA</p>
 </tr>
 <tr>
 <td><strong>String Password</strong></td>
-<td>Provides a string which can be used as a password.</td>
+<td>Provides a string which can be used as a password. Note that this value is persisted.</td>
 </tr>
 <tr>
 <td><strong>Device Selector</strong></td>
@@ -2844,7 +2844,7 @@ Salt Lake City, UT 84020 USA</p>
 </tr>
 <tr>
 <td><strong>Dynamic List</strong></td>
-<td>Provides driver-based, dynamically updated lists. See the Dynamic List topic for more information.</td>
+<td>Provides driver-based, dynamically updated lists. See the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-dynamic-list-properties">Dynamic List</a> topic for more information.</td>
 </tr>
 <tr>
 <td><strong>Link</strong></td>
@@ -3509,7 +3509,7 @@ Salt Lake City, UT 84020 USA</p>
 </tr>
 <tr>
 <td><strong>String Password</strong></td>
-<td>Provides a string which can be used as a password.</td>
+<td>Provides a string which can be used as a password. Note that this value is not persisted.</td>
 </tr>
 <tr>
 <td><strong>Device Selector</strong></td>
@@ -3521,7 +3521,7 @@ Salt Lake City, UT 84020 USA</p>
 </tr>
 <tr>
 <td><strong>Dynamic List</strong></td>
-<td>Provides driver-based, dynamically updated lists. See the Dynamic List topic for more information.</td>
+<td>Provides driver-based, dynamically updated lists. See the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-dynamic-list-properties">Dynamic List </a>topic for more information.</td>
 </tr>
 <tr>
 <td><strong>Link</strong></td>
@@ -3573,7 +3573,15 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action"><code>&lt;action&gt;</code></a></p>
 
-<p>The sort order element allows for an ordered display of Command parameters in Composer Pro. These parameters can be selected by integrators configuring the driver. For more information on Sorting Actions please see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-actions">Actions</a></p>
+<p>The sort order element allows for an ordered display of Actions in Composer Pro. These Actions can be selected by integrators configuring the driver. In the example, the Actions will be displayed in the following order:</p>
+
+<ol>
+<li>Display Globals</li>
+<li>Create Programming Project</li>
+<li>Main Flood ID</li>
+</ol>
+
+<p>For more information on Sorting Actions please see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-actions">Actions</a></p>
 
 <h3 id='actions-xml-sort_order-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;action&gt;</span>
         <span class="nt">&lt;action&gt;</span>
@@ -3629,7 +3637,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-param"><code>&lt;param&gt;</code></a></p>
 
-<p>The password element support the ability to activate (true) the use of a password to configure the driver. …..</p>
+<p>The password element supports the ability to activate (true) the use of a password field for the Action. The only significance to the use of this field includes the ability to hide the characters that are entered into the Password field in Composer Pro. Note that while the string entered for this action is not logged, the use of this element does not include any type of encryption. A driver must be encrypted to protect the string value required here.</p>
 
 <h3 id='actions-xml-password-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;action&gt;</span>
             <span class="nt">&lt;name&gt;</span>Allow Execute<span class="nt">&lt;/name&gt;</span>
@@ -3649,7 +3657,15 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-param"><code>&lt;param&gt;</code></a></p>
 
-<p>The minimum element provides the ability to define a value that represents the lowest number accepted by the Action. In the example, the minimum value of 79 will be accepted for this ranged integer type action named Ranged Integer.</p>
+<p>The minimum element provides the ability to define a value that represents the lowest number accepted by the Action. The minimum and maximum elements are supported in the following parameter types:</p>
+
+<ul>
+<li>Ranged Float</li>
+<li>Ranged Integer</li>
+<li>Track</li>
+</ul>
+
+<p>In the example, the minimum value of 79 will be accepted for this ranged integer type action named Ranged Integer.</p>
 
 <h3 id='actions-xml-minimum-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;action&gt;</span>
             <span class="nt">&lt;name&gt;</span>Test Action with Paramters<span class="nt">&lt;/name&gt;</span>
@@ -3670,7 +3686,15 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-param"><code>&lt;param&gt;</code></a></p>
 
-<p>The maximum element provides the ability to define a value that represents the highest number accepted by the Action. In the example, the minimum value of 120 will be accepted for this ranged integer type action named Ranged Integer.</p>
+<p>The maximum element provides the ability to define a value that represents the highest number accepted by the Action. The minimum and maximum elements are supported in the following parameter types:</p>
+
+<ul>
+<li>Ranged Float</li>
+<li>Ranged Integer</li>
+<li>Track</li>
+</ul>
+
+<p>In the example, the minimum value of 120 will be accepted for this ranged integer type action named Ranged Integer.</p>
 
 <h3 id='actions-xml-maximum-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;action&gt;</span>
             <span class="nt">&lt;name&gt;</span>Test Action with Paramters<span class="nt">&lt;/name&gt;</span>
@@ -3691,10 +3715,12 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-param"><code>&lt;param&gt;</code></a></p>
 
-<p>The variable type element provides the ability to define a value that represents the highest number accepted by the Action. In the example, the minimum value of 120 will be accepted for this ranged integer type action named Ranged Integer.</p>
+<p>The variable type element is only used with the <code>VARIABLE_SELECTOR</code> parameter type. The Variable Selector parameter type will return a list of a type of variable found within the project. The variable type element is used to define the type of variable that will be returned. </p>
+
+<p>In the example, the Action named: Test Action with Parameters will return all of the boolean and string variables found in the project. An integrator can then select the desired variable and it will be placed within the Action.</p>
 
 <p><h3 id='actions-xml-variable_type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;action&gt;</span>
-            <span class="nt">&lt;name&gt;</span>Test Action with Variable Paramters That is really long<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Test Action with Variable Paramters<span class="nt">&lt;/name&gt;</span>
             <span class="nt">&lt;command&gt;</span>TestActionWithVarParamters<span class="nt">&lt;/command&gt;</span>
             <span class="nt">&lt;params&gt;</span>
                 <span class="nt">&lt;param&gt;</span>
