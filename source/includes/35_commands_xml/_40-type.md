@@ -23,7 +23,7 @@ The type element is used to identify which of the support Command Parameter Type
 | **String**          | The STRING command parameter type supports the ability to provide a string within the Device Specific Commands tab in ComposerPro.                                                                                                                                                                                           |
 
 
-In the example, the command Toggle has a params element containing the XML definition of one parameter defined within the \<param\>\</param\> element. The parameter name is Zone and uses the Command Parameter Type of DYNAMIC LIST to dynamically create a list of Zones that the command can toggle through.
+In the example, the command Toggle has a params element containing the XML definition of one parameter defined within the `<param></param>` element. The parameter name is Zone and uses the Command Parameter Type of DYNAMIC LIST to dynamically create a list of Zones that the command can toggle through.
 
 ### Example
 

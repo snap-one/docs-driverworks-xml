@@ -8,7 +8,7 @@
 [`<command>`][1]
 
 
-The sort order element is used to assign order to commands. This order reflects the manner in which the commands are displayed in Composer Pro’s programming area. 
+The sort order element is used to assign order to commands. This order reflects the manner in which the commands are displayed in Composer Pro’s programming area. For more information, please see: [Sorting Commands.][2]
 
 In the example, the sort order element is used to display the command Select Channel 3 in the third spot in a list of channels. 
 
@@ -35,3 +35,4 @@ In the example, the sort order element is used to display the command Select Cha
 
 
 [1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action
+[2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#commands-sorting-commands-in-composerpro
