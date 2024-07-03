@@ -27,4 +27,4 @@ In the example, the Event name is “Static Event”.
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#events-xml-event
