@@ -8,7 +8,7 @@
 [`<param>`][1]
 
 
-The parameter default element contains the ……………………
+The password element support the ability to activate (true) the use of a password to configure the driver. …..
 
 
 ### Example
