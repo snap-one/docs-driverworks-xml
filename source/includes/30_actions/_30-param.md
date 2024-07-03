@@ -8,7 +8,7 @@
 [`<params>`][1]
 
 
-The param element contains the definition of a single parameter used by the Action’s Command.
+The param element contains the definition of a single parameter used by the Action’s Command. In the example, a parameter named outlet is used by the LUA function AddRelays to support the Add and Connect Relays Action.
 
 ### Example
 

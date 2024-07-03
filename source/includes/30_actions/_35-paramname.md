@@ -8,7 +8,7 @@
 [`<param>`][1]
 
 
-The parameter name element contains the name of the parameter used by the Action’s Command.
+The parameter name element contains the name of the parameter used by the Action’s Command. In the example, when an integrator selects the Add and Connect Relays Action they are presented with a parameter list box that includes a header for a list of outlets. The header is “Outlet”.
 
 ### Example
 

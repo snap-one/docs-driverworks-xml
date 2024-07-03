@@ -8,7 +8,7 @@
 [`<action>`][1]
 
 
-The params contains the definition for the parameter(s) used by the Action’s Command.
+The params contains the definition for the parameter(s) used by the Action’s Command. The parameters defined here will be displayed in a box in ComposerPro when the Action is selected.
 
 ### Example
 

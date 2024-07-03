@@ -3,7 +3,10 @@
 
 `<actions></actions>`
 
-The Actions XML elements are used to define programming which is specific a driver’s initial installation and configuration. Typically, the functionality provided through Actions is one-time setup configuration and not required for ongoing driver use.
+The Actions XML elements are used to define driver configuration elements that are executable. You’ll notice many similarities between Actions and Properties. However, Actions differ in that many rely upon corresponding LUA code to accomplish their goal. 
+
+
+
 
 For a list of supported Action types and how they can assist with driver configuration, please see the [Actions][1] section of the DriverWorks Fundamentals Guide.
 

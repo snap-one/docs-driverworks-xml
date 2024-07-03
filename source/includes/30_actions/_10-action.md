@@ -8,7 +8,7 @@
 [`<actions>`][1]
 
 
-The property element contains the driver’s XML that defines an individual Property displayed in Composer Pro.
+The property element contains the driver’s XML that defines an individual Action displayed in Composer Pro.
 
 
 ### Example
