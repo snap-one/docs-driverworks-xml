@@ -10,7 +10,7 @@ For example, a AV Switch might have the following section in the XML of the .c4z
 ```xml
 <commands>
  <command>
-   <name>~MAIN_ZONE_ON</name>
+   <name>MAIN_ZONE_ON</name>
    <description>MAIN_ZONE_ON</description>
  </command>
  <command>

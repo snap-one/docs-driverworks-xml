@@ -8,39 +8,27 @@
 [`<command>`][1]
 
 
-The name element serves two purposes with regard to Command XML. First, it is used to name a command defined within the XML. In the first example, a command has been defined called New Command.
+The name element serves two purposes with regard to Command XML. First, it is used to name a command defined within the XML and that name is displayed in the Device Specific Programming in Composer Pro.
 
-Secondly, when a command is defined in conjunction with using on of the defined Command Parameter Types, the name element contains the name of the Parameter Type for the Command. This can bee seen in the second example where The following Command Parameter Types are supported:
-
-|                     |                                                                                                                                                                                                                               |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Device Selector** | The Device Selector command parameter type supports the Device Selector property. Device Selector allows you (as the driver developer) to display a list of devices that may be associated with the driver.                   |
-| **Custom Select**   | The ability of a Proxy driver to deliver a browse-able list of related elements can be supported through the use of the CUSTOM/\_SELECT property.                                                                             |
-| **Dynamic List**    | The Dynamic List command parameter type supports the ability to use the Dynamic List Property. This property provides ability to include driver-based, dynamically updated lists in ComposerPro’s Advanced Properties screen. |
-| **LIST**            | The List command parameter type supports the ability to provide a non-dynamic list of selectable objects within the Properties tab in ComposerPro.                                                                            |
-| **Ranged Float**    | The Ranged Float command parameter type supports the ability to provide a range of selectable floating-point or non-integer numbers within the Properties tab in ComposerPro.                                                 |
-| **Ranged Integer**  | The Ranged Integer command parameter type supports the ability to provide a range of selectable integers within the Properties tab in ComposerPro.                                                                            |
-| **String**          | The STRING command parameter type supports the ability to provide a read only string within the Properties tab in ComposerPro.                                                                                                |
-
+Secondly, the contents defined in the name element of the Command XML is used by the LUA function ExecuteCommand. This function must be defined in the driver’s LUA code. The first parameter that the ExecuteCommand function requires is the value defined in the name XML element. The function is then handled however needed within the ExecuteCommand Code.
 
 
 ### Example
-
+In the example, a Command named SelectFavorite has been defined. SelectFavorite will be displayed in the Device Specific Programming in Composer Pro. Additionally, it will be passed as the first parameter in the LUA ExecuteCommand function defined in the driver’s LUA code.
 
 
 ```xml
-<actions>
-			<action>
-				<name>Add and Connect Relays</name>
-				<command>AddRelays</command>
-				<params>
-					<param>
-						<name>Outlet</name>
-					<type>CUSTOM_SELECT:GetPropertiesForAction</type>
-					</param>
-				</params>
-			</action>
-</actions>
+<command>
+			<name>SelectFavorite</name>
+			<description>Select Favorite PARAM1 in PARAM2</description>
+			<sort_order>1</sort_order>
+			<params>
+				<param>
+					<name>Favorite</name>
+					<type>CUSTOM_SELECT:GetFavoritesForProgramming</type>
+			    </param>
+            </params>
+</command>
 ```
 
 
