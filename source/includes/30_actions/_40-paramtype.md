@@ -15,7 +15,7 @@ The parameter type element identifies the parameter type used by the command for
 | **List**            | Provides a static list of selectable objects.                                                                                                                                          |
 | **Ranged Float**    | Provides a range of selectable floating-point or non-integer numbers.                                                                                                                  |
 | **Ranged Integer**  | Provides a range of selectable integers.                                                                                                                                               |
-| **String**          | Provides a read only string.                                                                                                                                                           |
+| **String**          | Provides a string.                                                                                                                                                                     |
 | **String Password** | Provides a string which can be used as a password. Note that this value is not persisted.                                                                                              |
 | **Device Selector** | Provides a list of selectable drivers. See the Device Selector topic for more information. For more information, please see: [Using Device Selector][2]                                |
 | **Color Selector**  | Provides the ability to select a color. See the Color Selector topic for more information. For more information, please see: [Using COLOR SELECTOR.][3]                                |
