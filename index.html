@@ -3318,7 +3318,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><code>&lt;actions&gt;&lt;/actions&gt;</code></p>
 
-<p>The Actions XML elements are used to define programming which is specific a driver’s initial installation and configuration. Typically, the functionality provided through Actions is one-time setup configuration and not required for ongoing driver use.</p>
+<p>The Actions XML elements are used to define driver configuration elements that are executable. You’ll notice many similarities between Actions and Properties. However, Actions differ in that many rely upon corresponding LUA code to accomplish their goal. </p>
 
 <p>For a list of supported Action types and how they can assist with driver configuration, please see the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-actions">Actions</a> section of the DriverWorks Fundamentals Guide.</p>
 
@@ -3351,7 +3351,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-actions"><code>&lt;actions&gt;</code></a></p>
 
-<p>The property element contains the driver’s XML that defines an individual Property displayed in Composer Pro.</p>
+<p>The property element contains the driver’s XML that defines an individual Action displayed in Composer Pro.</p>
 
 <h3 id='actions-xml-action-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
             <span class="nt">&lt;action&gt;</span>
@@ -3372,7 +3372,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action"><code>&lt;action&gt;</code></a></p>
 
-<p>The name element contains the name of the Action. This name is used to identify the action and is displayed  in Composer Pro.</p>
+<p>The name element contains the name of the Action. This name is used to identify the Action and is displayed  in Composer Pro.</p>
 
 <h3 id='actions-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
             <span class="nt">&lt;action&gt;</span>
@@ -3393,7 +3393,9 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action"><code>&lt;action&gt;</code></a></p>
 
-<p>The command element contains the ……………………</p>
+<p>The command element contains the name of the function that has been written in the driver’s LUA code that supports the use of the Action. In the example, the Add and Connect Relays Action, relies upon a function written by the driver writer called AddRelays. When an integrator executes the Add and Connect Relays Action, it calls the AddRelays function.</p>
+
+<p>Without the inclusion of a corresponding LUA function, an Action will not function.</p>
 
 <h3 id='actions-xml-command-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
             <span class="nt">&lt;action&gt;</span>
@@ -3414,7 +3416,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action"><code>&lt;action&gt;</code></a></p>
 
-<p>The params contains the definition for the parameter(s) used by the Action’s Command.</p>
+<p>The params contains the definition for the parameter(s) used by the Action’s Command. The parameters defined here will be displayed in a box in ComposerPro when the Action is selected.</p>
 
 <h3 id='actions-xml-params-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
             <span class="nt">&lt;action&gt;</span>
@@ -3435,7 +3437,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-params"><code>&lt;params&gt;</code></a></p>
 
-<p>The param element contains the definition of a single parameter used by the Action’s Command.</p>
+<p>The param element contains the definition of a single parameter used by the Action’s Command. In the example, a parameter named outlet is used by the LUA function AddRelays to support the Add and Connect Relays Action.</p>
 
 <h3 id='actions-xml-param-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
             <span class="nt">&lt;action&gt;</span>
@@ -3456,7 +3458,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-param"><code>&lt;param&gt;</code></a></p>
 
-<p>The parameter name element contains the name of the parameter used by the Action’s Command.</p>
+<p>The parameter name element contains the name of the parameter used by the Action’s Command. In the example, when an integrator selects the Add and Connect Relays Action they are presented with a parameter list box that includes a header for a list of outlets. The header is “Outlet”.</p>
 
 <h3 id='actions-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
             <span class="nt">&lt;action&gt;</span>
@@ -3477,17 +3479,75 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="#"><code>&lt;param&gt;</code></a></p>
 
-<p>The parameter type element identifies the type of Action supported by the parameter. Action Types include: </p>
+<p>The parameter type element identifies the parameter type used by the command for the Action. Supported by the parameter. Action Types include: </p>
 
-<ul>
-<li>STRING</li>
-<li>LIST</li>
-<li>RANGED INTEGER</li>
-<li>RANGED FLOAT</li>
-<li>COLOR SELECTOR</li>
-</ul>
+<table><thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>List</strong></td>
+<td>Provides a static list of selectable objects.</td>
+</tr>
+<tr>
+<td><strong>Ranged Float</strong></td>
+<td>Provides a range of selectable floating-point or non-integer numbers.</td>
+</tr>
+<tr>
+<td><strong>Ranged Integer</strong></td>
+<td>Provides a range of selectable integers.</td>
+</tr>
+<tr>
+<td><strong>String</strong></td>
+<td>Provides a read only string.</td>
+</tr>
+<tr>
+<td><strong>String Password</strong></td>
+<td>Provides a string which can be used as a password.</td>
+</tr>
+<tr>
+<td><strong>Device Selector</strong></td>
+<td>Provides a list of selectable drivers. See the Device Selector topic for more information.</td>
+</tr>
+<tr>
+<td><strong>Color Selector</strong></td>
+<td>Provides the ability to select a color. See the Color Selector topic for more information.</td>
+</tr>
+<tr>
+<td><strong>Dynamic List</strong></td>
+<td>Provides driver-based, dynamically updated lists. See the Dynamic List topic for more information.</td>
+</tr>
+<tr>
+<td><strong>Link</strong></td>
+<td>Provides a link to a resource which can be used to support your driver.</td>
+</tr>
+<tr>
+<td><strong>Label</strong></td>
+<td>Action that provides a Header Label on the Properties Screen in Composer Pro.</td>
+</tr>
+<tr>
+<td><strong>Scroll</strong></td>
+<td>Action that provides a graphical way to set an integer value on a scale on the Properties Screen in Composer Pro.</td>
+</tr>
+<tr>
+<td><strong>Track</strong></td>
+<td>Action that provides another option  for setting an integer value which is similar to Scroll. However, Track is more of a discrete slider control.</td>
+</tr>
+<tr>
+<td><strong>Custom Select</strong></td>
+<td>Provides a dynamically generated list of selectable objects. This property relies upon supporting LUA code to function properly. For more information, see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-using-the-custom-select-property">Using CUSTOM SELECT </a>.</td>
+</tr>
+</tbody></table>
 
-<h3 id='actions-xml-type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
+<h3 id='actions-xml-type-example'>Example</h3>
+
+<p>In the example shown, the parameter type of CUSTOM SELECT is used. CUSTOM SELECT uses a function written by the driver writer in the driver’s LUA code called GetPropertiesForAction.</p>
+
+<p>When an integrator selects the Add and Connect Relays Action they are presented with a parameter list box that includes a header for a list of outlets. The box also includes the Custom Select button. When clicked, the GetPropertiesForAction function is called and it populates the Outlet list with a dynamically created list of available outlets in the project. The list is searchable and multiple items can be selected. Once the appropriate outlets are selected, selected the OK button is clicked and the AddRelays command is executed.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
             <span class="nt">&lt;action&gt;</span>
                 <span class="nt">&lt;name&gt;</span>Add and Connect Relays<span class="nt">&lt;/name&gt;</span>
                 <span class="nt">&lt;command&gt;</span>AddRelays<span class="nt">&lt;/command&gt;</span>
@@ -3500,8 +3560,11 @@ Salt Lake City, UT 84020 USA</p>
             <span class="nt">&lt;/action&gt;</span>
 <span class="nt">&lt;/actions&gt;</span>
 </code></pre></div>
+
 <h2 id='actions-xml-sort_order'>sort_order</h2>
+
 <p><code>&lt;sort_order&gt;&lt;/sort_order&gt;</code></p>
+
 <h3 id='actions-xml-sort_order-parent'>Parent</h3>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action"><code>&lt;action&gt;</code></a></p>
