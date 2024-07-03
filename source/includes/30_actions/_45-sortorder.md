@@ -8,7 +8,13 @@
 [`<action>`][1]
 
 
-The sort order element allows for an ordered display of Command parameters in Composer Pro. These parameters can be selected by integrators configuring the driver. For more information on Sorting Actions please see: [Actions][2]
+The sort order element allows for an ordered display of Actions in Composer Pro. These Actions can be selected by integrators configuring the driver. In the example, the Actions will be displayed in the following order:
+
+1. Display Globals
+2. Create Programming Project
+3. Main Flood ID
+
+For more information on Sorting Actions please see: [Actions][2]
 
 ### Example
 
