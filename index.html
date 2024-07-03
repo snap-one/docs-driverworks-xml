@@ -654,6 +654,9 @@
                   </li>
               </ul>
           </li>
+          <li>
+            <a href="#events-xml" class="toc-h1 toc-link" data-title="Events XML">Events XML</a>
+          </li>
       </ul>
         <ul class="toc-footer">
             <li><a href='https://snap-one.github.io/docs-driverworks-introduction/'>An Introduction to DriverWorks</a></li>
@@ -3871,7 +3874,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action"><code>&lt;command&gt;</code></a></p>
 
-<p>The sort order element is used to assign order to commands. This order reflects the manner in which the commands are displayed in Composer Pro’s programming area. </p>
+<p>The sort order element is used to assign order to commands. This order reflects the manner in which the commands are displayed in Composer Pro’s programming area. For more information, please see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#commands-sorting-commands-in-composerpro">Sorting Commands.</a></p>
 
 <p>In the example, the sort order element is used to display the command Select Channel 3 in the third spot in a list of channels. </p>
 
@@ -3975,7 +3978,7 @@ Salt Lake City, UT 84020 USA</p>
 </tr>
 </tbody></table>
 
-<p>In the example, the command Toggle has a params element containing the XML definition of one parameter defined within the &lt;param&gt;&lt;/param&gt; element. The parameter name is Zone and uses the Command Parameter Type of DYNAMIC LIST to dynamically create a list of Zones that the command can toggle through.</p>
+<p>In the example, the command Toggle has a params element containing the XML definition of one parameter defined within the <code>&lt;param&gt;&lt;/param&gt;</code> element. The parameter name is Zone and uses the Command Parameter Type of DYNAMIC LIST to dynamically create a list of Zones that the command can toggle through.</p>
 
 <p><h3 id='commands-xml-type-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;command&gt;</span>
             <span class="nt">&lt;name&gt;</span>Toggle<span class="nt">&lt;/name&gt;</span>
@@ -3988,6 +3991,21 @@ Salt Lake City, UT 84020 USA</p>
             <span class="nt">&lt;/params&gt;</span>
 <span class="nt">&lt;/command&gt;</span>
 </code></pre></div></p>
+<h1 id='events-xml'>Events XML</h1>
+
+<p><code>&lt;events&gt;&lt;/events&gt;</code></p>
+
+<p>This area contains definitions for the XML elements that are supported in the Events section of a device driver’s driver.xml file. A driver can trigger events within the Control4 system. Events are used to cause other things to happen within the system using custom programming. They can be considered “when” statements. One of the duties of your driver is to expose all events. Examples of Events include:</p>
+
+<ul>
+<li>When the door opens.</li>
+<li>When it is 7:00 AM.</li>
+<li>When it is sunrise.</li>
+</ul>
+
+<p>Note that a limit of 1000 Events per driver exists within the Control4 Operating System. Exceeding this limit results in undesirable handling of Events.</p>
+
+<p>For more information regard Events and how they can be used in conjunction with your driver, please see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#events">Events</a></p>
 
       </div>
       <div class="dark-box">
