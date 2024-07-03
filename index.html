@@ -3715,7 +3715,18 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-param"><code>&lt;param&gt;</code></a></p>
 
-<p>The variable type element is only used with the <code>VARIABLE_SELECTOR</code> parameter type. The Variable Selector parameter type will return a list of a type of variable found within the project. The variable type element is used to define the type of variable that will be returned. </p>
+<p>The variable type element is only used with the <code>VARIABLE_SELECTOR</code> parameter type. The Variable Selector parameter type will return a list of a type of variable found within the project. The variable type element is used to define the type of variable that will be returned. Supported variable types include:</p>
+
+<ul>
+<li>boolean</li>
+<li>string</li>
+<li>number</li>
+<li>float</li>
+<li>device</li>
+<li>media</li>
+<li>user</li>
+<li>room</li>
+</ul>
 
 <p>In the example, the Action named: Test Action with Parameters will return all of the boolean and string variables found in the project. An integrator can then select the desired variable and it will be placed within the Action.</p>
 
@@ -3746,7 +3757,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;commands&gt;</span>
  <span class="nt">&lt;command&gt;</span>
-   <span class="nt">&lt;name&gt;</span>~MAIN_ZONE_ON<span class="nt">&lt;/name&gt;</span>
+   <span class="nt">&lt;name&gt;</span>MAIN_ZONE_ON<span class="nt">&lt;/name&gt;</span>
    <span class="nt">&lt;description&gt;</span>MAIN_ZONE_ON<span class="nt">&lt;/description&gt;</span>
  <span class="nt">&lt;/command&gt;</span>
  <span class="nt">&lt;command&gt;</span>
@@ -3774,17 +3785,17 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#common-xml-config"><code>&lt;config&gt;</code></a></p>
 
-<p>The commands element contains the driver’s XML that defines the Commands displayed in the programming area of Composer Pro. It is the root element for all Commands. In the example, two commands are defined within the <code>&lt;commands&gt;&lt;/commands&gt;</code> XML: a command named “MAIN ZONE ON” and a command named MAIN ZONE OFF. </p>
+<p>The commands element contains the driver’s XML that defines the Commands displayed in the Device Specific Programming area of Composer Pro. It is the root element for all Commands. In the example, two commands are defined within the <code>&lt;commands&gt;&lt;/commands&gt;</code> XML: a command named “MAIN ZONE ON” and a command named MAIN ZONE OFF. </p>
 
 <h3 id='commands-xml-commands-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;commands&gt;</span>
-    ~<span class="nt">&lt;command&gt;</span>~
-        ~<span class="nt">&lt;name&gt;</span>~MAIN_ZONE_ON~<span class="nt">&lt;/name&gt;</span>~
-        ~<span class="nt">&lt;description&gt;</span>~MAIN_ZONE\_ON~<span class="nt">&lt;/description&gt;</span>~
-    ~<span class="nt">&lt;/command&gt;</span>~
-    ~<span class="nt">&lt;command&gt;</span>~
-        ~<span class="nt">&lt;name&gt;</span>~MAIN_ZONE_OFF~<span class="nt">&lt;/name&gt;</span>~
-        ~<span class="nt">&lt;description&gt;</span>~MAIN_ZONE_OFF~<span class="nt">&lt;/description&gt;</span>~
-    ~<span class="nt">&lt;/command&gt;</span>~
+    <span class="nt">&lt;command&gt;</span>
+        <span class="nt">&lt;name&gt;</span>MAIN_ZONE_ON<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;description&gt;</span>MAIN_ZONE_ON<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;/command&gt;</span>
+    <span class="nt">&lt;command&gt;</span>
+        <span class="nt">&lt;name&gt;</span>MAIN_ZONE_OFF<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;description&gt;</span>MAIN_ZONE_OFF<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;/command&gt;</span>
 <span class="nt">&lt;/commands&gt;</span>
 </code></pre></div>
 <h2 id='commands-xml-command'>command</h2>
@@ -3808,61 +3819,31 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action"><code>&lt;command&gt;</code></a></p>
 
-<p>The name element serves two purposes with regard to Command XML. First, it is used to name a command defined within the XML. In the first example, a command has been defined called New Command.</p>
+<p>The name element serves two purposes with regard to Command XML. First, it is used to name a command defined within the XML and that name is displayed in the Device Specific Programming in Composer Pro.</p>
 
-<p>Secondly, when a command is defined in conjunction with using on of the defined Command Parameter Types, the name element contains the name of the Parameter Type for the Command. This can bee seen in the second example where The following Command Parameter Types are supported:</p>
+<p>Secondly, the contents defined in the name element of the Command XML is used by the LUA function ExecuteCommand. This function must be defined in the driver’s LUA code. The first parameter that the ExecuteCommand function requires is the value defined in the name XML element. The function is then handled however needed within the ExecuteCommand Code.</p>
 
-<table><thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead><tbody>
-<tr>
-<td><strong>Device Selector</strong></td>
-<td>The Device Selector command parameter type supports the Device Selector property. Device Selector allows you (as the driver developer) to display a list of devices that may be associated with the driver.</td>
-</tr>
-<tr>
-<td><strong>Custom Select</strong></td>
-<td>The ability of a Proxy driver to deliver a browse-able list of related elements can be supported through the use of the CUSTOM/_SELECT property.</td>
-</tr>
-<tr>
-<td><strong>Dynamic List</strong></td>
-<td>The Dynamic List command parameter type supports the ability to use the Dynamic List Property. This property provides ability to include driver-based, dynamically updated lists in ComposerPro’s Advanced Properties screen.</td>
-</tr>
-<tr>
-<td><strong>LIST</strong></td>
-<td>The List command parameter type supports the ability to provide a non-dynamic list of selectable objects within the Properties tab in ComposerPro.</td>
-</tr>
-<tr>
-<td><strong>Ranged Float</strong></td>
-<td>The Ranged Float command parameter type supports the ability to provide a range of selectable floating-point or non-integer numbers within the Properties tab in ComposerPro.</td>
-</tr>
-<tr>
-<td><strong>Ranged Integer</strong></td>
-<td>The Ranged Integer command parameter type supports the ability to provide a range of selectable integers within the Properties tab in ComposerPro.</td>
-</tr>
-<tr>
-<td><strong>String</strong></td>
-<td>The STRING command parameter type supports the ability to provide a read only string within the Properties tab in ComposerPro.</td>
-</tr>
-</tbody></table>
+<h3 id='commands-xml-name-example'>Example</h3>
 
-<h3 id='commands-xml-name-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;actions&gt;</span>
-            <span class="nt">&lt;action&gt;</span>
-                <span class="nt">&lt;name&gt;</span>Add and Connect Relays<span class="nt">&lt;/name&gt;</span>
-                <span class="nt">&lt;command&gt;</span>AddRelays<span class="nt">&lt;/command&gt;</span>
-                <span class="nt">&lt;params&gt;</span>
-                    <span class="nt">&lt;param&gt;</span>
-                        <span class="nt">&lt;name&gt;</span>Outlet<span class="nt">&lt;/name&gt;</span>
-                    <span class="nt">&lt;type&gt;</span>CUSTOM_SELECT:GetPropertiesForAction<span class="nt">&lt;/type&gt;</span>
-                    <span class="nt">&lt;/param&gt;</span>
-                <span class="nt">&lt;/params&gt;</span>
-            <span class="nt">&lt;/action&gt;</span>
-<span class="nt">&lt;/actions&gt;</span>
+<p>In the example, a Command named SelectFavorite has been defined. SelectFavorite will be displayed in the Device Specific Programming in Composer Pro. Additionally, it will be passed as the first parameter in the LUA ExecuteCommand function defined in the driver’s LUA code.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;command&gt;</span>
+            <span class="nt">&lt;name&gt;</span>SelectFavorite<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;description&gt;</span>Select Favorite PARAM1 in PARAM2<span class="nt">&lt;/description&gt;</span>
+            <span class="nt">&lt;sort_order&gt;</span>1<span class="nt">&lt;/sort_order&gt;</span>
+            <span class="nt">&lt;params&gt;</span>
+                <span class="nt">&lt;param&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>Favorite<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>CUSTOM_SELECT:GetFavoritesForProgramming<span class="nt">&lt;/type&gt;</span>
+                <span class="nt">&lt;/param&gt;</span>
+            <span class="nt">&lt;/params&gt;</span>
+<span class="nt">&lt;/command&gt;</span>
 </code></pre></div>
+
 <h2 id='commands-xml-description'>description</h2>
+
 <p><code>&lt;description&gt;&lt;/description&gt;</code></p>
+
 <h3 id='commands-xml-description-parent'>Parent</h3>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action"><code>&lt;command&gt;</code></a></p>
@@ -3966,15 +3947,15 @@ Salt Lake City, UT 84020 USA</p>
 </thead><tbody>
 <tr>
 <td><strong>Device Selector</strong></td>
-<td>The Device Selector command parameter type supports the Device Selector property. Device Selector allows you (as the driver developer) to display a list of devices that may be associated with the driver.</td>
+<td>The Device Selector command parameter type supports the Device Selector property. Device Selector allows you (as the driver developer) to display a list of devices based on driver name.</td>
 </tr>
 <tr>
 <td><strong>Custom Select</strong></td>
-<td>The ability of a Proxy driver to deliver a browse-able list of related elements can be supported through the use of the CUSTOM/\_SELECT property.</td>
+<td>The ability of a Proxy driver to deliver a browse-able list of related elements can be supported through the use of the CUSTOM SELECT property. For more information, please see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-using-the-custom-select-property">Using Custom Select.</a></td>
 </tr>
 <tr>
 <td><strong>Dynamic List</strong></td>
-<td>The Dynamic List command parameter type supports the ability to use the Dynamic List Property. This property provides ability to include driver-based, dynamically updated lists in ComposerPro’s Advanced Properties screen.</td>
+<td>The Dynamic List command parameter type supports the ability to use the Dynamic List Property. This property provides ability to include driver-based, dynamically updated lists in ComposerPro’s Advanced Properties screen. For more information, please see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-dynamic-list-properties">Using Dynamic List</a> and the <a href="https://snap-one.github.io/docs-driverworks-api/#properties-interface-updatepropertylist">UpdatePropertyList </a>API.</td>
 </tr>
 <tr>
 <td><strong>LIST</strong></td>
