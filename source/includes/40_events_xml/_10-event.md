@@ -29,4 +29,4 @@ In the example, and Event named “Static Event” is defined under the `<events
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-actions
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#events-xml-events
