@@ -3740,45 +3740,31 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><code>&lt;commands&gt;&lt;/commands&gt;</code></p>
 
-<p>This area contains definitions for the XML elements that are supported in the Commands section of a device driver’s driver.xml file. Commands  come from the Device Proxy. For example, a AV Switch might have the following section in the XML of the .c4z file:</p>
+<p>This area contains definitions for the XML elements that are supported in the Commands section of a device driver’s driver.xml file. These Commands are specific to the device and fall outside of the commands defined by the Proxy. Defining these commands in the driver XML will make them available under the Device Specific Programming area of Composer Pro</p>
+
+<p>For example, a AV Switch might have the following section in the XML of the .c4z file:</p>
 
 <div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;commands&gt;</span>
- ~<span class="nt">&lt;command&gt;</span>~
-   ~<span class="nt">&lt;name&gt;</span>~MAIN_ZONE_ON~<span class="nt">&lt;/name&gt;</span>~
-   ~<span class="nt">&lt;description&gt;</span>~MAIN_ZONE\_ON~<span class="nt">&lt;/description&gt;</span>~
- ~<span class="nt">&lt;/command&gt;</span>~
- ~<span class="nt">&lt;command&gt;</span>~
-   ~<span class="nt">&lt;name&gt;</span>~MAIN_ZONE_OFF~<span class="nt">&lt;/name&gt;</span>~
-   ~<span class="nt">&lt;description&gt;</span>~MAIN\_ZONE\_OFF~<span class="nt">&lt;/description&gt;</span>~
- ~<span class="nt">&lt;/command&gt;</span>~
- ~<span class="nt">&lt;command&gt;</span>~
-   ~<span class="nt">&lt;name&gt;</span>~ZONE2_ON~<span class="nt">&lt;/name&gt;</span>~
-   ~<span class="nt">&lt;description&gt;</span>~ZONE2\_ON~<span class="nt">&lt;/description&gt;</span>~
- ~<span class="nt">&lt;/command&gt;</span>~
- ~<span class="nt">&lt;command&gt;</span>~
-   ~<span class="nt">&lt;name&gt;</span>~ZONE2_OFF~<span class="nt">&lt;/name&gt;</span>~
-   ~<span class="nt">&lt;description&gt;</span>~ZONE2\_OFF~<span class="nt">&lt;/description&gt;</span>~
- ~<span class="nt">&lt;/command&gt;</span>~
- ~<span class="nt">&lt;command&gt;</span>~
-   ~<span class="nt">&lt;name&gt;</span>~ZONE3_ON~<span class="nt">&lt;/name&gt;</span>~
-   ~<span class="nt">&lt;description&gt;</span>~ZONE3\_ON~<span class="nt">&lt;/description&gt;</span>~
- ~<span class="nt">&lt;/command&gt;</span>~
- ~<span class="nt">&lt;command&gt;</span>~
-   ~<span class="nt">&lt;name&gt;</span>~ZONE3_OFF~<span class="nt">&lt;/name&gt;</span>~
-   ~<span class="nt">&lt;description&gt;</span>~ZONE3\_OFF~<span class="nt">&lt;/description&gt;</span>~
- ~<span class="nt">&lt;/command&gt;</span>~
- ~<span class="nt">&lt;command&gt;</span>~
-   ~<span class="nt">&lt;name&gt;</span>~ZONE4_ON~<span class="nt">&lt;/name&gt;</span>~
-   ~<span class="nt">&lt;description&gt;</span>~ZONE4\_ON~<span class="nt">&lt;/description&gt;</span>~
- ~<span class="nt">&lt;/command&gt;</span>~
- ~<span class="nt">&lt;command&gt;</span>~
-   ~<span class="nt">&lt;name&gt;</span>~ZONE4_OFF~<span class="nt">&lt;/name&gt;</span>~
-   ~<span class="nt">&lt;description&gt;</span>~ZONE4\_OFF~<span class="nt">&lt;/description&gt;</span>~
- ~<span class="nt">&lt;/command&gt;</span>~
+ <span class="nt">&lt;command&gt;</span>
+   <span class="nt">&lt;name&gt;</span>~MAIN_ZONE_ON<span class="nt">&lt;/name&gt;</span>
+   <span class="nt">&lt;description&gt;</span>MAIN_ZONE_ON<span class="nt">&lt;/description&gt;</span>
+ <span class="nt">&lt;/command&gt;</span>
+ <span class="nt">&lt;command&gt;</span>
+   <span class="nt">&lt;name&gt;</span>MAIN_ZONE_OFF<span class="nt">&lt;/name&gt;</span>
+   <span class="nt">&lt;description&gt;</span>MAIN_ZONE_OFF<span class="nt">&lt;/description&gt;</span>
+ <span class="nt">&lt;/command&gt;</span>
+ <span class="nt">&lt;command&gt;</span>
+   <span class="nt">&lt;name&gt;</span>ZONE2_ON<span class="nt">&lt;/name&gt;</span>
+   <span class="nt">&lt;description&gt;</span>ZONE2_ON<span class="nt">&lt;/description&gt;</span>~
+ <span class="nt">&lt;/command&gt;</span>
+ <span class="nt">&lt;command&gt;</span>
+   <span class="nt">&lt;name&gt;</span>ZONE2_OFF<span class="nt">&lt;/name&gt;</span>
+   <span class="nt">&lt;description&gt;</span>~ZONE2_OFF<span class="nt">&lt;/description&gt;</span>~
+ <span class="nt">&lt;/command&gt;</span>
 <span class="nt">&lt;/command&gt;</span>
 </code></pre></div>
 
-<p>Additional information regarding Commands and how they can be configured in a driver can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#commands">DriverWorks Fundamentals: Commands</a></p>
+<p>The commands defined here fall outside of the scope found in the AV Switch area of the Proxy and Protocol Guide. Additional information regarding Commands and how they can be configured in a driver can be found here: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#commands">DriverWorks Fundamentals: Commands</a></p>
 
 <h2 id='commands-xml-commands'>commands</h2>
 
