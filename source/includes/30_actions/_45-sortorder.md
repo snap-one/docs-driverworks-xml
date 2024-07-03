@@ -8,7 +8,7 @@
 [`<action>`][1]
 
 
-The sort order element allows for an ordered display of Command parameters in Composer Pro. These parameters can be selected by integrators configuring the driver. 
+The sort order element allows for an ordered display of Command parameters in Composer Pro. These parameters can be selected by integrators configuring the driver. For more information on Sorting Actions please see: [Actions][2]
 
 ### Example
 
@@ -35,3 +35,4 @@ The sort order element allows for an ordered display of Command parameters in Co
 ```
 
 [1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action
+[2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-actions
