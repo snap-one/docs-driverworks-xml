@@ -13,8 +13,6 @@ The description element is used to provide text that helps describe the purpose 
 
 ### Example
 
-
-
 ```xml
 <command>
 			<name>Turn On</name>

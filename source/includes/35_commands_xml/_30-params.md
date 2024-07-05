@@ -12,6 +12,7 @@ The params element contains the XML definition of the Command Parameter Types th
 
 In the example, the command Toggle has a params element containing the XML definition of one parameter. The parameter name is Zone and uses the Command Parameter Type of DYNAMIC LIST to dynamically create a list of Zones that the command can toggle through.
 
+
 ### Example
 
 ```xml

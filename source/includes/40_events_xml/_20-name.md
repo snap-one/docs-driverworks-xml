@@ -11,6 +11,8 @@
 The name element contains the name of the Event. This name is used to identify the Event and is displayed  in Composer Pro programming.
 
 In the example, the Event name is “Static Event”.
+
+
 ### Example
 
 ```xml
