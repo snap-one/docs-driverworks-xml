@@ -686,6 +686,9 @@
                   <li>
                     <a href="#connections-xml-connections" class="toc-h2 toc-link" data-title="connections">connections</a>
                   </li>
+                  <li>
+                    <a href="#connections-xml-connection" class="toc-h2 toc-link" data-title="connection">connection</a>
+                  </li>
               </ul>
           </li>
       </ul>
@@ -4216,7 +4219,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h2 id='connections-xml-connections'>connections</h2>
 
-<p><code>&lt;properties&gt;&lt;/properties&gt;</code></p>
+<p><code>&lt;connections&gt;&lt;/connections&gt;</code></p>
 
 <h3 id='connections-xml-connections-parent'>Parent</h3>
 
@@ -4224,8 +4227,76 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>The connections element contains the driver’s XML that defines the Connections that are made available for the driver in Composer Pro. It is the root element for all Connections.</p>
 
-<p><h3 id='connections-xml-connections-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
-     <span class="nt">&lt;connection&gt;</span><br>
+<h3 id='connections-xml-connections-example'>Example</h3>
+
+<p>In the example, three connections are defined: Serial RS-232, POOL and Thermostat.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>~<span class="nt">&lt;connections&gt;</span>~
+        <span class="nt">&lt;connection&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+            <span class="nt">&lt;connectionname&gt;</span>Serial RS-232<span class="nt">&lt;/connectionname&gt;</span>
+            <span class="nt">&lt;type&gt;</span>1<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+            <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+            <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+            <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+            <span class="nt">&lt;classes&gt;</span>
+                <span class="nt">&lt;class&gt;</span>
+                    <span class="nt">&lt;classname&gt;</span>RS_232<span class="nt">&lt;/classname&gt;</span>
+                <span class="nt">&lt;/class&gt;</span>
+            <span class="nt">&lt;/classes&gt;</span>
+        <span class="nt">&lt;/connection&gt;</span>
+        <span class="nt">&lt;connection&gt;</span>
+            <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+            <span class="nt">&lt;connectionname&gt;</span>POOL<span class="nt">&lt;/connectionname&gt;</span>
+            <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;consumer&gt;</span>false<span class="nt">&lt;/consumer&gt;</span>
+            <span class="nt">&lt;audiosource&gt;</span>false<span class="nt">&lt;/audiosource&gt;</span>
+            <span class="nt">&lt;videosource&gt;</span>false<span class="nt">&lt;/videosource&gt;</span>
+            <span class="nt">&lt;linelevel&gt;</span>false<span class="nt">&lt;/linelevel&gt;</span>
+            <span class="nt">&lt;classes&gt;</span>
+                <span class="nt">&lt;class&gt;</span>
+                    <span class="nt">&lt;classname&gt;</span>POOL<span class="nt">&lt;/classname&gt;</span>
+                <span class="nt">&lt;/class&gt;</span>
+            <span class="nt">&lt;/classes&gt;</span>
+        <span class="nt">&lt;/connection&gt;</span>
+        <span class="nt">&lt;connection&gt;</span>
+          <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+          <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+          <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
+          <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+          <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+          <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+          <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+          <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+          <span class="nt">&lt;classes&gt;</span>
+            <span class="nt">&lt;class&gt;</span>
+              <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
+            <span class="nt">&lt;/class&gt;</span>
+          <span class="nt">&lt;/classes&gt;</span>
+          <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
+        <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-connection'>connection</h2>
+
+<p><code>&lt;connection&gt;&lt;/connection&gt;</code></p>
+
+<h3 id='connections-xml-connection-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata"><code>&lt;connection&gt;</code></a></p>
+
+<p>The connection element contains the driver’s XML that defines an individual Connection which is made available for the driver in Composer Pro.</p>
+
+<h3 id='connections-xml-connection-example'>Example</h3>
+
+<p>In the example, a single connection for a Thermostat is defined.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+     <span class="nt">&lt;connection&gt;</span>      
       <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
       <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
       <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
@@ -4242,7 +4313,7 @@ Salt Lake City, UT 84020 USA</p>
       <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
      <span class="nt">&lt;/connection&gt;</span>
 <span class="nt">&lt;/connections&gt;</span>
-</code></pre></div></p>
+</code></pre></div>
 
       </div>
       <div class="dark-box">
