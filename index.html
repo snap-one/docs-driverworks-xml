@@ -672,6 +672,9 @@
                   <li>
                     <a href="#events-xml-description" class="toc-h2 toc-link" data-title="description">description</a>
                   </li>
+                  <li>
+                    <a href="#events-xml-sort_order" class="toc-h2 toc-link" data-title="sort_order">sort_order</a>
+                  </li>
               </ul>
           </li>
       </ul>
@@ -4109,13 +4112,51 @@ Salt Lake City, UT 84020 USA</p>
 
 <p>For example, consider that the name of our example driver is “Living Room Lamp” and it is in the Living Room. Based on this, “Living Room-&gt;Living Room Lamp” will replace NAME when your Event programming description is displayed in the Event window and the script actions area of ComposerPro. Using the example, ComposerPro will display the description XML element as: “When the Living Room-&gt;Living Room Lamp Static Event changes”.</p>
 
-<p><h3 id='events-xml-description-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;events&gt;</span>
+<h3 id='events-xml-description-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;events&gt;</span>
    <span class="nt">&lt;event&gt;</span>
         <span class="nt">&lt;id&gt;</span>0<span class="nt">&lt;/id&gt;</span>
         <span class="nt">&lt;name&gt;</span>Static Event<span class="nt">&lt;/name&gt;</span>
         <span class="nt">&lt;description&gt;</span>When the NAME Static Event changes<span class="nt">&lt;/description&gt;</span>
         <span class="nt">&lt;sort_order&gt;</span>1<span class="nt">&lt;/sort_order&gt;</span>
     <span class="nt">&lt;/event&gt;</span>
+<span class="nt">&lt;/events&gt;</span>
+</code></pre></div>
+<h2 id='events-xml-sort_order'>sort_order</h2>
+<p><code>&lt;sort_order&gt;&lt;/sort_order&gt;</code></p>
+<h3 id='events-xml-sort_order-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#events-xml-event"><code>&lt;event&gt;</code></a></p>
+
+<p>The sort order element allows for an ordered display of Events in Composer Pro. These Events can be selected by integrators configuring event based programming. In the example, the Actions will be displayed in the following order:</p>
+
+<ol>
+<li>Test Event 1</li>
+<li>Test Event 2</li>
+<li>Test Event 3</li>
+</ol>
+
+<p>For more information on Sorting Actions please see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#events-sorting-events-in-composerpro">Sorting Events in Composer Pro</a></p>
+
+<p><h3 id='events-xml-sort_order-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;events&gt;</span>
+    <span class="nt">&lt;event&gt;</span>
+        <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Test Event 1<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;description&gt;</span>When the NAME Static Event changes<span class="nt">&lt;/description&gt;</span>
+        <span class="nt">&lt;sort_order&gt;</span>1<span class="nt">&lt;/sort_order&gt;</span>
+    <span class="nt">&lt;/event&gt;</span>
+    <span class="nt">&lt;event&gt;</span>
+        <span class="nt">&lt;id&gt;</span>2<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Test Event 2<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;description&gt;</span>When the NAME Event 1 changes<span class="nt">&lt;/description&gt;</span>
+        <span class="nt">&lt;sort_order&gt;</span>2<span class="nt">&lt;/sort_order&gt;</span>
+    <span class="nt">&lt;/event&gt;</span>
+    <span class="nt">&lt;event&gt;</span>
+        <span class="nt">&lt;id&gt;</span>3<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Test Event 2<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;description&gt;</span>When the NAME Event 2 changes<span class="nt">&lt;/description&gt;</span>
+        <span class="nt">&lt;sort_order&gt;</span>3<span class="nt">&lt;/sort_order&gt;</span>
+    <span class="nt">&lt;/event&gt;</span>
+    <span class="nt">&lt;event&gt;</span>
 <span class="nt">&lt;/events&gt;</span>
 </code></pre></div></p>
 
