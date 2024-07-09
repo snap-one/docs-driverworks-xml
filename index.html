@@ -677,6 +677,9 @@
                   </li>
               </ul>
           </li>
+          <li>
+            <a href="#capabilites-xml" class="toc-h1 toc-link" data-title="Capabilites XML">Capabilites XML</a>
+          </li>
       </ul>
         <ul class="toc-footer">
             <li><a href='https://snap-one.github.io/docs-driverworks-introduction/'>An Introduction to DriverWorks</a></li>
@@ -4159,6 +4162,40 @@ Salt Lake City, UT 84020 USA</p>
     <span class="nt">&lt;event&gt;</span>
 <span class="nt">&lt;/events&gt;</span>
 </code></pre></div></p>
+<h1 id='capabilites-xml'>Capabilites XML</h1>
+
+<p><code>&lt;capabilites&gt;&lt;/capabilites&gt;</code></p>
+
+<p>Capabilities tell the Proxy what your device can do. Not all devices of a particular type have the same capabilities. In these cases, the .c4z file contains information which enables the proxy driver to determine what capabilities are available. For example, a Receiver-Tuner might have the included XML code in the .c4z file:</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+    <span class="nt">&lt;has_discrete_volume_control&gt;</span>True<span class="nt">&lt;/has_discrete_volume_control&gt;</span>
+    <span class="nt">&lt;has_up_down_volume_control&gt;</span>True<span class="nt">&lt;/has_up_down_volume_control&gt;</span>
+    <span class="nt">&lt;has_discrete_input_select&gt;</span>True<span class="nt">&lt;/has_discrete_input_select&gt;</span>
+    <span class="nt">&lt;has_toad_input_select&gt;</span>True<span class="nt">&lt;/has_toad_input_select&gt;</span>
+    <span class="nt">&lt;has_discrete_surround_mode_select&gt;</span>True<span class="nt">&lt;/has_discrete_surround_mode_select&gt;</span>
+    <span class="nt">&lt;has_toad_surround_mode_select&gt;</span>True<span class="nt">&lt;/has_toad_surround_mode_select&gt;</span>
+    <span class="nt">&lt;has_tune_up_down&gt;</span>True<span class="nt">&lt;/has_tune_up_down&gt;</span>
+    <span class="nt">&lt;has_search_up_down&gt;</span>False<span class="nt">&lt;/has_search_up_down&gt;</span>
+    <span class="nt">&lt;has_discrete_preset&gt;</span>True<span class="nt">&lt;/has_discrete_preset&gt;</span>
+    <span class="nt">&lt;has_preset_up_down&gt;</span>True<span class="nt">&lt;/has_preset_up_down&gt;</span>
+    <span class="nt">&lt;preset_count&gt;</span>40<span class="nt">&lt;/preset_count&gt;</span>
+    <span class="nt">&lt;can_upclass&gt;</span>False<span class="nt">&lt;/can_upclass&gt;</span>
+    <span class="nt">&lt;can_downclass&gt;</span>False<span class="nt">&lt;/can_downclass&gt;</span>
+    <span class="nt">&lt;video_provider_count&gt;</span>1<span class="nt">&lt;/video_provider_count&gt;</span>
+    <span class="nt">&lt;video_consumer_count&gt;</span>4<span class="nt">&lt;/video_consumer_count&gt;</span>
+    <span class="nt">&lt;audio_provider_count&gt;</span>2<span class="nt">&lt;/audio_provider_count&gt;</span>
+    <span class="nt">&lt;audio_consumer_count&gt;</span>8<span class="nt">&lt;/audio_consumer_count&gt;</span>
+    <span class="nt">&lt;has_discrete_mute_control&gt;</span>True<span class="nt">&lt;/has_discrete_mute_control&gt;</span>
+    <span class="nt">&lt;has_toggle_mute_control&gt;</span>True<span class="nt">&lt;/has_toggle_mute_control&gt;</span>
+    <span class="nt">&lt;has_discrete_channel_select&gt;</span>True<span class="nt">&lt;/has_discrete_channel_select&gt;</span>
+    <span class="nt">&lt;has_discrete_input_select&gt;</span>True<span class="nt">&lt;/has_discrete_input_select&gt;</span>
+    <span class="nt">&lt;has_channel_up_down&gt;</span>True<span class="nt">&lt;/has_channel_up_down&gt;</span>
+    <span class="nt">&lt;has_feedback&gt;</span>True<span class="nt">&lt;/has_feedback&gt;</span>
+    <span class="nt">&lt;serialdelay&gt;</span>0<span class="nt">&lt;/serialdelay&gt;</span>
+    <span class="nt">&lt;serialsettings&gt;</span>9600 8 none 1 none 232<span class="nt">&lt;/serialsettings&gt;</span>
+<span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
 
       </div>
       <div class="dark-box">
