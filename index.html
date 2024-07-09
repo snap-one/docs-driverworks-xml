@@ -680,6 +680,14 @@
           <li>
             <a href="#capabilites-xml" class="toc-h1 toc-link" data-title="Capabilites XML">Capabilites XML</a>
           </li>
+          <li>
+            <a href="#connections-xml" class="toc-h1 toc-link" data-title="Connections XML">Connections XML</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#connections-xml-connections" class="toc-h2 toc-link" data-title="connections">connections</a>
+                  </li>
+              </ul>
+          </li>
       </ul>
         <ul class="toc-footer">
             <li><a href='https://snap-one.github.io/docs-driverworks-introduction/'>An Introduction to DriverWorks</a></li>
@@ -4196,6 +4204,45 @@ Salt Lake City, UT 84020 USA</p>
     <span class="nt">&lt;serialsettings&gt;</span>9600 8 none 1 none 232<span class="nt">&lt;/serialsettings&gt;</span>
 <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
+<h1 id='connections-xml'>Connections XML</h1>
+
+<p><code>&lt;connections&gt;&lt;/connections&gt;</code></p>
+
+<p>Every driver within the Control4 system publishes the connections capabilities that are available for the device being controlled. These connections are utilized to create the bindings within the Control4 system. The connections to the device you are creating a driver for can be implemented using serial (RS-232) or Internet (TCP/IP) protocols.</p>
+
+<p>The Connections XML defines all of the supported connections for the device. In addition to the network/communication bindings, your DriverWorks driver will have all of the other bindings necessary for your device  as long as they are correctly defined in the <connections>  XML. </p>
+
+<p>For more information regarding Connections, please see: <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#connections">Connections</a></p>
+
+<h2 id='connections-xml-connections'>connections</h2>
+
+<p><code>&lt;properties&gt;&lt;/properties&gt;</code></p>
+
+<h3 id='connections-xml-connections-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>The connections element contains the driver’s XML that defines the Connections that are made available for the driver in Composer Pro. It is the root element for all Connections.</p>
+
+<p><h3 id='connections-xml-connections-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+     <span class="nt">&lt;connection&gt;</span><br>
+      <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+      <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
+     <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div></p>
 
       </div>
       <div class="dark-box">
