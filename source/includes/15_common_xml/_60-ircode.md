@@ -5,7 +5,7 @@
 
 ### Parent
 
-`<ircodes>`
+[`<ircodes>`][1]
 
 
 This element 
@@ -46,3 +46,5 @@ The example to the right is a \<config\> XML section from a sample TV driver.  I
         </ircode>
 </config>
 ```
+
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-ir-codes

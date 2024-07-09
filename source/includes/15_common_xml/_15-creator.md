@@ -18,4 +18,4 @@ The creator element contains the name of the entity which created the driver.
 <creator>Control4</creator>
 ```
 
-[1]:	https://snap-one.github.io/docs-driverworks-xml/#devicedata
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata

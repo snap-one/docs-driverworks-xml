@@ -9,7 +9,7 @@
 [`<devicedata>`][1]
 
 
-This element lists the number proxies used by the driver. One or more proxies may be defined. Proxies are defined within the \<proxies\> element in the \<proxy\> element.
+This element lists the number proxies used by the driver. One or more proxies may be defined. Proxies are defined within the `<proxies></proxies>` element.
 
 
 ### Example
@@ -22,4 +22,4 @@ This element lists the number proxies used by the driver. One or more proxies ma
 
 
 
-[1]:	https://snap-one.github.io/docs-driverworks-xml/#devicedata
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata

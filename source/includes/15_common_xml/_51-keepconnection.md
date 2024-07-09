@@ -56,4 +56,4 @@ This element indicates if the connection on this port should be maintained once 
 </connection>
 ```
 
-[1]:	https://snap-one.github.io/docs-driverworks-xml/#class
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-port

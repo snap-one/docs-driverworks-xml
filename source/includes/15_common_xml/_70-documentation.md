@@ -10,9 +10,9 @@
 
 This element indicates location and name of the driver’s documentation file.
 
-| Attributes | Description |
-| --- | --- |
-| file | Location and name of the driver’s documentation file. |
+| Attributes | Description                                           |
+| ---------- | ----------------------------------------------------- |
+| file       | Location and name of the driver’s documentation file. |
 
 ### Example
 
@@ -20,4 +20,4 @@ This element indicates location and name of the driver’s documentation file.
  <documentation file="www/documentation.rtf"></documentation>
 ```
 
-[1]:	https://snap-one.github.io/docs-driverworks-xml/#config
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-config

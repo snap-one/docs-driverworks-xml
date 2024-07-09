@@ -10,17 +10,12 @@
 
 This element
 
-| \<rfs\> | |
-| \<documentation\> | |
-| \<script\> | |
-| \<properties\> | |
-| \<commands\> |
-| \<actions\> | |
+
 
 
 ### Example
 
-The example to the right is a \<config\> XML section from a sample TV driver.  If provides numerous example of  XML structure that may be found in a driver written using the TV Proxy.
+The example to the right is a \<config\> XML section from a sample TV driver.  It provides numerous example of  XML structure that may be found in a driver written using the TV Proxy.
 
 ```xml
 <config>
@@ -52,4 +47,4 @@ The example to the right is a \<config\> XML section from a sample TV driver.  I
 </config>
 ```
 
-[1]:	https://snap-one.github.io/docs-driverworks-xml/#ir-section
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-ir-section

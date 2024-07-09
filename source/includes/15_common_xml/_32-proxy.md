@@ -11,11 +11,11 @@
 
 This element is used to define a proxy used by the driver.
 
-| Attributes | Description |
-| --- | --- |
-| \<proxybindingid\> | Binding id value |
-| \<name\> | Model name |
-| \<primary\> | Indicates if the proxy is the primary proxy used by the driver “True” or “False” |
+| Attributes         | Description                                                                      |
+| ------------------ | -------------------------------------------------------------------------------- |
+| `<proxybindingid>` | Binding id value                                                                 |
+| `<name>`           | Model name                                                                       |
+| `<primary>`        | Indicates if the proxy is the primary proxy used by the driver “True” or “False” |
 
 
 ### Example
@@ -26,4 +26,4 @@ This element is used to define a proxy used by the driver.
 </proxies>
 ```
 
-[1]:	https://snap-one.github.io/docs-driverworks-xml/#proxies
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-proxies

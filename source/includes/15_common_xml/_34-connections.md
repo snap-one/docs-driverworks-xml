@@ -8,12 +8,12 @@
 [`<devicedata>`][1]
 
 
-This element defines the driver [connections][2] which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the `<connections>` element under the `<connection>` element.
+This element defines the driver [connections][2] which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the `<connections>` element an individual `<connection>` element.
 
 
 ### Example
 
-The example to the right is an entire connections XML section from a sample TV driver. If provides numerous example of the various types of connections and their respective XML structure that may be found in a driver written using the TV Proxy.
+The example to the right is an entire connections XML section from a sample TV driver. It provides numerous example of the various types of connections and their respective XML structure that may be found in a driver written using the TV Proxy.
 
 ```xml
 
@@ -253,5 +253,5 @@ The example to the right is an entire connections XML section from a sample TV d
 
 
 
-[1]:	https://snap-one.github.io/docs-driverworks-xml/#devicedata
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata
 [2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#connections
