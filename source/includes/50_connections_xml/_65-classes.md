@@ -8,32 +8,36 @@
 [`<connection>`][1]
 
 
-The hidden element is an optional tag to specify if this connection should be hidden in Composer Pro or not. This defaults to false, except for proxy bindings.
+The classes XML element defines one or more classes for this connection.
+If the class is TCP or UDP then there may be a ports section as seen to the right. This includes the IP Port number for the network connection.
 
 ### Example
 
-In the example, a single connection for a Thermostat is defined using an hidden value of true.  This indicates that this connection will not be displayed in Composer Pro as it is a Proxy connection. 
-
+In the example, a single serial connection is defined using 
 
 ```xml
 <connections>
-     <connection>      
-	  <id>5001</id>
-      <facing>6</facing>
-      <connectionname>Thermostat</connectionname>
-      <type>2</type>
-      <consumer>False</consumer>
-      <audiosource>False</audiosource>
-      <videosource>False</videosource>
-      <linelevel>False</linelevel>
-	  <idautobind>15</idautobind>
-      <classes>
-        <class>
-          <classname>THERMOSTAT</classname>
-        </class>
-      </classes>
-      <hidden>True</hidden>
-     </connection>
+ <connections>
+		<connection>
+			<id>1</id>
+			<facing>6</facing>
+			<connectionname>Serial RS-232</connectionname>
+			<type>1</type>
+			<consumer>True</consumer>
+			<audiosource>False</audiosource>
+			<videosource>False</videosource>
+			<linelevel>False</linelevel>
+			<classes>
+				<class>
+					<classname>TCP</classname>
+                    <ports>
+                      <port>
+                        <number>8750</number>
+                      </port>
+                    </ports>
+				</class>
+			</classes>
+		</connection>
 </connections>
 ```
 
