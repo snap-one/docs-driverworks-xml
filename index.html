@@ -689,6 +689,39 @@
                   <li>
                     <a href="#connections-xml-connection" class="toc-h2 toc-link" data-title="connection">connection</a>
                   </li>
+                  <li>
+                    <a href="#connections-xml-id" class="toc-h2 toc-link" data-title="id">id</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-facing" class="toc-h2 toc-link" data-title="facing">facing</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-connectionname" class="toc-h2 toc-link" data-title="connectionname">connectionname</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-type" class="toc-h2 toc-link" data-title="type">type</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-consumer" class="toc-h2 toc-link" data-title="consumer">consumer</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-audiosource" class="toc-h2 toc-link" data-title="audiosource">audiosource</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-videosource" class="toc-h2 toc-link" data-title="videosource">videosource</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-linelevel" class="toc-h2 toc-link" data-title="linelevel">linelevel</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-linelevel" class="toc-h2 toc-link" data-title="linelevel">linelevel</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-hidden" class="toc-h2 toc-link" data-title="hidden">hidden</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-classes" class="toc-h2 toc-link" data-title="classes">classes</a>
+                  </li>
               </ul>
           </li>
       </ul>
@@ -4305,6 +4338,500 @@ Salt Lake City, UT 84020 USA</p>
       <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
       <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
       <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+      <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
+     <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-id'>id</h2>
+
+<p><code>&lt;id&gt;&lt;/id&gt;</code></p>
+
+<h3 id='connections-xml-id-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The id element contains the connection’s id value.  This id number must be in the correct range for the particular type of connection being defined. Below are the ranges:</p>
+
+<table><thead>
+<tr>
+<th>Binding</th>
+<th>Range</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Control Bindings</td>
+<td>1 - 999</td>
+</tr>
+<tr>
+<td>Video Inputs</td>
+<td>1000 - 1099</td>
+</tr>
+<tr>
+<td>Video Outputs</td>
+<td>2000 - 2999</td>
+</tr>
+<tr>
+<td>Audio Inputs</td>
+<td>3000 - 3099</td>
+</tr>
+<tr>
+<td>Audio Outputs</td>
+<td>4000 - 4999</td>
+</tr>
+<tr>
+<td>Proxy Bindings</td>
+<td>5000 - 5999</td>
+</tr>
+<tr>
+<td>Network Bindings</td>
+<td>6000 - 6999</td>
+</tr>
+<tr>
+<td>Room Bindings</td>
+<td>7000 - 7999</td>
+</tr>
+<tr>
+<td>Power Manager</td>
+<td>8000 - 8999</td>
+</tr>
+</tbody></table>
+
+<h3 id='connections-xml-id-example'>Example</h3>
+
+<p>In the example, a single connection for a Thermostat is defined using an id value of 5001. This is a proxy binding connection.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+     <span class="nt">&lt;connection&gt;</span>      
+      <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+      <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
+     <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-facing'>facing</h2>
+
+<p><code>&lt;facing&gt;&lt;/facing&gt;</code></p>
+
+<h3 id='connections-xml-facing-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>This connection element  indicates which side of the device this connection is on if it is a physical connection. Values are:</p>
+
+<table><thead>
+<tr>
+<th>Location</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Front</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Back</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Top</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Bottom</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Left</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Right</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Unknown</td>
+<td>6</td>
+</tr>
+</tbody></table>
+
+<h3 id='connections-xml-facing-example'>Example</h3>
+
+<p>In the example, a single connection for a Thermostat is defined using a facing value of 6. In this example, the physical connection location of the thermostat is unknown</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+     <span class="nt">&lt;connection&gt;</span>      
+      <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+      <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
+     <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-connectionname'>connectionname</h2>
+
+<p><code>&lt;connectionname&gt;&lt;/connectionname&gt;</code></p>
+
+<h3 id='connections-xml-connectionname-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The connectionname element indicates the name of this connection. This name is used by Composer when displaying the connection.  </p>
+
+<h3 id='connections-xml-connectionname-example'>Example</h3>
+
+<p>In the example, a single connection for a Thermostat is defined using a connectionname of “Thermostat”. This connection will be displayed as “Thermostat” in the connections area of Composer Pro.  </p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+     <span class="nt">&lt;connection&gt;</span>      
+      <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+      <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
+     <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-type'>type</h2>
+
+<p><code>&lt;type&gt;&lt;/type&gt;</code></p>
+
+<h3 id='connections-xml-type-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The type element indicates the type of this connection. Supported values include:</p>
+
+<table><thead>
+<tr>
+<th>Type</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Control</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Proxy</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Audio/Video</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Nectwork</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Video</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Audion</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Room</td>
+<td>7</td>
+</tr>
+</tbody></table>
+
+<h3 id='connections-xml-type-example'>Example</h3>
+
+<p>In the example, a single connection for a Thermostat is defined using a type value of 2.  This connection is a Proxy connection type.  </p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+     <span class="nt">&lt;connection&gt;</span>      
+      <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+      <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
+     <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-consumer'>consumer</h2>
+
+<p><code>&lt;consumer&gt;&lt;/consumer&gt;</code></p>
+
+<h3 id='connections-xml-consumer-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The consumer element indicates (True or False) if this connection is the consumer (or a provider) for the connection.</p>
+
+<h3 id='connections-xml-consumer-example'>Example</h3>
+
+<p>In the example, a single connection for a Thermostat is defined using a consumer value of False.  This connection is not on the receiving end of a provider/consumer connection.   </p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+     <span class="nt">&lt;connection&gt;</span>      
+      <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+      <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
+     <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-audiosource'>audiosource</h2>
+
+<p><code>&lt;audiosource&gt;&lt;/audiosource&gt;</code></p>
+
+<h3 id='connections-xml-audiosource-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The audiosource element indicates (True or False) if this connection is a source of audio. </p>
+
+<h3 id='connections-xml-audiosource-example'>Example</h3>
+
+<p>In the example, a single connection for a Thermostat is defined using a audiosource value of False.  This indicates that this connection is not a source of audio distributions.   </p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+     <span class="nt">&lt;connection&gt;</span>      
+      <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+      <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
+     <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-videosource'>videosource</h2>
+
+<p><code>&lt;videosource&gt;&lt;/videosource&gt;</code></p>
+
+<h3 id='connections-xml-videosource-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The videosource element indicates (True or False) if this connection is a source of video. </p>
+
+<h3 id='connections-xml-videosource-example'>Example</h3>
+
+<p>In the example, a single connection for a Thermostat is defined using a videosource value of False.  This indicates that this connection is not a source of video distributions.  </p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+     <span class="nt">&lt;connection&gt;</span>      
+      <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+      <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
+     <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-linelevel'>linelevel</h2>
+
+<p><code>&lt;linelevel&gt;&lt;/linelevel&gt;</code></p>
+
+<h3 id='connections-xml-linelevel-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The linelevel element indicates (True or False) if this connection provides a line level source. Line level signals are the highest level signals before amplification.</p>
+
+<h3 id='connections-xml-linelevel-example'>Example</h3>
+
+<p>In the example, a single connection for a Thermostat is defined using a linelevel value of False.  This indicates that this connection does not provide a linelevel source.  </p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+     <span class="nt">&lt;connection&gt;</span>      
+      <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;idautobind&gt;</span>0<span class="nt">&lt;/idautobind&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+      <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
+     <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-linelevel'>linelevel</h2>
+
+<p><code>&lt;linelevel&gt;&lt;/linelevel&gt;</code></p>
+
+<h3 id='connections-xml-linelevel-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The idautobind element is an optional tag that allows the connection to automatically connect to a connection with the defined idautobind value. The supported value range is 0 - 999.</p>
+
+<h3 id='connections-xml-linelevel-example'>Example</h3>
+
+<p>In the example, a single connection for a Thermostat is defined using an idautobind value of 15.  This indicates that this connection will automatically connect to another defined connection with the idautobind value of 15. </p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+     <span class="nt">&lt;connection&gt;</span>      
+      <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;idautobind&gt;</span>15<span class="nt">&lt;/idautobind&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+      <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
+     <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-hidden'>hidden</h2>
+
+<p><code>&lt;hidden&gt;&lt;/hidden&gt;</code></p>
+
+<h3 id='connections-xml-hidden-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The hidden element is an optional tag to specify if this connection should be hidden in Composer Pro or not. This defaults to false, except for proxy bindings.</p>
+
+<h3 id='connections-xml-hidden-example'>Example</h3>
+
+<p>In the example, a single connection for a Thermostat is defined using an hidden value of true.  This indicates that this connection will not be displayed in Composer Pro as it is a Proxy connection. </p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+     <span class="nt">&lt;connection&gt;</span>      
+      <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;idautobind&gt;</span>15<span class="nt">&lt;/idautobind&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+      <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
+     <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-classes'>classes</h2>
+
+<p><code>&lt;classes&gt;&lt;/classes&gt;</code></p>
+
+<h3 id='connections-xml-classes-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The hidden element is an optional tag to specify if this connection should be hidden in Composer Pro or not. This defaults to false, except for proxy bindings.</p>
+
+<h3 id='connections-xml-classes-example'>Example</h3>
+
+<p>In the example, a single connection for a Thermostat is defined using an hidden value of true.  This indicates that this connection will not be displayed in Composer Pro as it is a Proxy connection. </p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+     <span class="nt">&lt;connection&gt;</span>      
+      <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;idautobind&gt;</span>15<span class="nt">&lt;/idautobind&gt;</span>
       <span class="nt">&lt;classes&gt;</span>
         <span class="nt">&lt;class&gt;</span>
           <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
