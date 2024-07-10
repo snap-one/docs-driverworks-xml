@@ -4815,30 +4815,35 @@ Salt Lake City, UT 84020 USA</p>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
-<p>The hidden element is an optional tag to specify if this connection should be hidden in Composer Pro or not. This defaults to false, except for proxy bindings.</p>
+<p>The classes XML element defines one or more classes for this connection.
+If the class is TCP or UDP then there may be a ports section as seen to the right. This includes the IP Port number for the network connection.</p>
 
 <h3 id='connections-xml-classes-example'>Example</h3>
 
-<p>In the example, a single connection for a Thermostat is defined using an hidden value of true.  This indicates that this connection will not be displayed in Composer Pro as it is a Proxy connection. </p>
+<p>In the example, a single serial connection is defined using </p>
 
 <div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
-     <span class="nt">&lt;connection&gt;</span>      
-      <span class="nt">&lt;id&gt;</span>5001<span class="nt">&lt;/id&gt;</span>
-      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
-      <span class="nt">&lt;connectionname&gt;</span>Thermostat<span class="nt">&lt;/connectionname&gt;</span>
-      <span class="nt">&lt;type&gt;</span>2<span class="nt">&lt;/type&gt;</span>
-      <span class="nt">&lt;consumer&gt;</span>False<span class="nt">&lt;/consumer&gt;</span>
-      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
-      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
-      <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
-      <span class="nt">&lt;idautobind&gt;</span>15<span class="nt">&lt;/idautobind&gt;</span>
-      <span class="nt">&lt;classes&gt;</span>
-        <span class="nt">&lt;class&gt;</span>
-          <span class="nt">&lt;classname&gt;</span>THERMOSTAT<span class="nt">&lt;/classname&gt;</span>
-        <span class="nt">&lt;/class&gt;</span>
-      <span class="nt">&lt;/classes&gt;</span>
-      <span class="nt">&lt;hidden&gt;</span>True<span class="nt">&lt;/hidden&gt;</span>
-     <span class="nt">&lt;/connection&gt;</span>
+ <span class="nt">&lt;connections&gt;</span>
+        <span class="nt">&lt;connection&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+            <span class="nt">&lt;connectionname&gt;</span>Serial RS-232<span class="nt">&lt;/connectionname&gt;</span>
+            <span class="nt">&lt;type&gt;</span>1<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+            <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+            <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+            <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+            <span class="nt">&lt;classes&gt;</span>
+                <span class="nt">&lt;class&gt;</span>
+                    <span class="nt">&lt;classname&gt;</span>TCP<span class="nt">&lt;/classname&gt;</span>
+                    <span class="nt">&lt;ports&gt;</span>
+                      <span class="nt">&lt;port&gt;</span>
+                        <span class="nt">&lt;number&gt;</span>8750<span class="nt">&lt;/number&gt;</span>
+                      <span class="nt">&lt;/port&gt;</span>
+                    <span class="nt">&lt;/ports&gt;</span>
+                <span class="nt">&lt;/class&gt;</span>
+            <span class="nt">&lt;/classes&gt;</span>
+        <span class="nt">&lt;/connection&gt;</span>
 <span class="nt">&lt;/connections&gt;</span>
 </code></pre></div>
 
