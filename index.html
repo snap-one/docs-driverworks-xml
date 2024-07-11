@@ -722,6 +722,21 @@
                   <li>
                     <a href="#connections-xml-classes" class="toc-h2 toc-link" data-title="classes">classes</a>
                   </li>
+                  <li>
+                    <a href="#connections-xml-class" class="toc-h2 toc-link" data-title="class">class</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-name" class="toc-h2 toc-link" data-title="name">name</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-ports" class="toc-h2 toc-link" data-title="ports">ports</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-port" class="toc-h2 toc-link" data-title="port">port</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-number" class="toc-h2 toc-link" data-title="number">number</a>
+                  </li>
               </ul>
           </li>
       </ul>
@@ -4820,7 +4835,202 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <h3 id='connections-xml-classes-example'>Example</h3>
 
-<p>In the example, a single serial connection is defined using </p>
+<p>In the example, a single serial connection is defined using the class name of TCP.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+ <span class="nt">&lt;connections&gt;</span>
+        <span class="nt">&lt;connection&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+            <span class="nt">&lt;connectionname&gt;</span>Serial RS-232<span class="nt">&lt;/connectionname&gt;</span>
+            <span class="nt">&lt;type&gt;</span>1<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+            <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+            <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+            <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+            <span class="nt">&lt;classes&gt;</span>
+                <span class="nt">&lt;class&gt;</span>
+                    <span class="nt">&lt;classname&gt;</span>TCP<span class="nt">&lt;/classname&gt;</span>
+                    <span class="nt">&lt;ports&gt;</span>
+                      <span class="nt">&lt;port&gt;</span>
+                        <span class="nt">&lt;number&gt;</span>8750<span class="nt">&lt;/number&gt;</span>
+                      <span class="nt">&lt;/port&gt;</span>
+                    <span class="nt">&lt;/ports&gt;</span>
+                <span class="nt">&lt;/class&gt;</span>
+            <span class="nt">&lt;/classes&gt;</span>
+        <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-class'>class</h2>
+
+<p><code>&lt;classes&gt;&lt;/classes&gt;</code></p>
+
+<h3 id='connections-xml-class-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-classes"><code>&lt;classes&gt;</code></a></p>
+
+<p>The class element contains the driver’s XML that defines an individual Class needed by the connection.</p>
+
+<h3 id='connections-xml-class-example'>Example</h3>
+
+<p>In the example, a single serial connection is defined using the class name of TCP.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+ <span class="nt">&lt;connections&gt;</span>
+        <span class="nt">&lt;connection&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+            <span class="nt">&lt;connectionname&gt;</span>Serial RS-232<span class="nt">&lt;/connectionname&gt;</span>
+            <span class="nt">&lt;type&gt;</span>1<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+            <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+            <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+            <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+            <span class="nt">&lt;classes&gt;</span>
+                <span class="nt">&lt;class&gt;</span>
+                    <span class="nt">&lt;classname&gt;</span>TCP<span class="nt">&lt;/classname&gt;</span>
+                    <span class="nt">&lt;ports&gt;</span>
+                      <span class="nt">&lt;port&gt;</span>
+                        <span class="nt">&lt;number&gt;</span>8750<span class="nt">&lt;/number&gt;</span>
+                      <span class="nt">&lt;/port&gt;</span>
+                    <span class="nt">&lt;/ports&gt;</span>
+                <span class="nt">&lt;/class&gt;</span>
+            <span class="nt">&lt;/classes&gt;</span>
+        <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-name'>name</h2>
+
+<p><code>&lt;classname&gt;&lt;/classname&gt;</code></p>
+
+<h3 id='connections-xml-name-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property"><code>&lt;class&gt;</code></a></p>
+
+<p>The name element contains the name of the Class. This name is used to identify the connection and is displayed in Composer Pro Connections area.</p>
+
+<h3 id='connections-xml-name-example'>Example</h3>
+
+<p>In the example, a single serial connection is defined using the class name of TCP.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+ <span class="nt">&lt;connections&gt;</span>
+        <span class="nt">&lt;connection&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+            <span class="nt">&lt;connectionname&gt;</span>Serial RS-232<span class="nt">&lt;/connectionname&gt;</span>
+            <span class="nt">&lt;type&gt;</span>1<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+            <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+            <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+            <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+            <span class="nt">&lt;classes&gt;</span>
+                <span class="nt">&lt;class&gt;</span>
+                    <span class="nt">&lt;classname&gt;</span>TCP<span class="nt">&lt;/classname&gt;</span>
+                    <span class="nt">&lt;ports&gt;</span>
+                      <span class="nt">&lt;port&gt;</span>
+                        <span class="nt">&lt;number&gt;</span>8750<span class="nt">&lt;/number&gt;</span>
+                      <span class="nt">&lt;/port&gt;</span>
+                    <span class="nt">&lt;/ports&gt;</span>
+                <span class="nt">&lt;/class&gt;</span>
+            <span class="nt">&lt;/classes&gt;</span>
+        <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-ports'>ports</h2>
+
+<p><code>&lt;ports&gt;&lt;/ports&gt;</code></p>
+
+<h3 id='connections-xml-ports-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;class&gt;</code></a></p>
+
+<p>The ports XML element defines one or more ports for the class used by the  connection. If the class is TCP or UDP then there may be a ports section.  This includes the IP Port number for the network connection.</p>
+
+<h3 id='connections-xml-ports-example'>Example</h3>
+
+<p>In the example, a single serial connection is defined using the class name of TCP. It has a single port defined: 8750.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+ <span class="nt">&lt;connections&gt;</span>
+        <span class="nt">&lt;connection&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+            <span class="nt">&lt;connectionname&gt;</span>Serial RS-232<span class="nt">&lt;/connectionname&gt;</span>
+            <span class="nt">&lt;type&gt;</span>1<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+            <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+            <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+            <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+            <span class="nt">&lt;classes&gt;</span>
+                <span class="nt">&lt;class&gt;</span>
+                    <span class="nt">&lt;classname&gt;</span>TCP<span class="nt">&lt;/classname&gt;</span>
+                    <span class="nt">&lt;ports&gt;</span>
+                      <span class="nt">&lt;port&gt;</span>
+                        <span class="nt">&lt;number&gt;</span>8750<span class="nt">&lt;/number&gt;</span>
+                      <span class="nt">&lt;/port&gt;</span>
+                    <span class="nt">&lt;/ports&gt;</span>
+                <span class="nt">&lt;/class&gt;</span>
+            <span class="nt">&lt;/classes&gt;</span>
+        <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-port'>port</h2>
+
+<p><code>&lt;port&gt;&lt;/port&gt;</code></p>
+
+<h3 id='connections-xml-port-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;class&gt;</code></a></p>
+
+<p>The port XML element defines a single port for the class used by the  connection. If the class is TCP or UDP then there may be a ports section. This includes the IP Port number for the network connection.</p>
+
+<h3 id='connections-xml-port-example'>Example</h3>
+
+<p>In the example, a single serial connection is defined using the class name of TCP. It has a single port defined: 8750.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+ <span class="nt">&lt;connections&gt;</span>
+        <span class="nt">&lt;connection&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+            <span class="nt">&lt;connectionname&gt;</span>Serial RS-232<span class="nt">&lt;/connectionname&gt;</span>
+            <span class="nt">&lt;type&gt;</span>1<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+            <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+            <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+            <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+            <span class="nt">&lt;classes&gt;</span>
+                <span class="nt">&lt;class&gt;</span>
+                    <span class="nt">&lt;classname&gt;</span>TCP<span class="nt">&lt;/classname&gt;</span>
+                    <span class="nt">&lt;ports&gt;</span>
+                      <span class="nt">&lt;port&gt;</span>
+                        <span class="nt">&lt;number&gt;</span>8750<span class="nt">&lt;/number&gt;</span>
+                      <span class="nt">&lt;/port&gt;</span>
+                    <span class="nt">&lt;/ports&gt;</span>
+                <span class="nt">&lt;/class&gt;</span>
+            <span class="nt">&lt;/classes&gt;</span>
+        <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-number'>number</h2>
+
+<p><code>&lt;number&gt;&lt;/number&gt;</code></p>
+
+<h3 id='connections-xml-number-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;port&gt;</code></a></p>
+
+<p>The number XML element defines the port identification value for a single port for the class used by the  connection. If the class is TCP or UDP then there may be a ports section. This includes the IP Port number for the network connection.</p>
+
+<h3 id='connections-xml-number-example'>Example</h3>
+
+<p>In the example, a single serial connection is defined using the class name of TCP. It has a single port defined: 8750.</p>
 
 <div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
  <span class="nt">&lt;connections&gt;</span>
