@@ -15,7 +15,7 @@ The class element contains the driver’s XML that defines an individual Class n
 In the example, a single serial connection is defined using the class name of TCP.
 
 ```xml
-<connections>
+
  <connections>
 		<connection>
 			<id>1</id>

@@ -1,20 +1,21 @@
-## number
+## delimiter
 
-`<number></number>`
+`<keep_connection></keep_connection>`
 
 
 ### Parent
 
-[`<port>`][1]
+[`<connection>`][1]
 
 
-The number XML element defines the port identification value for a single port for the class used by the  connection. If the class is TCP or UDP then there may be a ports section. This includes the IP Port number for the network connection.
+The delimiter XML element, is used to specify how a network driver should break up incoming packets. NOTE: If delimiter XML is specified, data will not be sent UNTIL the delimiter is reached. If no delimiter specified, data is sent on timeout.
+
 
 ### Example
+In the example, a single serial connection is defined using the class name of TCP. Its delimiter xml element is set to `0d`
 
-In the example, a single serial connection is defined using the class name of TCP. It has a single port defined: 8750.
 
-```xml
+```
 
  <connections>
 		<connection>
@@ -36,6 +37,10 @@ In the example, a single serial connection is defined using the class name of TC
                     </ports>
 				</class>
 			</classes>
+            <auto_connect>True</auto_connect>
+            <monitor_connection>True</monitor_connection>
+            <keep_connection>True</keep_connection>
+            <delimiter>0d</delimiter> 
 		</connection>
 </connections>
 ```

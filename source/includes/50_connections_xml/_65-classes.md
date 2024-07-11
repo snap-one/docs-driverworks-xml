@@ -16,7 +16,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 In the example, a single serial connection is defined using the class name of TCP.
 
 ```xml
-<connections>
+
  <connections>
 		<connection>
 			<id>1</id>

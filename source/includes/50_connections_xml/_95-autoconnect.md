@@ -1,21 +1,20 @@
-## number
+## auto\_connect
 
-`<number></number>`
+`<auto_connect></auto_connect>`
 
 
 ### Parent
 
-[`<port>`][1]
+[`<connection>`][1]
 
 
-The number XML element defines the port identification value for a single port for the class used by the  connection. If the class is TCP or UDP then there may be a ports section. This includes the IP Port number for the network connection.
+The auto\_connect  XML element, when set to True,  creates an Auto Connect for this socket. This socket will be created and connected when the driver is started.
 
 ### Example
-
-In the example, a single serial connection is defined using the class name of TCP. It has a single port defined: 8750.
+In the example, a single serial connection is defined using the class name of TCP. Its auto\_connect xml element is set to True.
 
 ```xml
-
+<connections>
  <connections>
 		<connection>
 			<id>1</id>
@@ -36,6 +35,7 @@ In the example, a single serial connection is defined using the class name of TC
                     </ports>
 				</class>
 			</classes>
+            <auto_connect>True</auto_connect>
 		</connection>
 </connections>
 ```

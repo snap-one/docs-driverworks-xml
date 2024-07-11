@@ -1,18 +1,18 @@
-## number
+## monitor\_connection
 
-`<number></number>`
+`<monitor_connection></monitor_connection>`
 
 
 ### Parent
 
-[`<port>`][1]
+[`<connection>`][1]
 
 
-The number XML element defines the port identification value for a single port for the class used by the  connection. If the class is TCP or UDP then there may be a ports section. This includes the IP Port number for the network connection.
+The monitor\_connection  XML element, when set to True,  provides monitoring of this socket. Director will periodically check the connection, if data is not returned on this socket it will be considered down.
+
 
 ### Example
-
-In the example, a single serial connection is defined using the class name of TCP. It has a single port defined: 8750.
+In the example, a single serial connection is defined using the class name of TCP. Its monitor\_connect xml element is set to True.
 
 ```xml
 
@@ -36,6 +36,8 @@ In the example, a single serial connection is defined using the class name of TC
                     </ports>
 				</class>
 			</classes>
+            <auto_connect>True</auto_connect>
+            <monitor_connection>True</monitor_connection>
 		</connection>
 </connections>
 ```

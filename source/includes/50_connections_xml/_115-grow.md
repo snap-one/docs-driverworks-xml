@@ -1,20 +1,20 @@
-## number
+## grow
 
-`<number></number>`
+`<grow></grow>`
 
 
 ### Parent
 
-[`<port>`][1]
+[`<connection>`][1]
 
 
-The number XML element defines the port identification value for a single port for the class used by the  connection. If the class is TCP or UDP then there may be a ports section. This includes the IP Port number for the network connection.
+The grow XML element is used to define the number of bytes to increaase the size of receive buffers by when the original receiver buffer is overflowed.
 
 ### Example
+In the example, a single serial connection is defined using the class name of TCP. Its grow xml element is set to 255 bytes of increase.
 
-In the example, a single serial connection is defined using the class name of TCP. It has a single port defined: 8750.
 
-```xml
+```
 
  <connections>
 		<connection>
@@ -36,6 +36,11 @@ In the example, a single serial connection is defined using the class name of TC
                     </ports>
 				</class>
 			</classes>
+            <auto_connect>True</auto_connect>
+            <monitor_connection>True</monitor_connection>
+            <keep_connection>True</keep_connection>
+            <delimiter>0d</delimiter> 
+            <grow>255</grow> 
 		</connection>
 </connections>
 ```

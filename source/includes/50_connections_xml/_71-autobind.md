@@ -1,18 +1,19 @@
-## number
+## autobind
 
-`<number></number>`
+`<autobind></autobind>`
 
 
 ### Parent
 
-[`<port>`][1]
+[`<class>`][1]
 
 
-The number XML element defines the port identification value for a single port for the class used by the  connection. If the class is TCP or UDP then there may be a ports section. This includes the IP Port number for the network connection.
+The autobind XML element, when set to True, marks this class as needed to be autobound. If an idautobind is provided then this class will be connected on that binding. Otherwise, it will be connected on the first connection in the project providing this class.
+
 
 ### Example
 
-In the example, a single serial connection is defined using the class name of TCP. It has a single port defined: 8750.
+In the example, a single serial connection is defined using the class name of TCP. Its autobind XML element is set to True.
 
 ```xml
 
@@ -29,6 +30,7 @@ In the example, a single serial connection is defined using the class name of TC
 			<classes>
 				<class>
 					<classname>TCP</classname>
+                    <autobind>True</autobind>
                     <ports>
                       <port>
                         <number>8750</number>
@@ -44,4 +46,4 @@ In the example, a single serial connection is defined using the class name of TC
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#connections-xml-class

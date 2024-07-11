@@ -1,18 +1,17 @@
-## number
+## keep\_connection
 
-`<number></number>`
+`<keep_connection></keep_connection>`
 
 
 ### Parent
 
-[`<port>`][1]
+[`<connection>`][1]
 
 
-The number XML element defines the port identification value for a single port for the class used by the  connection. If the class is TCP or UDP then there may be a ports section. This includes the IP Port number for the network connection.
+The keep\_connection  XML element, when set to True, keeps this connection connected. This means if the connection goes down, Director will attempt to re-connect it.
 
 ### Example
-
-In the example, a single serial connection is defined using the class name of TCP. It has a single port defined: 8750.
+In the example, a single serial connection is defined using the class name of TCP. Its keep\_connection xml element is set to True.
 
 ```xml
 
@@ -36,6 +35,9 @@ In the example, a single serial connection is defined using the class name of TC
                     </ports>
 				</class>
 			</classes>
+            <auto_connect>True</auto_connect>
+            <monitor_connection>True</monitor_connection>
+            <keep_connection>True</keep_connection>
 		</connection>
 </connections>
 ```

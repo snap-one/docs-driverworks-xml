@@ -15,7 +15,7 @@ The ports XML element defines one or more ports for the class used by the  conne
 In the example, a single serial connection is defined using the class name of TCP. It has a single port defined: 8750.
 
 ```xml
-<connections>
+
  <connections>
 		<connection>
 			<id>1</id>

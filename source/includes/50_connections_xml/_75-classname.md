@@ -16,7 +16,7 @@ The name element contains the name of the Class. This name is used to identify t
 In the example, a single serial connection is defined using the class name of TCP.
 
 ```xml
-<connections>
+
  <connections>
 		<connection>
 			<id>1</id>
