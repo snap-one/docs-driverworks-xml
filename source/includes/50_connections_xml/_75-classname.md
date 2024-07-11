@@ -1,15 +1,15 @@
-## classes
+## name
 
-`<classes></classes>`
+`<classname></classname>`
 
 
 ### Parent
 
-[`<connection>`][1]
+[`<class>`][1]
 
 
-The classes XML element defines one or more classes for this connection.
-If the class is TCP or UDP then there may be a ports section as seen to the right. This includes the IP Port number for the network connection.
+The name element contains the name of the Class. This name is used to identify the connection and is displayed in Composer Pro Connections area.
+
 
 ### Example
 
@@ -44,5 +44,4 @@ In the example, a single serial connection is defined using the class name of TC
 
 
 
-
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property

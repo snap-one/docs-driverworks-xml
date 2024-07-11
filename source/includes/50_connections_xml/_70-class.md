@@ -1,15 +1,14 @@
-## classes
+## class
 
 `<classes></classes>`
 
 
 ### Parent
 
-[`<connection>`][1]
+[`<classes>`][1]
 
 
-The classes XML element defines one or more classes for this connection.
-If the class is TCP or UDP then there may be a ports section as seen to the right. This includes the IP Port number for the network connection.
+The class element contains the driver’s XML that defines an individual Class needed by the connection.
 
 ### Example
 
@@ -45,4 +44,4 @@ In the example, a single serial connection is defined using the class name of TC
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection
+[1]:	https://verbose-telegram-5004f902.pages.github.io/#connections-xml-classes

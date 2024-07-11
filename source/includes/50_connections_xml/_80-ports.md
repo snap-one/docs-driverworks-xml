@@ -1,19 +1,18 @@
-## classes
+## ports
 
-`<classes></classes>`
+`<ports></ports>`
 
 
 ### Parent
 
-[`<connection>`][1]
+[`<class>`][1]
 
 
-The classes XML element defines one or more classes for this connection.
-If the class is TCP or UDP then there may be a ports section as seen to the right. This includes the IP Port number for the network connection.
+The ports XML element defines one or more ports for the class used by the  connection. If the class is TCP or UDP then there may be a ports section.  This includes the IP Port number for the network connection.
 
 ### Example
 
-In the example, a single serial connection is defined using the class name of TCP.
+In the example, a single serial connection is defined using the class name of TCP. It has a single port defined: 8750.
 
 ```xml
 <connections>
