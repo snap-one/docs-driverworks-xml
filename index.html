@@ -714,7 +714,7 @@
                     <a href="#connections-xml-linelevel" class="toc-h2 toc-link" data-title="linelevel">linelevel</a>
                   </li>
                   <li>
-                    <a href="#connections-xml-linelevel" class="toc-h2 toc-link" data-title="linelevel">linelevel</a>
+                    <a href="#connections-xml-idautobind" class="toc-h2 toc-link" data-title="idautobind">idautobind</a>
                   </li>
                   <li>
                     <a href="#connections-xml-hidden" class="toc-h2 toc-link" data-title="hidden">hidden</a>
@@ -724,6 +724,9 @@
                   </li>
                   <li>
                     <a href="#connections-xml-class" class="toc-h2 toc-link" data-title="class">class</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-autobind" class="toc-h2 toc-link" data-title="autobind">autobind</a>
                   </li>
                   <li>
                     <a href="#connections-xml-name" class="toc-h2 toc-link" data-title="name">name</a>
@@ -736,6 +739,21 @@
                   </li>
                   <li>
                     <a href="#connections-xml-number" class="toc-h2 toc-link" data-title="number">number</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-auto_connect" class="toc-h2 toc-link" data-title="auto_connect">auto_connect</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-monitor_connection" class="toc-h2 toc-link" data-title="monitor_connection">monitor_connection</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-keep_connection" class="toc-h2 toc-link" data-title="keep_connection">keep_connection</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-delimiter" class="toc-h2 toc-link" data-title="delimiter">delimiter</a>
+                  </li>
+                  <li>
+                    <a href="#connections-xml-grow" class="toc-h2 toc-link" data-title="grow">grow</a>
                   </li>
               </ul>
           </li>
@@ -4752,17 +4770,17 @@ Salt Lake City, UT 84020 USA</p>
 <span class="nt">&lt;/connections&gt;</span>
 </code></pre></div>
 
-<h2 id='connections-xml-linelevel'>linelevel</h2>
+<h2 id='connections-xml-idautobind'>idautobind</h2>
 
-<p><code>&lt;linelevel&gt;&lt;/linelevel&gt;</code></p>
+<p><code>&lt;idautobind&gt;&lt;/idautobind&gt;</code></p>
 
-<h3 id='connections-xml-linelevel-parent'>Parent</h3>
+<h3 id='connections-xml-idautobind-parent'>Parent</h3>
 
 <p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The idautobind element is an optional tag that allows the connection to automatically connect to a connection with the defined idautobind value. The supported value range is 0 - 999.</p>
 
-<h3 id='connections-xml-linelevel-example'>Example</h3>
+<h3 id='connections-xml-idautobind-example'>Example</h3>
 
 <p>In the example, a single connection for a Thermostat is defined using an idautobind value of 15.  This indicates that this connection will automatically connect to another defined connection with the idautobind value of 15. </p>
 
@@ -4837,7 +4855,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <p>In the example, a single serial connection is defined using the class name of TCP.</p>
 
-<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+<div class="highlight"><pre class="highlight xml tab-xml"><code>
  <span class="nt">&lt;connections&gt;</span>
         <span class="nt">&lt;connection&gt;</span>
             <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
@@ -4876,7 +4894,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <p>In the example, a single serial connection is defined using the class name of TCP.</p>
 
-<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+<div class="highlight"><pre class="highlight xml tab-xml"><code>
  <span class="nt">&lt;connections&gt;</span>
         <span class="nt">&lt;connection&gt;</span>
             <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
@@ -4890,6 +4908,46 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
             <span class="nt">&lt;classes&gt;</span>
                 <span class="nt">&lt;class&gt;</span>
                     <span class="nt">&lt;classname&gt;</span>TCP<span class="nt">&lt;/classname&gt;</span>
+                    <span class="nt">&lt;ports&gt;</span>
+                      <span class="nt">&lt;port&gt;</span>
+                        <span class="nt">&lt;number&gt;</span>8750<span class="nt">&lt;/number&gt;</span>
+                      <span class="nt">&lt;/port&gt;</span>
+                    <span class="nt">&lt;/ports&gt;</span>
+                <span class="nt">&lt;/class&gt;</span>
+            <span class="nt">&lt;/classes&gt;</span>
+        <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-autobind'>autobind</h2>
+
+<p><code>&lt;autobind&gt;&lt;/autobind&gt;</code></p>
+
+<h3 id='connections-xml-autobind-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-class"><code>&lt;class&gt;</code></a></p>
+
+<p>The autobind XML element, when set to True, marks this class as needed to be autobound. If an idautobind is provided then this class will be connected on that binding. Otherwise, it will be connected on the first connection in the project providing this class.</p>
+
+<h3 id='connections-xml-autobind-example'>Example</h3>
+
+<p>In the example, a single serial connection is defined using the class name of TCP. Its autobind XML element is set to True.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>
+ <span class="nt">&lt;connections&gt;</span>
+        <span class="nt">&lt;connection&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+            <span class="nt">&lt;connectionname&gt;</span>Serial RS-232<span class="nt">&lt;/connectionname&gt;</span>
+            <span class="nt">&lt;type&gt;</span>1<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+            <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+            <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+            <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+            <span class="nt">&lt;classes&gt;</span>
+                <span class="nt">&lt;class&gt;</span>
+                    <span class="nt">&lt;classname&gt;</span>TCP<span class="nt">&lt;/classname&gt;</span>
+                    <span class="nt">&lt;autobind&gt;</span>True<span class="nt">&lt;/autobind&gt;</span>
                     <span class="nt">&lt;ports&gt;</span>
                       <span class="nt">&lt;port&gt;</span>
                         <span class="nt">&lt;number&gt;</span>8750<span class="nt">&lt;/number&gt;</span>
@@ -4915,7 +4973,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <p>In the example, a single serial connection is defined using the class name of TCP.</p>
 
-<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+<div class="highlight"><pre class="highlight xml tab-xml"><code>
  <span class="nt">&lt;connections&gt;</span>
         <span class="nt">&lt;connection&gt;</span>
             <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
@@ -4954,7 +5012,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <p>In the example, a single serial connection is defined using the class name of TCP. It has a single port defined: 8750.</p>
 
-<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+<div class="highlight"><pre class="highlight xml tab-xml"><code>
  <span class="nt">&lt;connections&gt;</span>
         <span class="nt">&lt;connection&gt;</span>
             <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
@@ -4993,7 +5051,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <p>In the example, a single serial connection is defined using the class name of TCP. It has a single port defined: 8750.</p>
 
-<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+<div class="highlight"><pre class="highlight xml tab-xml"><code>
  <span class="nt">&lt;connections&gt;</span>
         <span class="nt">&lt;connection&gt;</span>
             <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
@@ -5032,7 +5090,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <p>In the example, a single serial connection is defined using the class name of TCP. It has a single port defined: 8750.</p>
 
-<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+<div class="highlight"><pre class="highlight xml tab-xml"><code>
  <span class="nt">&lt;connections&gt;</span>
         <span class="nt">&lt;connection&gt;</span>
             <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
@@ -5055,6 +5113,216 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
             <span class="nt">&lt;/classes&gt;</span>
         <span class="nt">&lt;/connection&gt;</span>
 <span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-auto_connect'>auto_connect</h2>
+
+<p><code>&lt;auto_connect&gt;&lt;/auto_connect&gt;</code></p>
+
+<h3 id='connections-xml-auto_connect-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The auto_connect  XML element, when set to True,  creates an Auto Connect for this socket. This socket will be created and connected when the driver is started.</p>
+
+<h3 id='connections-xml-auto_connect-example'>Example</h3>
+
+<p>In the example, a single serial connection is defined using the class name of TCP. Its auto_connect xml element is set to True.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
+ <span class="nt">&lt;connections&gt;</span>
+        <span class="nt">&lt;connection&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+            <span class="nt">&lt;connectionname&gt;</span>Serial RS-232<span class="nt">&lt;/connectionname&gt;</span>
+            <span class="nt">&lt;type&gt;</span>1<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+            <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+            <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+            <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+            <span class="nt">&lt;classes&gt;</span>
+                <span class="nt">&lt;class&gt;</span>
+                    <span class="nt">&lt;classname&gt;</span>TCP<span class="nt">&lt;/classname&gt;</span>
+                    <span class="nt">&lt;ports&gt;</span>
+                      <span class="nt">&lt;port&gt;</span>
+                        <span class="nt">&lt;number&gt;</span>8750<span class="nt">&lt;/number&gt;</span>
+                      <span class="nt">&lt;/port&gt;</span>
+                    <span class="nt">&lt;/ports&gt;</span>
+                <span class="nt">&lt;/class&gt;</span>
+            <span class="nt">&lt;/classes&gt;</span>
+            <span class="nt">&lt;auto_connect&gt;</span>True<span class="nt">&lt;/auto_connect&gt;</span>
+        <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-monitor_connection'>monitor_connection</h2>
+
+<p><code>&lt;monitor_connection&gt;&lt;/monitor_connection&gt;</code></p>
+
+<h3 id='connections-xml-monitor_connection-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The monitor_connection  XML element, when set to True,  provides monitoring of this socket. Director will periodically check the connection, if data is not returned on this socket it will be considered down.</p>
+
+<h3 id='connections-xml-monitor_connection-example'>Example</h3>
+
+<p>In the example, a single serial connection is defined using the class name of TCP. Its monitor_connect xml element is set to True.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>
+ <span class="nt">&lt;connections&gt;</span>
+        <span class="nt">&lt;connection&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+            <span class="nt">&lt;connectionname&gt;</span>Serial RS-232<span class="nt">&lt;/connectionname&gt;</span>
+            <span class="nt">&lt;type&gt;</span>1<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+            <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+            <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+            <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+            <span class="nt">&lt;classes&gt;</span>
+                <span class="nt">&lt;class&gt;</span>
+                    <span class="nt">&lt;classname&gt;</span>TCP<span class="nt">&lt;/classname&gt;</span>
+                    <span class="nt">&lt;ports&gt;</span>
+                      <span class="nt">&lt;port&gt;</span>
+                        <span class="nt">&lt;number&gt;</span>8750<span class="nt">&lt;/number&gt;</span>
+                      <span class="nt">&lt;/port&gt;</span>
+                    <span class="nt">&lt;/ports&gt;</span>
+                <span class="nt">&lt;/class&gt;</span>
+            <span class="nt">&lt;/classes&gt;</span>
+            <span class="nt">&lt;auto_connect&gt;</span>True<span class="nt">&lt;/auto_connect&gt;</span>
+            <span class="nt">&lt;monitor_connection&gt;</span>True<span class="nt">&lt;/monitor_connection&gt;</span>
+        <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-keep_connection'>keep_connection</h2>
+
+<p><code>&lt;keep_connection&gt;&lt;/keep_connection&gt;</code></p>
+
+<h3 id='connections-xml-keep_connection-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The keep_connection  XML element, when set to True, keeps this connection connected. This means if the connection goes down, Director will attempt to re-connect it.</p>
+
+<h3 id='connections-xml-keep_connection-example'>Example</h3>
+
+<p>In the example, a single serial connection is defined using the class name of TCP. Its keep_connection xml element is set to True.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code>
+ <span class="nt">&lt;connections&gt;</span>
+        <span class="nt">&lt;connection&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+            <span class="nt">&lt;connectionname&gt;</span>Serial RS-232<span class="nt">&lt;/connectionname&gt;</span>
+            <span class="nt">&lt;type&gt;</span>1<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+            <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+            <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+            <span class="nt">&lt;linelevel&gt;</span>False<span class="nt">&lt;/linelevel&gt;</span>
+            <span class="nt">&lt;classes&gt;</span>
+                <span class="nt">&lt;class&gt;</span>
+                    <span class="nt">&lt;classname&gt;</span>TCP<span class="nt">&lt;/classname&gt;</span>
+                    <span class="nt">&lt;ports&gt;</span>
+                      <span class="nt">&lt;port&gt;</span>
+                        <span class="nt">&lt;number&gt;</span>8750<span class="nt">&lt;/number&gt;</span>
+                      <span class="nt">&lt;/port&gt;</span>
+                    <span class="nt">&lt;/ports&gt;</span>
+                <span class="nt">&lt;/class&gt;</span>
+            <span class="nt">&lt;/classes&gt;</span>
+            <span class="nt">&lt;auto_connect&gt;</span>True<span class="nt">&lt;/auto_connect&gt;</span>
+            <span class="nt">&lt;monitor_connection&gt;</span>True<span class="nt">&lt;/monitor_connection&gt;</span>
+            <span class="nt">&lt;keep_connection&gt;</span>True<span class="nt">&lt;/keep_connection&gt;</span>
+        <span class="nt">&lt;/connection&gt;</span>
+<span class="nt">&lt;/connections&gt;</span>
+</code></pre></div>
+
+<h2 id='connections-xml-delimiter'>delimiter</h2>
+
+<p><code>&lt;keep_connection&gt;&lt;/keep_connection&gt;</code></p>
+
+<h3 id='connections-xml-delimiter-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The delimiter XML element, is used to specify how a network driver should break up incoming packets. NOTE: If delimiter XML is specified, data will not be sent UNTIL the delimiter is reached. If no delimiter specified, data is sent on timeout.</p>
+
+<h3 id='connections-xml-delimiter-example'>Example</h3>
+
+<p>In the example, a single serial connection is defined using the class name of TCP. Its delimiter xml element is set to <code>0d</code></p>
+
+<div class="highlight"><pre class="highlight plaintext"><code>
+ &lt;connections&gt;
+        &lt;connection&gt;
+            &lt;id&gt;1&lt;/id&gt;
+            &lt;facing&gt;6&lt;/facing&gt;
+            &lt;connectionname&gt;Serial RS-232&lt;/connectionname&gt;
+            &lt;type&gt;1&lt;/type&gt;
+            &lt;consumer&gt;True&lt;/consumer&gt;
+            &lt;audiosource&gt;False&lt;/audiosource&gt;
+            &lt;videosource&gt;False&lt;/videosource&gt;
+            &lt;linelevel&gt;False&lt;/linelevel&gt;
+            &lt;classes&gt;
+                &lt;class&gt;
+                    &lt;classname&gt;TCP&lt;/classname&gt;
+                    &lt;ports&gt;
+                      &lt;port&gt;
+                        &lt;number&gt;8750&lt;/number&gt;
+                      &lt;/port&gt;
+                    &lt;/ports&gt;
+                &lt;/class&gt;
+            &lt;/classes&gt;
+            &lt;auto_connect&gt;True&lt;/auto_connect&gt;
+            &lt;monitor_connection&gt;True&lt;/monitor_connection&gt;
+            &lt;keep_connection&gt;True&lt;/keep_connection&gt;
+            &lt;delimiter&gt;0d&lt;/delimiter&gt; 
+        &lt;/connection&gt;
+&lt;/connections&gt;
+</code></pre></div>
+
+<h2 id='connections-xml-grow'>grow</h2>
+
+<p><code>&lt;grow&gt;&lt;/grow&gt;</code></p>
+
+<h3 id='connections-xml-grow-parent'>Parent</h3>
+
+<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+
+<p>The grow XML element is used to define the number of bytes to increaase the size of receive buffers by when the original receiver buffer is overflowed.</p>
+
+<h3 id='connections-xml-grow-example'>Example</h3>
+
+<p>In the example, a single serial connection is defined using the class name of TCP. Its grow xml element is set to 255 bytes of increase.</p>
+
+<div class="highlight"><pre class="highlight plaintext"><code>
+ &lt;connections&gt;
+        &lt;connection&gt;
+            &lt;id&gt;1&lt;/id&gt;
+            &lt;facing&gt;6&lt;/facing&gt;
+            &lt;connectionname&gt;Serial RS-232&lt;/connectionname&gt;
+            &lt;type&gt;1&lt;/type&gt;
+            &lt;consumer&gt;True&lt;/consumer&gt;
+            &lt;audiosource&gt;False&lt;/audiosource&gt;
+            &lt;videosource&gt;False&lt;/videosource&gt;
+            &lt;linelevel&gt;False&lt;/linelevel&gt;
+            &lt;classes&gt;
+                &lt;class&gt;
+                    &lt;classname&gt;TCP&lt;/classname&gt;
+                    &lt;ports&gt;
+                      &lt;port&gt;
+                        &lt;number&gt;8750&lt;/number&gt;
+                      &lt;/port&gt;
+                    &lt;/ports&gt;
+                &lt;/class&gt;
+            &lt;/classes&gt;
+            &lt;auto_connect&gt;True&lt;/auto_connect&gt;
+            &lt;monitor_connection&gt;True&lt;/monitor_connection&gt;
+            &lt;keep_connection&gt;True&lt;/keep_connection&gt;
+            &lt;delimiter&gt;0d&lt;/delimiter&gt; 
+            &lt;grow&gt;255&lt;/grow&gt; 
+        &lt;/connection&gt;
+&lt;/connections&gt;
 </code></pre></div>
 
       </div>
