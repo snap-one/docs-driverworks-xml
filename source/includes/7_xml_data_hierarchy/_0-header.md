@@ -1,7 +1,7 @@
 
 # XML Data Hierarchy
 
-```
+```xml
 <devicedata>
 	<copyright></copyright>
 	<creator></creator>
