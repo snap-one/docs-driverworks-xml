@@ -814,7 +814,7 @@ Salt Lake City, UT 84020 USA</p>
 <p>Inside of a  device driver, protocol code is written in XML and Lua which is an embedded scripting language delivered with the DriverWorks SDK. The resulting file is referred to as the “Protocol Driver”. When combined with the Proxy Driver, it provides the foundation needed to implement a 2-way device driver in the Control4 OS.</p>
 
 <p>In addition to a Common XML section, the guide is organized by Proxy. You will find the Common section has XML element definitions that make up the foundation of a well formed XML component of a protocol driver. Each Proxy specific section contains XML element definitions that are most commonly found in a device class driver as well as other XML elements that you may find useful in your driver development efforts.</p>
-<p><h1 id='xml-data-hierarchy'>XML Data Hierarchy</h1><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;devicedata&gt;</span>
+<p><h1 id='xml-data-hierarchy'>XML Data Hierarchy</h1><div class="highlight"><pre class="highlight html tab-html"><code><span class="nt">&lt;devicedata&gt;</span>
     <span class="nt">&lt;copyright&gt;&lt;/copyright&gt;</span>
     <span class="nt">&lt;creator&gt;&lt;/creator&gt;</span>
     <span class="nt">&lt;name&gt;&lt;/name&gt;</span>
@@ -859,9 +859,9 @@ Salt Lake City, UT 84020 USA</p>
                         <span class="nt">&lt;items&gt;</span>
                             <span class="nt">&lt;item&gt;&lt;/item&gt;</span>
                         <span class="nt">&lt;/items&gt;</span>
-                        <span class="nt">&lt;multiselect&gt;</span><span class="err">&lt;</span>/multiselect&amp;gt;
+                        <span class="nt">&lt;multiselect&gt;&lt;/multiselect&gt;</span>
                         <span class="nt">&lt;search&gt;&lt;search/&gt;</span>
-                        <span class="nt">&lt;password&gt;</span><span class="err">&lt;</span>/password&amp;gt;
+                        <span class="nt">&lt;password&gt;&lt;/password&gt;</span>
                     <span class="nt">&lt;/param&gt;</span>
                 <span class="nt">&lt;/params&gt;</span>
                 <span class="nt">&lt;sort_order&gt;&lt;/sort_order&gt;</span>
@@ -927,8 +927,8 @@ Salt Lake City, UT 84020 USA</p>
     <span class="nt">&lt;/events&gt;</span>
     <span class="nt">&lt;connections&gt;</span>
         <span class="nt">&lt;connection&gt;</span>
-            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
-            <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+            <span class="nt">&lt;id&gt;&lt;/id&gt;</span>
+            <span class="nt">&lt;facing&gt;&lt;/facing&gt;</span>
             <span class="nt">&lt;connectionname&gt;&lt;/connectionname&gt;</span>
             <span class="nt">&lt;type&gt;&lt;/type&gt;</span>
             <span class="nt">&lt;consumer&gt;&lt;/consumer&gt;</span>
