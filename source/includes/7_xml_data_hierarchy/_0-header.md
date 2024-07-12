@@ -1,7 +1,7 @@
 
 # XML Data Hierarchy
 
-```xml
+```html
 <devicedata>
 	<copyright></copyright>
 	<creator></creator>
@@ -47,9 +47,9 @@
                         <items>
 							<item></item>
 						</items>
-                        <multiselect></multiselect\>
+                        <multiselect></multiselect>
 						<search><search/>
-                        <password></password\>
+                        <password></password>
 					</param>
 				</params>
                 <sort_order></sort_order>
@@ -115,8 +115,8 @@
 	</events>
 	<connections>
 		<connection>
-			<id>1</id>
-			<facing>6</facing>
+			<id></id>
+			<facing></facing>
 			<connectionname></connectionname>
 			<type></type>
 			<consumer></consumer>
