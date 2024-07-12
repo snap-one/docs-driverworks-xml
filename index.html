@@ -814,136 +814,136 @@ Salt Lake City, UT 84020 USA</p>
 <p>Inside of a  device driver, protocol code is written in XML and Lua which is an embedded scripting language delivered with the DriverWorks SDK. The resulting file is referred to as the “Protocol Driver”. When combined with the Proxy Driver, it provides the foundation needed to implement a 2-way device driver in the Control4 OS.</p>
 
 <p>In addition to a Common XML section, the guide is organized by Proxy. You will find the Common section has XML element definitions that make up the foundation of a well formed XML component of a protocol driver. Each Proxy specific section contains XML element definitions that are most commonly found in a device class driver as well as other XML elements that you may find useful in your driver development efforts.</p>
-<p><h1 id='xml-data-hierarchy'>XML Data Hierarchy</h1><div class="highlight"><pre class="highlight plaintext"><code>&lt;devicedata&gt;
-    &lt;copyright&gt;&lt;/copyright&gt;
-    &lt;creator&gt;&lt;/creator&gt;
-    &lt;name&gt;&lt;/name&gt;
-    &lt;version&gt;&lt;/version&gt;
-    &lt;manufacturer&gt;&lt;/manufacturer&gt;
-    &lt;model&gt;&lt;/model&gt;
-    &lt;created&gt;&lt;/created&gt;
-    &lt;modified&gt;&lt;/modified&gt;
-    &lt;small&gt;&lt;/small&gt;
-    &lt;large&gt;&lt;/large&gt;
-    &lt;control&gt;&lt;/control&gt;
-    &lt;controlmethod&gt;&lt;/controlmethod&gt;
-    &lt;auto_update&gt;&lt;/auto_update&gt;
-    &lt;driver&gt;&lt;/driver&gt;
-    &lt;user_defined&gt;&lt;/user_defined&gt;
-    &lt;combo&gt;&lt;/combo&gt;
-    &lt;capabilities&gt;&lt;/capabilities&gt;
- &lt;notification_attachment_provider&gt;&lt;/notification_attachment_provider&gt;
-    &lt;notification_attachments&gt;
-        &lt;attachment&gt;
-            &lt;id&gt;&lt;/id&gt;
-            &lt;type&gt;&lt;/type&gt;
-            &lt;description&gt;&lt;/description&gt;
-            &lt;source&gt;&lt;/source&gt;
-        &lt;/attachment&gt;
-    &lt;/notification_attachments&gt;
-    &lt;config&gt;
-        &lt;power_command_needed&gt;&lt;/power_command_needed&gt;
-        &lt;documentation&gt;&lt;/documentation&gt;
-        &lt;script&gt;&lt;/script&gt;
-        &lt;actions&gt;
-            &lt;action&gt;
-                &lt;name&gt;&lt;/name&gt;
-                &lt;command&gt;&lt;/command&gt;
-                &lt;params&gt;
-                    &lt;param&gt;
-                        &lt;name&gt;&lt;/name&gt;
-                        &lt;type&gt;&lt;/type&gt;
-                        &lt;variabletype&gt;&lt;/variabletype&gt;
-                        &lt;minimum&gt;&lt;/minimum&gt;
-                        &lt;maximum&gt;&lt;/maximum&gt;
-                        &lt;items&gt;
-                            &lt;item&gt;&lt;/item&gt;
-                        &lt;/items&gt;
-                        &lt;multiselect&gt;&lt;/multiselect&amp;gt;
-                        &lt;search&gt;&lt;search/&gt;
-                        &lt;password&gt;&lt;/password&amp;gt;
-                    &lt;/param&gt;
-                &lt;/params&gt;
-                &lt;sort_order&gt;&lt;/sort_order&gt;
-            &lt;/action&gt;
-        &lt;actions&gt;
-        &lt;commands&gt;
-            &lt;command&gt;
-                &lt;name&gt;&lt;/name&gt;
-                &lt;description&gt;&lt;/description&gt;
-                &lt;sort_order&gt;&lt;/sort_order&gt;
-                &lt;params&gt;
-                    &lt;param&gt;
-                        &lt;name&gt;&lt;/name&gt;
-                        &lt;type&gt;&lt;/type&gt;
-                        &lt;variabletype&gt;&lt;varibaletype/&gt;
-                        &lt;items&gt;&lt;items/&gt;
-                          &lt;item&gt;&lt;item/&gt;
-                        &lt;minimum&gt;&lt;/minimum&gt;
-                        &lt;maximum&gt;&lt;/maximum&gt;
-                    &lt;/param&gt;
-                &lt;/params&gt;
-            &lt;/command&gt;
-        &lt;/commands&gt;
-        &lt;conditionals&gt;
-            &lt;conditional&gt;
-                &lt;id&gt;&lt;/id&gt;
-                &lt;name&gt;&lt;/name&gt;
-                &lt;type&gt;&lt;/type&gt;
-                &lt;condition_statement&gt;&lt;/condition_statement&gt;
-                &lt;description&gt;&lt;/description&gt;
-                &lt;truetext&gt;&lt;truetext/&gt;
-                &lt;falsetext&gt;&lt;falsetext/&gt;
-                &lt;minimum&gt;&lt;/minimum&gt;
-                &lt;maximum&gt;&lt;/maximum&gt;
-                &lt;items&gt;&lt;/items&gt;
-                  &lt;item&gt;&lt;/item&gt;
-            &lt;/conditional&gt;
-        &lt;/conditionals&gt;
-        &lt;properties&gt;
-            &lt;property&gt;
-                &lt;name&gt;&lt;/name&gt;
-                &lt;type&gt;&lt;/type&gt;
-                &lt;readonly&gt;&lt;/readonly&gt;
-                &lt;tooltip&gt;&lt;/tooltip&gt;
-                &lt;default&gt;&lt;/default&gt;
-                &lt;minimum&gt;&lt;/minimum&gt;
-                &lt;maximum&gt;&lt;/maximum&gt;
-                &lt;items&gt;&lt;/items&gt;
-                  &lt;item&gt;&lt;/item&gt;
-            &lt;/property&gt;
-        &lt;properties/&gt;
-    &lt;/config&gt;
-    &lt;composer_categories&gt;
-      &lt;/category&gt;&lt;category&gt;
-    &lt;/composer_categories&gt;
-    &lt;events&gt;
-        &lt;event&gt;
-            &lt;id&gt;1&lt;/id&gt;
-            &lt;name&gt;&lt;/name&gt;
-            &lt;description&gt;&lt;/description&gt;
-            &lt;sort_order&gt;&lt;/sort_order&gt;
-        &lt;/event&gt;
-    &lt;/events&gt;
-    &lt;connections&gt;
-        &lt;connection&gt;
-            &lt;id&gt;1&lt;/id&gt;
-            &lt;facing&gt;6&lt;/facing&gt;
-            &lt;connectionname&gt;&lt;/connectionname&gt;
-            &lt;type&gt;&lt;/type&gt;
-            &lt;consumer&gt;&lt;/consumer&gt;
-            &lt;audiosource&gt;&lt;/audiosource&gt;
-            &lt;videosource&gt;&lt;/videosource&gt;
-            &lt;linelevel&gt;&lt;/linelevel&gt;
-            &lt;classes&gt;
-                &lt;class&gt;
-                    &lt;classname&gt;&lt;/classname&gt;
-                &lt;/class&gt;
-            &lt;/classes&gt;
-            &lt;hidden&gt;&lt;/hidden&gt;
-        &lt;/connection&gt;
-    &lt;/connections&gt;
-&lt;/devicedata&gt;
+<p><h1 id='xml-data-hierarchy'>XML Data Hierarchy</h1><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;devicedata&gt;</span>
+    <span class="nt">&lt;copyright&gt;&lt;/copyright&gt;</span>
+    <span class="nt">&lt;creator&gt;&lt;/creator&gt;</span>
+    <span class="nt">&lt;name&gt;&lt;/name&gt;</span>
+    <span class="nt">&lt;version&gt;&lt;/version&gt;</span>
+    <span class="nt">&lt;manufacturer&gt;&lt;/manufacturer&gt;</span>
+    <span class="nt">&lt;model&gt;&lt;/model&gt;</span>
+    <span class="nt">&lt;created&gt;&lt;/created&gt;</span>
+    <span class="nt">&lt;modified&gt;&lt;/modified&gt;</span>
+    <span class="nt">&lt;small&gt;&lt;/small&gt;</span>
+    <span class="nt">&lt;large&gt;&lt;/large&gt;</span>
+    <span class="nt">&lt;control&gt;&lt;/control&gt;</span>
+    <span class="nt">&lt;controlmethod&gt;&lt;/controlmethod&gt;</span>
+    <span class="nt">&lt;auto_update&gt;&lt;/auto_update&gt;</span>
+    <span class="nt">&lt;driver&gt;&lt;/driver&gt;</span>
+    <span class="nt">&lt;user_defined&gt;&lt;/user_defined&gt;</span>
+    <span class="nt">&lt;combo&gt;&lt;/combo&gt;</span>
+    <span class="nt">&lt;capabilities&gt;&lt;/capabilities&gt;</span>
+ <span class="nt">&lt;notification_attachment_provider&gt;&lt;/notification_attachment_provider&gt;</span>
+    <span class="nt">&lt;notification_attachments&gt;</span>
+        <span class="nt">&lt;attachment&gt;</span>
+            <span class="nt">&lt;id&gt;&lt;/id&gt;</span>
+            <span class="nt">&lt;type&gt;&lt;/type&gt;</span>
+            <span class="nt">&lt;description&gt;&lt;/description&gt;</span>
+            <span class="nt">&lt;source&gt;&lt;/source&gt;</span>
+        <span class="nt">&lt;/attachment&gt;</span>
+    <span class="nt">&lt;/notification_attachments&gt;</span>
+    <span class="nt">&lt;config&gt;</span>
+        <span class="nt">&lt;power_command_needed&gt;&lt;/power_command_needed&gt;</span>
+        <span class="nt">&lt;documentation&gt;&lt;/documentation&gt;</span>
+        <span class="nt">&lt;script&gt;&lt;/script&gt;</span>
+        <span class="nt">&lt;actions&gt;</span>
+            <span class="nt">&lt;action&gt;</span>
+                <span class="nt">&lt;name&gt;&lt;/name&gt;</span>
+                <span class="nt">&lt;command&gt;&lt;/command&gt;</span>
+                <span class="nt">&lt;params&gt;</span>
+                    <span class="nt">&lt;param&gt;</span>
+                        <span class="nt">&lt;name&gt;&lt;/name&gt;</span>
+                        <span class="nt">&lt;type&gt;&lt;/type&gt;</span>
+                        <span class="nt">&lt;variabletype&gt;&lt;/variabletype&gt;</span>
+                        <span class="nt">&lt;minimum&gt;&lt;/minimum&gt;</span>
+                        <span class="nt">&lt;maximum&gt;&lt;/maximum&gt;</span>
+                        <span class="nt">&lt;items&gt;</span>
+                            <span class="nt">&lt;item&gt;&lt;/item&gt;</span>
+                        <span class="nt">&lt;/items&gt;</span>
+                        <span class="nt">&lt;multiselect&gt;</span><span class="err">&lt;</span>/multiselect&amp;gt;
+                        <span class="nt">&lt;search&gt;&lt;search/&gt;</span>
+                        <span class="nt">&lt;password&gt;</span><span class="err">&lt;</span>/password&amp;gt;
+                    <span class="nt">&lt;/param&gt;</span>
+                <span class="nt">&lt;/params&gt;</span>
+                <span class="nt">&lt;sort_order&gt;&lt;/sort_order&gt;</span>
+            <span class="nt">&lt;/action&gt;</span>
+        <span class="nt">&lt;actions&gt;</span>
+        <span class="nt">&lt;commands&gt;</span>
+            <span class="nt">&lt;command&gt;</span>
+                <span class="nt">&lt;name&gt;&lt;/name&gt;</span>
+                <span class="nt">&lt;description&gt;&lt;/description&gt;</span>
+                <span class="nt">&lt;sort_order&gt;&lt;/sort_order&gt;</span>
+                <span class="nt">&lt;params&gt;</span>
+                    <span class="nt">&lt;param&gt;</span>
+                        <span class="nt">&lt;name&gt;&lt;/name&gt;</span>
+                        <span class="nt">&lt;type&gt;&lt;/type&gt;</span>
+                        <span class="nt">&lt;variabletype&gt;&lt;varibaletype/&gt;</span>
+                        <span class="nt">&lt;items&gt;&lt;items/&gt;</span>
+                          <span class="nt">&lt;item&gt;&lt;item/&gt;</span>
+                        <span class="nt">&lt;minimum&gt;&lt;/minimum&gt;</span>
+                        <span class="nt">&lt;maximum&gt;&lt;/maximum&gt;</span>
+                    <span class="nt">&lt;/param&gt;</span>
+                <span class="nt">&lt;/params&gt;</span>
+            <span class="nt">&lt;/command&gt;</span>
+        <span class="nt">&lt;/commands&gt;</span>
+        <span class="nt">&lt;conditionals&gt;</span>
+            <span class="nt">&lt;conditional&gt;</span>
+                <span class="nt">&lt;id&gt;&lt;/id&gt;</span>
+                <span class="nt">&lt;name&gt;&lt;/name&gt;</span>
+                <span class="nt">&lt;type&gt;&lt;/type&gt;</span>
+                <span class="nt">&lt;condition_statement&gt;&lt;/condition_statement&gt;</span>
+                <span class="nt">&lt;description&gt;&lt;/description&gt;</span>
+                <span class="nt">&lt;truetext&gt;&lt;truetext/&gt;</span>
+                <span class="nt">&lt;falsetext&gt;&lt;falsetext/&gt;</span>
+                <span class="nt">&lt;minimum&gt;&lt;/minimum&gt;</span>
+                <span class="nt">&lt;maximum&gt;&lt;/maximum&gt;</span>
+                <span class="nt">&lt;items&gt;&lt;/items&gt;</span>
+                  <span class="nt">&lt;item&gt;&lt;/item&gt;</span>
+            <span class="nt">&lt;/conditional&gt;</span>
+        <span class="nt">&lt;/conditionals&gt;</span>
+        <span class="nt">&lt;properties&gt;</span>
+            <span class="nt">&lt;property&gt;</span>
+                <span class="nt">&lt;name&gt;&lt;/name&gt;</span>
+                <span class="nt">&lt;type&gt;&lt;/type&gt;</span>
+                <span class="nt">&lt;readonly&gt;&lt;/readonly&gt;</span>
+                <span class="nt">&lt;tooltip&gt;&lt;/tooltip&gt;</span>
+                <span class="nt">&lt;default&gt;&lt;/default&gt;</span>
+                <span class="nt">&lt;minimum&gt;&lt;/minimum&gt;</span>
+                <span class="nt">&lt;maximum&gt;&lt;/maximum&gt;</span>
+                <span class="nt">&lt;items&gt;&lt;/items&gt;</span>
+                  <span class="nt">&lt;item&gt;&lt;/item&gt;</span>
+            <span class="nt">&lt;/property&gt;</span>
+        <span class="nt">&lt;properties/&gt;</span>
+    <span class="nt">&lt;/config&gt;</span>
+    <span class="nt">&lt;composer_categories&gt;</span>
+      <span class="nt">&lt;/category&gt;&lt;category&gt;</span>
+    <span class="nt">&lt;/composer_categories&gt;</span>
+    <span class="nt">&lt;events&gt;</span>
+        <span class="nt">&lt;event&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;name&gt;&lt;/name&gt;</span>
+            <span class="nt">&lt;description&gt;&lt;/description&gt;</span>
+            <span class="nt">&lt;sort_order&gt;&lt;/sort_order&gt;</span>
+        <span class="nt">&lt;/event&gt;</span>
+    <span class="nt">&lt;/events&gt;</span>
+    <span class="nt">&lt;connections&gt;</span>
+        <span class="nt">&lt;connection&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+            <span class="nt">&lt;connectionname&gt;&lt;/connectionname&gt;</span>
+            <span class="nt">&lt;type&gt;&lt;/type&gt;</span>
+            <span class="nt">&lt;consumer&gt;&lt;/consumer&gt;</span>
+            <span class="nt">&lt;audiosource&gt;&lt;/audiosource&gt;</span>
+            <span class="nt">&lt;videosource&gt;&lt;/videosource&gt;</span>
+            <span class="nt">&lt;linelevel&gt;&lt;/linelevel&gt;</span>
+            <span class="nt">&lt;classes&gt;</span>
+                <span class="nt">&lt;class&gt;</span>
+                    <span class="nt">&lt;classname&gt;&lt;/classname&gt;</span>
+                <span class="nt">&lt;/class&gt;</span>
+            <span class="nt">&lt;/classes&gt;</span>
+            <span class="nt">&lt;hidden&gt;&lt;/hidden&gt;</span>
+        <span class="nt">&lt;/connection&gt;</span>
+    <span class="nt">&lt;/connections&gt;</span>
+<span class="nt">&lt;/devicedata&gt;</span>
 </code></pre></div></p>
 <h1 id='common-xml'>Common XML</h1>
 
