@@ -34,5 +34,5 @@ In the example, the sort order element is used to display the command Select Cha
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#commands-xml-command
 [2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#commands-sorting-commands-in-composerpro

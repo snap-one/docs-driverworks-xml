@@ -32,4 +32,4 @@ In the example, the command Toggle has a params element containing the XML defin
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-params
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#commands-xml-params

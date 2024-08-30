@@ -34,4 +34,4 @@ The description element is used to provide text that helps describe the purpose 
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#commands-xml-command

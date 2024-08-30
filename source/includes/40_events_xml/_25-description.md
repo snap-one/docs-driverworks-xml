@@ -5,7 +5,7 @@
 
 ### Parent
 
-[`<conditional>`][1]
+[`<event>`][1]
 
 
 The description element needs to contain the NAME macro. NAME is a key value that is equivalent to your driver’s unique name. Every conditional needs to include NAME. ComposerPro treats the NAME macro in your Event XML in a way that replaces it with your driver’s unique name. The unique name is formatted by the name of the room where the driver resides followed by “-\>”, followed by the name of the driver as it is named in the project. 
@@ -26,4 +26,4 @@ For example, consider that the name of our example driver is “Living Room Lamp
 </events>
 ```
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#events-xml-event

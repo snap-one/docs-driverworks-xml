@@ -44,7 +44,7 @@ In the example, the command Toggle has a params element containing the XML defin
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-params
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#commands-xml-params
 [2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-using-the-custom-select-property
 [3]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-dynamic-list-properties
 [4]:	https://snap-one.github.io/docs-driverworks-api/#properties-interface-updatepropertylist

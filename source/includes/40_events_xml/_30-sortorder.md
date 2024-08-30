@@ -42,5 +42,5 @@ For more information on Sorting Actions please see: [Sorting Events in Composer 
 </events>
 ```
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#events-xml-event
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#events-xml-event
 [2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#events-sorting-events-in-composerpro
