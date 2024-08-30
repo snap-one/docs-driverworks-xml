@@ -19,5 +19,5 @@ This element contains the searchable text that can be used to locate the driver 
 </search_types>
 ```
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-searchtypes
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#common-xml-searchtypes
 [2]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-type

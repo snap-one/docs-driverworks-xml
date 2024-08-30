@@ -25,6 +25,6 @@ This element
  <script file="driver.lua" encryption="2" jit="1"></script>
 ```
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-config
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#common-xml-config
 [2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#squishlua-and-driver-encryption
 [3]:	https://snap-one.github.io/docs-driverworks-fundamentals/#control4-os-3-and-luajit

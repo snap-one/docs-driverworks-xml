@@ -56,4 +56,4 @@ This element indicates if the connection status on this port should be monitored
 </connection>
 ```
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-port
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#common-xml-port

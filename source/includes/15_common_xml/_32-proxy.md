@@ -26,4 +26,4 @@ This element is used to define a proxy used by the driver.
 </proxies>
 ```
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-proxies
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#common-xml-proxies

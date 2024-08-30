@@ -17,4 +17,4 @@ This element is used to ensures that the driver can only be loaded once within a
 ```
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-config
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#common-xml-config

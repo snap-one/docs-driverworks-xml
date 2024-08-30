@@ -44,5 +44,5 @@ Note that the example to the right has been taken from a TV driver.
 ```
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#common-xml-devicedata
 [2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#capabilities-capabilities
