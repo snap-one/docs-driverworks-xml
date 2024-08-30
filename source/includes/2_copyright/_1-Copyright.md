@@ -45,4 +45,4 @@ Salt Lake City, UT 84020 USA
 
 [http://www.control4.com][1]
 
-[1]:	www.control4.com
+[1]:	https://www.control4.com/
