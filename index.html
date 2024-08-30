@@ -684,7 +684,7 @@
               </ul>
           </li>
           <li>
-            <a href="#capabilites-xml" class="toc-h1 toc-link" data-title="Capabilites XML">Capabilites XML</a>
+            <a href="#capabilities-xml" class="toc-h1 toc-link" data-title="Capabilities XML">Capabilities XML</a>
           </li>
           <li>
             <a href="#connections-xml" class="toc-h1 toc-link" data-title="Connections XML">Connections XML</a>
@@ -4376,7 +4376,7 @@ Salt Lake City, UT 84020 USA</p>
     <span class="nt">&lt;event&gt;</span>
 <span class="nt">&lt;/events&gt;</span>
 </code></pre></div></p>
-<h1 id='capabilites-xml'>Capabilites XML</h1>
+<h1 id='capabilities-xml'>Capabilities XML</h1>
 
 <p><code>&lt;capabilites&gt;&lt;/capabilites&gt;</code></p>
 
@@ -4426,7 +4426,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='connections-xml-connections-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata"><code>&lt;devicedata&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#common-xml-devicedata"><code>&lt;devicedata&gt;</code></a></p>
 
 <p>The connections element contains the driver’s XML that defines the Connections that are made available for the driver in Composer Pro. It is the root element for all Connections.</p>
 
@@ -4490,7 +4490,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='connections-xml-connection-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connections"><code>&lt;connections&gt;</code></a></p>
 
 <p>The connection element contains the driver’s XML that defines an individual Connection which is made available for the driver in Composer Pro.</p>
 
@@ -4524,7 +4524,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='connections-xml-id-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The id element contains the connection’s id value.  This id number must be in the correct range for the particular type of connection being defined. Below are the ranges:</p>
 
@@ -4602,7 +4602,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='connections-xml-facing-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>This connection element  indicates which side of the device this connection is on if it is a physical connection. Values are:</p>
 
@@ -4672,7 +4672,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='connections-xml-connectionname-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The connectionname element indicates the name of this connection. This name is used by Composer when displaying the connection.  </p>
 
@@ -4706,7 +4706,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='connections-xml-type-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The type element indicates the type of this connection. Supported values include:</p>
 
@@ -4776,13 +4776,13 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='connections-xml-consumer-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The consumer element indicates (True or False) if this connection is the consumer (or a provider) for the connection.</p>
 
 <h3 id='connections-xml-consumer-example'>Example</h3>
 
-<p>In the example, a single connection for a Thermostat is defined using a consumer value of False.  This connection is not on the receiving end of a provider/consumer connection.   </p>
+<p>In the example, a single connection for a Thermostat is defined using a consumer value of False.  This connection is not on the receiving end of a provider/consumer connection.  </p>
 
 <div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
      <span class="nt">&lt;connection&gt;</span>      
@@ -4810,13 +4810,13 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='connections-xml-audiosource-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The audiosource element indicates (True or False) if this connection is a source of audio. </p>
 
 <h3 id='connections-xml-audiosource-example'>Example</h3>
 
-<p>In the example, a single connection for a Thermostat is defined using a audiosource value of False.  This indicates that this connection is not a source of audio distributions.   </p>
+<p>In the example, a single connection for a Thermostat is defined using a audiosource value of False.  This indicates that this connection is not a source of audio distributions.  </p>
 
 <div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connections&gt;</span>
      <span class="nt">&lt;connection&gt;</span>      
@@ -4844,7 +4844,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='connections-xml-videosource-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The videosource element indicates (True or False) if this connection is a source of video. </p>
 
@@ -4878,7 +4878,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='connections-xml-linelevel-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The linelevel element indicates (True or False) if this connection provides a line level source. Line level signals are the highest level signals before amplification.</p>
 
@@ -4913,7 +4913,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='connections-xml-idautobind-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The idautobind element is an optional tag that allows the connection to automatically connect to a connection with the defined idautobind value. The supported value range is 0 - 999.</p>
 
@@ -4948,7 +4948,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='connections-xml-hidden-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The hidden element is an optional tag to specify if this connection should be hidden in Composer Pro or not. This defaults to false, except for proxy bindings.</p>
 
@@ -4983,7 +4983,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='connections-xml-classes-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The classes XML element defines one or more classes for this connection.
 If the class is TCP or UDP then there may be a ports section as seen to the right. This includes the IP Port number for the network connection.</p>
@@ -5023,7 +5023,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <h3 id='connections-xml-class-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-classes"><code>&lt;classes&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-classes"><code>&lt;classes&gt;</code></a></p>
 
 <p>The class element contains the driver’s XML that defines an individual Class needed by the connection.</p>
 
@@ -5062,7 +5062,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <h3 id='connections-xml-autobind-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-class"><code>&lt;class&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-class"><code>&lt;class&gt;</code></a></p>
 
 <p>The autobind XML element, when set to True, marks this class as needed to be autobound. If an idautobind is provided then this class will be connected on that binding. Otherwise, it will be connected on the first connection in the project providing this class.</p>
 
@@ -5102,7 +5102,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <h3 id='connections-xml-name-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-class"><code>&lt;class&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-class"><code>&lt;class&gt;</code></a></p>
 
 <p>The name element contains the name of the Class. This name is used to identify the connection and is displayed in Composer Pro Connections area.</p>
 
@@ -5141,7 +5141,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <h3 id='connections-xml-ports-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-class"><code>&lt;class&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-class"><code>&lt;class&gt;</code></a></p>
 
 <p>The ports XML element defines one or more ports for the class used by the  connection. If the class is TCP or UDP then there may be a ports section.  This includes the IP Port number for the network connection.</p>
 
@@ -5180,7 +5180,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <h3 id='connections-xml-port-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-class"><code>&lt;class&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-class"><code>&lt;class&gt;</code></a></p>
 
 <p>The port XML element defines a single port for the class used by the  connection. If the class is TCP or UDP then there may be a ports section. This includes the IP Port number for the network connection.</p>
 
@@ -5219,7 +5219,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <h3 id='connections-xml-number-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-port"><code>&lt;port&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-port"><code>&lt;port&gt;</code></a></p>
 
 <p>The number XML element defines the port identification value for a single port for the class used by the  connection. If the class is TCP or UDP then there may be a ports section. This includes the IP Port number for the network connection.</p>
 
@@ -5258,7 +5258,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <h3 id='connections-xml-auto_connect-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The auto_connect  XML element, when set to True,  creates an Auto Connect for this socket. This socket will be created and connected when the driver is started.</p>
 
@@ -5298,7 +5298,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <h3 id='connections-xml-monitor_connection-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The monitor_connection  XML element, when set to True,  provides monitoring of this socket. Director will periodically check the connection, if data is not returned on this socket it will be considered down.</p>
 
@@ -5339,7 +5339,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <h3 id='connections-xml-keep_connection-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The keep_connection  XML element, when set to True, keeps this connection connected. This means if the connection goes down, Director will attempt to re-connect it.</p>
 
@@ -5381,7 +5381,7 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <h3 id='connections-xml-delimiter-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
 <p>The delimiter XML element, is used to specify how a network driver should break up incoming packets. NOTE: If delimiter XML is specified, data will not be sent UNTIL the delimiter is reached. If no delimiter specified, data is sent on timeout.</p>
 
@@ -5424,9 +5424,9 @@ If the class is TCP or UDP then there may be a ports section as seen to the righ
 
 <h3 id='connections-xml-grow-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection"><code>&lt;connection&gt;</code></a></p>
 
-<p>The grow XML element is used to define the number of bytes to increaase the size of receive buffers by when the original receiver buffer is overflowed.</p>
+<p>The grow XML element is used to define the number of bytes to increase the size of receive buffers by when the original receiver buffer is overflowed.</p>
 
 <h3 id='connections-xml-grow-example'>Example</h3>
 
