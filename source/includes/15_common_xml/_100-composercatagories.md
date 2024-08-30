@@ -5,10 +5,7 @@
 
 ### Parent
 
-[<devicedata>][1]
-
-
-Description
+[`<devicedata>`][1]
 
 
 | Attributes | Description |
