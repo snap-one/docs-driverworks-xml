@@ -1,5 +1,5 @@
 
-# Capabilites XML
+# Capabilities XML
 
 `<capabilites></capabilites>`
 

@@ -8,7 +8,7 @@
 [`<connection>`][1]
 
 
-The grow XML element is used to define the number of bytes to increaase the size of receive buffers by when the original receiver buffer is overflowed.
+The grow XML element is used to define the number of bytes to increase the size of receive buffers by when the original receiver buffer is overflowed.
 
 ### Example
 In the example, a single serial connection is defined using the class name of TCP. Its grow xml element is set to 255 bytes of increase.
@@ -49,4 +49,4 @@ In the example, a single serial connection is defined using the class name of TC
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection

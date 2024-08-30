@@ -13,7 +13,7 @@ The audiosource element indicates (True or False) if this connection is a source
 
 ### Example
 
-In the example, a single connection for a Thermostat is defined using a audiosource value of False.  This indicates that this connection is not a source of audio distributions.   
+In the example, a single connection for a Thermostat is defined using a audiosource value of False.  This indicates that this connection is not a source of audio distributions.  
 
 ```xml
 <connections>
@@ -40,4 +40,4 @@ In the example, a single connection for a Thermostat is defined using a audiosou
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection

@@ -13,7 +13,7 @@ The consumer element indicates (True or False) if this connection is the consume
 
 ### Example
 
-In the example, a single connection for a Thermostat is defined using a consumer value of False.  This connection is not on the receiving end of a provider/consumer connection.   
+In the example, a single connection for a Thermostat is defined using a consumer value of False.  This connection is not on the receiving end of a provider/consumer connection.  
 
 ```xml
 <connections>
@@ -40,4 +40,4 @@ In the example, a single connection for a Thermostat is defined using a consumer
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection

@@ -70,4 +70,4 @@ In the example, three connections are defined: Serial RS-232, POOL and Thermosta
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#common-xml-devicedata

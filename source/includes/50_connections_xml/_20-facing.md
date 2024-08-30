@@ -49,4 +49,4 @@ In the example, a single connection for a Thermostat is defined using a facing v
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection

@@ -4,7 +4,7 @@
 
 ### Parent
 
-[`<connection>`][1]
+[`<connections>`][1]
 
 
 The connection element contains the driver’s XML that defines an individual Connection which is made available for the driver in Composer Pro.
@@ -39,4 +39,4 @@ In the example, a single connection for a Thermostat is defined.
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connections

@@ -44,4 +44,4 @@ In the example, a single serial connection is defined using the class name of TC
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#connections-xml-connection
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#connections-xml-connection
