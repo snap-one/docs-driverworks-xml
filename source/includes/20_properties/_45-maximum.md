@@ -25,4 +25,4 @@ The maximum element provides the ability to define a value that represents the  
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#properties-xml-property

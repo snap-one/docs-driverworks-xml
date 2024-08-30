@@ -43,7 +43,7 @@ Below is table of currently supported Property Types. For detailed information r
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#properties-xml-property
 [2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk
 [3]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-advanced-properties
 [4]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-using-the-device-selector-property

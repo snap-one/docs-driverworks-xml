@@ -13,7 +13,11 @@ The items element provides the ability to define the content displayed through t
 Use of the Item element is supported in the following Property Types:
 
 [List][2]
+
+
 [Dynamic List ][3]
+
+
 [Device Selector][4]
 
 ### Example
@@ -39,7 +43,7 @@ Use of the Item element is supported in the following Property Types:
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#properties-xml-property
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#properties-xml-property
 [2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk
 [3]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-dynamic-list-properties
 [4]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-using-the-device-selector-property

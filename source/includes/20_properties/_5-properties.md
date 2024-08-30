@@ -26,4 +26,4 @@ The properties element contains the driver’s XML that defines the Properties d
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#common-xml-devicedata

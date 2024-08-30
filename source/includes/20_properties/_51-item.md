@@ -34,4 +34,4 @@ The item element provides the ability to display up to six  items in support of 
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#properties-xml-items
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#properties-xml-items
