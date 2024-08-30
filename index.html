@@ -3284,7 +3284,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='conditionals-xml-conditionals-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#common-xml-devicedata"><code>&lt;devicedata&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#common-xml-devicedata"><code>&lt;devicedata&gt;</code></a></p>
 
 <p>The conditionals element contains the driver’s XML that defines the Conditionals displayed in Composer Pro. It is the root element for all Conditionals. in the example, the <code>&lt;conditionals&gt;&lt;/conditionals&gt;</code> XML contains one conditional named SIMPLE LIGHT ON.</p>
 
@@ -3302,7 +3302,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;conditional&gt;&lt;/conditional&gt;</code></p>
 <h3 id='conditionals-xml-conditional-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditionals"><code>&lt;conditionals&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditionals"><code>&lt;conditionals&gt;</code></a></p>
 
 <p>The conditional element contains the driver’s XML that defines an individual conditional displayed in Composer Pro. In the example, the <code>&lt;conditional&gt;&lt;/conditional&gt;</code> contains the XML elements that make up a conditional named SIMPLE LIGHT ON.</p>
 
@@ -3320,7 +3320,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;id&gt;&lt;/id&gt;</code></p>
 <h3 id='conditionals-xml-id-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
 
 <p>The id element provides a way to assign a numerical identification value to an individual conditional.  All conditionals require an <code>&lt;id&gt;&lt;/id&gt;</code> value. It is recommended that conditionals be numbered beginning with 0. </p>
 
@@ -3338,7 +3338,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;name&gt;&lt;/name&gt;</code></p>
 <h3 id='conditionals-xml-name-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
 
 <p>The name element contains the name of the Conditional. This name is used to identify the Conditional and is displayed  in Composer Pro. In the example below, the name of the Conditional is SIMPLE LIGHT ON.</p>
 
@@ -3356,7 +3356,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;type&gt;&lt;/type&gt;</code></p>
 <h3 id='conditionals-xml-type-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
 
 <p>The type element identifies the type of Conditional defined within the <code>&lt;conditional&gt;&lt;/conditional&gt;</code> tag. Currently there are seven types of conditionals that can be included in your driver. They vary in complexity and each are intended to provide a specific programming opportunity. They include:</p>
 
@@ -3376,7 +3376,7 @@ Salt Lake City, UT 84020 USA</p>
 </tr>
 <tr>
 <td><strong>Number</strong></td>
-<td>Uses the following operators: =, !=, \&lt;, \&lt;=, \&gt;, \&gt;= to compare the current device value with an integer entered in ComposerPro programming by the dealer.</td>
+<td>Uses the following operators: =, !=, \\\&lt;, \\\&lt;=, \\\&gt;, \\\&gt;= to compare the current device value with an integer entered in ComposerPro programming by the dealer.</td>
 </tr>
 <tr>
 <td><strong>Boolean</strong></td>
@@ -3417,7 +3417,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='conditionals-xml-condition-statement-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
 
 <p>The conditional statement states a question being asked regarding a state of the driver. This is the statement that is shown before the condition logic. For example, the Simple Light On conditional , asks the question ‘The Light is on’. It is basically a useful statement that supports the conditional. When an integrator is viewing this driver’s conditionals in ComposerPro, they can select “The Light is on” from the list of conditionals and can ultimately initiate programming when the light is in the On state.</p>
 
@@ -3435,7 +3435,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;description&gt;&lt;/description&gt;</code></p>
 <h3 id='conditionals-xml-description-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
 
 <p>The description element needs to contain the NAME macro. NAME is a key value that is equivalent to your driver’s unique name. Every conditional needs to include NAME. ComposerPro treats the NAME macro in your conditional XML in a way that replaces it with your driver’s unique name. The unique name is formatted by the name of the room where the driver resides followed by “-&gt;”, followed by the name of the driver as it is named in the project. </p>
 
@@ -3455,7 +3455,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;true_text&gt;&lt;/true_text&gt;</code></p>
 <h3 id='conditionals-xml-true-text-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
 
 <p>The true text element provides the ability to define text that will be displayed in Composer Pro programming if a Boolean Conditional is True.</p>
 
@@ -3473,7 +3473,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;false_text&gt;&lt;/false_text&gt;</code></p>
 <h3 id='conditionals-xml-false-text-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
 
 <p>The false text element provides the ability to define text that will be displayed in Composer Pro programming if a Boolean Conditional is false.</p>
 
@@ -3491,7 +3491,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;minimum&gt;&lt;/minimum&gt;</code></p>
 <h3 id='conditionals-xml-minimum-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
 
 <p>The minimum element provides the ability to define a value that represents the lowest value of a range of numbers used by a NUMBER type Conditional.  In the example, the minimum value of the range is 10.</p>
 
@@ -3509,7 +3509,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;maximum&gt;&lt;/maximum&gt;</code></p>
 <h3 id='conditionals-xml-maximum-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
 
 <p>The maximum element provides the ability to define a value that represents the highest value of a range of numbers used by a NUMBER type Conditional.  In the example, the maximum value of the range is 150.</p>
 
@@ -3527,7 +3527,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;items&gt;&lt;/items&gt;</code></p>
 <h3 id='conditionals-xml-items-parent'>Parent</h3>
 
-<p><a href="https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional"><code>&lt;conditional&gt;</code></a></p>
 
 <p>The items element provides the ability to define a list of items used by the <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#conditionals-understanding-xml-in-a-list-type-conditional">LIST</a> type Conditional. The content is defined within the <code>&lt;items&gt;&lt;/items&gt;</code> XML. </p>
 
