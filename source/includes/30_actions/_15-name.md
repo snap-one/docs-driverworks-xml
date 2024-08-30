@@ -33,4 +33,4 @@ The name element contains the name of the Action. This name is used to identify 
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#actions-xml-action

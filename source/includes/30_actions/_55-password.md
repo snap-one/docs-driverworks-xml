@@ -34,4 +34,4 @@ The password element supports the ability to activate (true) the use of a passwo
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-param
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#actions-xml-param

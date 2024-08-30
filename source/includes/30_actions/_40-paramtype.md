@@ -5,7 +5,7 @@
 
 ### Parent
 
-[`<param>`]()
+[`<param>`][1]
 
 
 The parameter type element identifies the parameter type used by the command for the Action. Supported by the parameter. Action Types include: 
@@ -54,6 +54,7 @@ When an integrator selects the Add and Connect Relays Action they are presented 
 
 
 
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#actions-xml-param
 [2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-using-the-device-selector-property
 [3]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-using-the-color-selector-property
 [4]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-dynamic-list-properties

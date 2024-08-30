@@ -41,4 +41,4 @@ The parameter default element provides the ability to define a default value for
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-param
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#actions-xml-param

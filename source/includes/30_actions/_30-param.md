@@ -31,4 +31,4 @@ The param element contains the definition of a single parameter used by the Acti
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-params
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#actions-xml-action

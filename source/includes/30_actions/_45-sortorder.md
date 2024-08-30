@@ -40,5 +40,5 @@ For more information on Sorting Actions please see: [Actions][2]
 </action>
 ```
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-action
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#actions-xml-action
 [2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#composerpro-the-interface-into-the-sdk-actions

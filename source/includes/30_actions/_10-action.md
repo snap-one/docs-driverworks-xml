@@ -32,4 +32,4 @@ The property element contains the driver’s XML that defines an individual Acti
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-actions
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#actions-xml-actions

@@ -47,4 +47,4 @@ In the example, the Action named: Test Action with Parameters will return all of
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#actions-xml-param
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#actions-xml-param
