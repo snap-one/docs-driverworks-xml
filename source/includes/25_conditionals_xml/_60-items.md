@@ -40,5 +40,5 @@ Use of the Item element is supported in the following Conditional Types:
 			</conditional>
 ```
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional
 [2]:	https://snap-one.github.io/docs-driverworks-fundamentals/#conditionals-understanding-xml-in-a-list-type-conditional

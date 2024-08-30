@@ -25,4 +25,4 @@ The false text element provides the ability to define text that will be displaye
 </conditional>
 ```
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional

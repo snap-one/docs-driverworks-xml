@@ -28,4 +28,4 @@ The name element contains the name of the Conditional. This name is used to iden
 
 
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional

@@ -27,4 +27,4 @@ For example, consider that the name of our example driver is “Living Room Lamp
 </conditionals>
 ```
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional

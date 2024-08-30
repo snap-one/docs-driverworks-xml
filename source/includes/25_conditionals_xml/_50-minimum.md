@@ -25,4 +25,4 @@ The minimum element provides the ability to define a value that represents the l
 </conditional>
 ```
 
-[1]:	https://verbose-telegram-5004f902.pages.github.io/#conditionals-xml-conditional
+[1]:	https://snap-one.github.io/docs-driverworks-xml/#conditionals-xml-conditional
