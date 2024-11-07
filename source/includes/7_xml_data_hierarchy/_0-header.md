@@ -20,6 +20,7 @@
 	<user_defined></user_defined>
 	<combo></combo>
 	<capabilities></capabilities>
+	<replaces></replaces>
  <notification_attachment_provider></notification_attachment_provider>
 	<notification_attachments>
 		<attachment>
