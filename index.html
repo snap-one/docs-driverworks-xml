@@ -378,6 +378,9 @@
                     <a href="#common-xml-capabilities" class="toc-h2 toc-link" data-title="capabilities">capabilities</a>
                   </li>
                   <li>
+                    <a href="#common-xml-replaces" class="toc-h2 toc-link" data-title="replaces">replaces</a>
+                  </li>
+                  <li>
                     <a href="#common-xml-connections" class="toc-h2 toc-link" data-title="connections">connections</a>
                   </li>
                   <li>
@@ -838,6 +841,7 @@ Salt Lake City, UT 84020 USA</p>
     <span class="nt">&lt;user_defined&gt;&lt;/user_defined&gt;</span>
     <span class="nt">&lt;combo&gt;&lt;/combo&gt;</span>
     <span class="nt">&lt;capabilities&gt;&lt;/capabilities&gt;</span>
+    <span class="nt">&lt;replaces&gt;&lt;/replaces&gt;</span>
  <span class="nt">&lt;notification_attachment_provider&gt;&lt;/notification_attachment_provider&gt;</span>
     <span class="nt">&lt;notification_attachments&gt;</span>
         <span class="nt">&lt;attachment&gt;</span>
@@ -1206,10 +1210,22 @@ Salt Lake City, UT 84020 USA</p>
   <span class="nt">&lt;/capabilities&gt;</span>
 </code></pre></div>
 
+<h2 id='common-xml-replaces'>replaces</h2>
+
+<p><code>&lt;replaces&gt;&lt;/replaces&gt;</code></p>
+
+<h3 id='common-xml-replaces-parent'>Parent</h3>
+
+<p><a href="hhttps://snap-one.github.io/docs-driverworks-xml/#common-xml-devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element  is optional and if used, requires at least one instance of replace containing the .c4i or .c4z file name. Once the driver is loaded, Director will remove the driver defined in the replace element from the project. Note that the driver file is also removed from the local driver database of Composer Pro. This occurs without warning. The driver file is then marked as &quot;Obsolete&quot; upon driver searches. Obsolete drivers cannot be loaded into a project.</p>
+
+<h3 id='common-xml-replaces-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;replaces&gt;</span>
+    <span class="nt">&lt;replace&gt;</span>driver.c4z<span class="nt">&lt;/replace&gt;</span>
+<span class="nt">&lt;/replaces&gt;</span> 
+</code></pre></div>
 <h2 id='common-xml-connections'>connections</h2>
-
 <p><code>&lt;connections&gt;&lt;/connections&gt;</code></p>
-
 <h3 id='common-xml-connections-parent'>Parent</h3>
 
 <p><a href="hhttps://snap-one.github.io/docs-driverworks-xml/#common-xml-devicedata"><code>&lt;devicedata&gt;</code></a></p>
