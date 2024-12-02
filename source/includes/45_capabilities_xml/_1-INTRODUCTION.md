@@ -3,7 +3,7 @@
 
 `<capabilites></capabilites>`
 
-Capabilities tell the Proxy what your device can do. Not all devices of a particular type have the same capabilities. In these cases, the .c4z file contains information which enables the proxy driver to determine what capabilities are available. For example, a Receiver-Tuner might have the included XML code in the .c4z file:
+Capabilities tell the Proxy what your device can do. Not all devices of a particular type have the same capabilities. In these cases, the driver’s XML contains information which enables the proxy driver to determine what capabilities are available. For example, a Receiver-Tuner might have the included XML code in the .c4z file:
 
 ```xml
 <capabilities>
