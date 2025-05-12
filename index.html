@@ -366,6 +366,9 @@
                     <a href="#common-xml-controlmethod" class="toc-h2 toc-link" data-title="controlmethod">controlmethod</a>
                   </li>
                   <li>
+                    <a href="#common-xml-keywords" class="toc-h2 toc-link" data-title="keywords">keywords</a>
+                  </li>
+                  <li>
                     <a href="#common-xml-driver" class="toc-h2 toc-link" data-title="driver">driver</a>
                   </li>
                   <li>
@@ -768,10 +771,11 @@
           </li>
       </ul>
         <ul class="toc-footer">
+            <li><a href='https://github.com/snap-one/docs-driverworks'>DriverWorks GitHub Home</a></li>
             <li><a href='https://snap-one.github.io/docs-driverworks-introduction/'>An Introduction to DriverWorks</a></li>
             <li><a href='https://snap-one.github.io/docs-driverworks-fundamentals/'>DriverWorks Fundamentals Guide</a></li>
             <li><a href='https://snap-one.github.io/docs-driverworks-api/'>DriverWorks API Reference Guide</a></li>
-            <li><a href='https://github.com/snap-one/docs-driverworks'>DriverWorks GitHub Home</a></li>
+            <li><a href='https://snap-one.github.io/docs-driverworks-xml/'>DriverWorks XML Reference</a></li>
             <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
@@ -1117,6 +1121,16 @@ Salt Lake City, UT 84020 USA</p>
 <p>This element is used to defined the manner in which the device is controlled. For example: IP, Serial.</p>
 
 <h3 id='common-xml-controlmethod-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code> <span class="nt">&lt;controlmethod&gt;</span>ip<span class="nt">&lt;/controlmethod&gt;</span>
+</code></pre></div>
+<h2 id='common-xml-keywords'>keywords</h2>
+<p><code>&lt;keywords&gt;&lt;/keywords&gt;</code></p>
+<h3 id='common-xml-keywords-parent'>Parent</h3>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#common-xml-devicedata"><code>&lt;devicedata&gt;</code></a></p>
+
+<p>This element is used to determine whether or not a driver is returned in a standard driver search from the online driver database. For example, passing <code>Lua_Agent</code> would treat this driver as an Agent and not return it in a standard driver search</p>
+
+<h3 id='common-xml-keywords-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code> <span class="nt">&lt;keywords&gt;</span>Lua_Agent<span class="nt">&lt;/keywords&gt;</span>
 </code></pre></div>
 <h2 id='common-xml-driver'>driver</h2>
 <p><code>&lt;driver&gt;&lt;/driver&gt;</code></p>
