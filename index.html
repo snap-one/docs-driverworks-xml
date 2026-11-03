@@ -1230,7 +1230,7 @@ Salt Lake City, UT 84020 USA</p>
 
 <h3 id='common-xml-replaces-parent'>Parent</h3>
 
-<p><a href="hhttps://snap-one.github.io/docs-driverworks-xml/#common-xml-devicedata"><code>&lt;devicedata&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#common-xml-devicedata"><code>&lt;devicedata&gt;</code></a></p>
 
 <p>This element  is optional and if used, requires at least one instance of replace containing the .c4i or .c4z file name. Once the driver is loaded, Director will remove the driver defined in the replace element from the project. Note that the driver file is also removed from the local driver database of Composer Pro. This occurs without warning. The driver file is then marked as &quot;Obsolete&quot; upon driver searches. Obsolete drivers cannot be loaded into a project.</p>
 
@@ -1242,7 +1242,7 @@ Salt Lake City, UT 84020 USA</p>
 <p><code>&lt;connections&gt;&lt;/connections&gt;</code></p>
 <h3 id='common-xml-connections-parent'>Parent</h3>
 
-<p><a href="hhttps://snap-one.github.io/docs-driverworks-xml/#common-xml-devicedata"><code>&lt;devicedata&gt;</code></a></p>
+<p><a href="https://snap-one.github.io/docs-driverworks-xml/#common-xml-devicedata"><code>&lt;devicedata&gt;</code></a></p>
 
 <p>This element defines the driver <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#connections">connections</a> which are utilized to create the bindings within the Control4 system. Numerous connections can be defined within the <code>&lt;connections&gt;</code> element an individual <code>&lt;connection&gt;</code> element.</p>
 
@@ -2963,11 +2963,11 @@ Salt Lake City, UT 84020 USA</p>
 </tr>
 <tr>
 <td>encryption</td>
-<td>A value of 1 if the driver should be <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#squishlua-and-driver-encryption">encrypted</a>. A value of 0 if the driver should not be encrypted.</td>
+<td>A value of 2 if the driver should be <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#understanding-c4z-drivers-squishlua-and-driver-encryption">encrypted</a> by Driver Packager using the current public key encryption (.c4z drivers only). A value of 0 if the driver should not be encrypted. A value of 1 indicates the legacy encryption scheme used by older drivers.</td>
 </tr>
 <tr>
 <td>jit</td>
-<td>A value of 1 if the driver should be loaded using <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#control4-os-3-and-luajit">luajit</a>.  A value of 0 if the driver should be loaded using PUC.</td>
+<td>A value of 1 if the driver should be loaded using <a href="https://snap-one.github.io/docs-driverworks-fundamentals/#driverworks-and-luajit-control4-os-3-and-luajit">luajit</a>.  A value of 0 if the driver should be loaded using PUC.</td>
 </tr>
 </tbody></table>
 <h3 id='common-xml-script-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code> <span class="nt">&lt;script</span> <span class="na">file=</span><span class="s">"driver.lua"</span> <span class="na">encryption=</span><span class="s">"2"</span> <span class="na">jit=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/script&gt;</span>
