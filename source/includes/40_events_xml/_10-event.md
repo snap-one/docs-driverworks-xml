@@ -1,6 +1,6 @@
 ## event
 
-`<event></even t>`
+`<event></event>`
 
 
 ### Parent
