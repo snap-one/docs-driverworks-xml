@@ -74,21 +74,6 @@
 				</params>
 			</command>
         </commands>
-		<conditionals>
-			<conditional>
-				<id></id>
-				<name></name>
-				<type></type>
-				<condition_statement></condition_statement>
-				<description></description>
-                <truetext><truetext/>
-                <falsetext><falsetext/>
-                <minimum></minimum>
-                <maximum></maximum>
-                <items></items>
-				  <item></item>
-			</conditional>
-		</conditionals>
 		<properties>
 			<property>
 				<name></name>
@@ -103,6 +88,21 @@
 			</property>
 		<properties/>
 	</config>
+	<conditionals>
+		<conditional>
+			<id></id>
+			<name></name>
+			<type></type>
+			<condition_statement></condition_statement>
+			<description></description>
+			<truetext><truetext/>
+			<falsetext><falsetext/>
+			<minimum></minimum>
+			<maximum></maximum>
+			<items></items>
+			  <item></item>
+		</conditional>
+	</conditionals>
 	<composer_categories>
       </category><category>
 	</composer_categories>
